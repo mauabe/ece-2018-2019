@@ -1,3 +1,16 @@
+@import "./variables.scss";
+@import "~bulma/sass/utilities/_all.sass";
+@import "~bulma/sass/base/_all.sass";
+@import "~bulma/sass/elements/button.sass";
+@import "~bulma/sass/layout/section.sass";
+
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
+
+
 .App {
   text-align: center;
 }
@@ -9,7 +22,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: $primary-color;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,7 +33,9 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: $secondary-color;
+  // color: #61dafb;
+  background-color: $primaryColor;
 }
 
 @keyframes App-logo-spin {

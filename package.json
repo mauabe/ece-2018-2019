@@ -2,13 +2,10 @@
   "name": "ece-2018-2019",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
-  },
   "scripts": {
-    "start": "react-scripts start",
+    "css-build": "node-sass --omit-source-map-url src/scss/styles.scss src/scss/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "react-scripts start css-watch",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -27,5 +24,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.9.0",
+    "react-absolute-grid": "^3.0.1",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "react-sanfona": "^1.4.0",
+    "react-scripts": "3.1.1",
+    "react-transition-group": "^4.2.2"
+  },
+  "devDependencies": {
+    "bulma": "^0.7.5",
+    "eslint": "^6.2.2",
+    "lodash.zip": "^4.2.0",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2"
   }
 }
