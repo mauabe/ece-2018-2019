@@ -1,7 +1,37 @@
-$primaryColor: #BADA55;
-$primary-color: #282c34;
-$secondary-color: #61dafb;
+$badass: #BADA55;
+$darkblue: #282c34;
+$happyblue: #61dafb;
+
+//used colors for ECE
 $orange: #f99e39;
+$menublue: #113c6f;
+$submenublue: #4976AB;
 $borderblue: #c8e9D9;
-$darkblue: ;
-$buttonblue: #4976AB;
+$bubbles: #b7ad55;
+$bubblesgrey: #9e9d9d;
+$contentarea: #c9c9c2;
+
+$greydark: #777971;
+$greylight: #d8d9d1;
+$greyverylight: #e8e7e7;
+
+// Set your brand colors
+$purple: #8A4D76;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$family-sans-serif: "Oswald", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $submenublue;
+$link: $orange;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: $orange;
+$input-shadow: none;

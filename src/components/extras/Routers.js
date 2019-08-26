@@ -1,22 +1,25 @@
-import React from 'react'
-import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom'
-import { CSSTransition } from 'react-transition-group'
-import { Container, Navbar, Nav } from 'react-bootstrap'
+import React, {Component} from 'react';
+import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom';
+import { CSSTransition } from 'react-transition-group';
+import { Container, Navbar, Nav } from 'bulma'
 import Home from './pages/home'
 import About from './pages/about'
 import Contact from './pages/contact'
 import './styles.css'
 
 
-
+class Routers extends Component (){
 
 const routes = [
+  { path: '/', name: 'Features', Component: Features },
+  { path: '/highlights', name: 'About', Component: About },
+  { path: '/contact', name: 'Contact', Component: Contact },
   { path: '/', name: 'Home', Component: Home },
   { path: '/about', name: 'About', Component: About },
   { path: '/contact', name: 'Contact', Component: Contact },
 ]
 
-function Example() {
+function Example = () => {
   return (
     <Router>
       <>
