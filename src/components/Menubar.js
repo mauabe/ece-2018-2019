@@ -30,54 +30,22 @@ class Menubar extends Component{
 
 
 
-	navigationHtml = props => {
+	navigationHtml = () => {
 		let html = [];
 		data.topMenu.forEach((value, index) =>{
 			const path = value[0];
 			const label = value[1];
 
 			html.push(
-				(<li key = {index}>
-					<MenuBoxLarge>
+				<li key = {index}>
 						<NavLink to={"/" + path}  activeClassName="active">
 							{label}
 						</NavLink>
-					</MenuBoxLarge>
 				</li>
-				))
+				)
 			});
-			console.log('%c HTML at MENUBAR', 'color:black;background:dodgerblue;padding:6px;border:1px dashed black', html);
 			return html;
-		}
-
-
-// from HEADER BAR
-		// itemsHtml = () =>
-		// {
-		// 	// Link data for HTML generation.
-		// 	let linkData = values.appModesAndLabelsArray;
-		// 	// Generate HTML from link data.
-		// 	let html = [];
-		// 	linkData.forEach((value, index) =>
-		// 	{
-		// 		const path = value[0];
-		// 		const title = value[1];
-
-		// 		html.push(
-		// 		(
-		// 			<li key={index}>
-		// 				<NavLink to={"/app/" + path}
-		// 					="active"
-		// 				>
-		// 					{title}
-		// 					<div className="indicator" />
-		// 				</NavLink>
-		// 			</li>
-		// 		));
-		// 	});
-		// 	return html;
-		// }
-
+	}
 
   buildSubMenus = props => {
 		console.log('%c PROPS at Navbar', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
@@ -89,15 +57,15 @@ class Menubar extends Component{
 		const menuItem = this.state.pageView;
     return (
       <div className="menu-container">
-				<div className="menu">
+				<div className="top-menu">
 					<ul>
 						{this.navigationHtml()}
-
 					</ul>
+				</div>
+				<div>
 					<MenuBoxSmall
 						menuItem={menuItem}
 					/>
-
 				</div>
       </div>
     );

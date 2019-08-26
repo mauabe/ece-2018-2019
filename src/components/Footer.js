@@ -1,6 +1,6 @@
 import React from 'react';
 import * as data from '../assets/data';
-import logo from '../assets/UCLA_footer_600.png';
+import logo from '../assets/UCLA_footer_600.svg';
 import history from '../history';
 
 

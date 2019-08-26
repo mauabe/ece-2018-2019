@@ -5,7 +5,14 @@ export const topMenuLinks = ['features', 'highlights', 'students', 'faculty', 'o
 export const topMenuLabels = ['From the Chairman', 'Faculty Highlights', 'Students & Teaching', 'Faculty', 'Department Overview', 'Alumni & Partnershipts'];
 export const topMenu = zip(topMenuLinks, topMenuLabels);
 
-
+export const submenus = {
+  'features':{},
+  'highlights':{},
+  'students':{},
+  'faculty':{},
+  'overview':{},
+  'alumni':{}
+}
 
 
 export const logos = {

@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
-import * as data from '../assets/data'
+import ece from '../assets/ECE_white.svg';
+import uclaece from '../assets/UCLA_ECE_white.svg';
 import history from '../history';
 
 class Logos extends Component {
   constructor(props) {
 		super(props);
-	  this.state = {
-      pageView: '',
-      logoPick: "data.logos.uclaecewhite",
-    }
-		console.log('%c PROPS at LOGOS constructor', 'color:black;background:#b7ad55;padding:6px;border:4px dashed yellow', this.props, data.logos )
+	  // this.state = {
+    //   pageView: 'features',
+    //   logoPick: null,
+    // }
+		console.log('%c PROPS at LOGOS constructor', 'color:black;background:#orange;padding:6px;border:4px dashed yellow', this.props,  )
 	}
     //history.location.pathname gets the location path (pageView)from path url
     //data.logos --> gets values from assets.data.logos
@@ -18,33 +19,34 @@ class Logos extends Component {
       //     console.log('i am a happy searchbar')
       //   }
 
-      //logos images from assets.data.logos
-      // const logos = {
-      //   "uclabottom": "public/img/UCLA_bottom_600.svg",
-      //   "uclaeceblue": "public/img/UCLA_ECE.svg",
-      //   "uclaecewhite": "public/img/UCLA_ECE_WHITE.svg",
-      //   ecewhite: "public/img/ECE_WHITE.svg",
-      //   ece: "public/img/UCLA_ECE.svg",
-      // };
-
   // Check if pageView is in the url pathname
-  getPageView = (history) => {
-    let pageView = this.state.pageView;
-    const components = history.location.pathname.split('/');
-    if (components.indexOf('features') !== -1) {
-      this.setState.pageView = 'features';
-      this.setState.logoPick = "data.logos.uclaecewhite";
-    } else {this.setState.logoPick = "data.logos.ecewhite"}
-  }
-    render(){
+  // componentDidMount(){
+  //   let uclaece = './src/assets/UCLA_ECE_white.svg';
+  //   let ece = './src/assets/ECE_white.svg';
+
+  //   const components = history.location.pathname.split('/');
+  //   if (components.indexOf('features') !== -1) {this.setState.pageView = 'features'}
+  //   if (components.indexOf('highlights') !== -1) {this.setState.pageView = 'highlights'}
+  //   if (components.indexOf('students') !== -1) {this.setState.pageView = 'students'}
+  //   if (components.indexOf('faculty') !== -1) {this.setState.pageView = 'faculty'}
+  //   if (components.indexOf('overview') !== -1) {this.setState.pageView = 'overview'}
+  //   if (components.indexOf('alumni') !== -1) {this.setState.pageView = 'alumni'}
+
+  //   if(this.setState.pageView === "features"){
+  //     this.setState.logoPick = uclaece
+  //   } else {this.setState.logoPick = ece};
+  // }
+
+  render(){
     return (
       <div className="logo">
-        <span className={`logos${this.state.pageView}`}>
+        <span className={`logos-${this.props.pageView}`}>
           <img
             className="logo-image"
-            src={this.state.logoPick}
-            alt="UCLA"
-            title="UCLA"
+            src={ece}
+            // src={this.props.logoPick}
+            alt="UCLA ECE"
+            title="UCLA ECE"
           />
         </span>
       </div>

@@ -10,8 +10,6 @@
 
 
 
-
-
 .header {
   // display: flex;
   background-color: $primary;
@@ -20,5 +18,15 @@
   align-items: top;
   font-size: 2rem;
   color: $black-20;
+
+  .logo{
+    flex: start;
+
+    .logo-image{
+      width: 95px;
+      margin-top: 25px;
+    }
+  }
+
 
 }
