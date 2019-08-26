@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
+import { withRouter, Redirect, Route } from "react-router-dom";
 
 import Menubar from '../components/Menubar';
 import Logos from '../components/Logos';
-import { withRouter, Redirect, Route } from "react-router-dom";
+import * as data from '../assets/data'
 
 
 class Header extends Component{
@@ -12,35 +13,26 @@ class Header extends Component{
 	  this.state = {
       pageView: 'feature'
     }
-
-		console.log('%c PROPS at APP constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
+		// console.log('%c PROPS at HEADER constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
 	}
 
 	componentDidMount() {
-		const props = this.props;
+    const props = this.props;
+    // const routes = data.topMenu.map((value) => {
+    //   { path: `/${value[0]}`, name: value[1], Component: `${value[0]}.charAt(0).toUpperCase()${value[0]}substr(1).toLowerCase()` }
+    // });
   }
-
-  // renderRouteWithMatch(match, opts){
-  //   const {path, ...rest} = opts;
-  //   return(
-  //     <Route path={match.url + path} {...rest}/>
-  //   )
-  // }
-
-  // renderRoutes(match, optsArr){
-  //   return optsArr.map((opts, idx) => renderRouteWithMatch(match, {key: idx, ...opts}))
-  // }
 
 
   render() {
+    // console.log('%c PROPS at HEADER render', 'color:black;background:magenta;padding:6px;border:1px dashed black', routes)
     return (
-      <div className="App">
-        <Logos></Logos>
-        <Menubar></Menubar>
+      <div className="header">
+        <Logos/>
+        <Menubar/>
 
       </div>
     );
   }
 }
-
-export default Header;
+export default withRouter(Header);

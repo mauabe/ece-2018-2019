@@ -8,31 +8,17 @@
 @import "../../node_modules/bulma/sass/grid/_all.sass";
 @import "../../node_modules/bulma/sass/layout/_all.sass";
 
-.footer{
+
+
+
+
+.header {
   // display: flex;
+  background-color: $primary;
+  height: 165px;
   // flex-direction: row;
-  // flex-wrap: nowrap;
-  // flex: 0 0 1;
-  // width: 100%;
-  color: $greydark;
-  background-color: $black-20;
-  font-weight: 700;
-  // align-items: bottom;
-  height: 50px;
+  align-items: top;
+  font-size: 2rem;
+  color: $black-20;
 
-
-  .footer-logo{
-    // justify-content: flex-end;
-    // padding-right: 30px;
-    // align-items: center;
-
-    .logo-bottom{
-      width:100px;
-      max-width: 100%;
-      height: auto;
-      // width: 150px;
-      // height: 40px;
-    }
-
-  }
 }

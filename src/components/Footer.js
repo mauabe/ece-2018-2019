@@ -1,28 +1,38 @@
 import React from 'react';
-import * as data from '../assets/data'
+import * as data from '../assets/data';
+import logo from '../assets/UCLA_footer_600.png';
 import history from '../history';
+
 
 const Footer = () => {
 
+  // src="data.logos.uclabottom"
   return (
     <div className="footer">
+    <div className="container">
       <div className="columns">
-        <div className="columns is-1">
-        <div className="columns is-1 has-text-left">
+
+        <div className="columns is-2">
           <span className="footer-logo">
             <img className="logo-bottom"
-              src="data.logos.uclabottom"
+              src={logo}
               alt="UCLA"
-              title="UCLA bottom"
-            />
+              title="UCLA footer"
+              />
           </span>
-          <div className="columns is-10">
-            <span className="is-size-5">Samueli School of Engineering</span>
-            <span className="is-size-7">The Birthplace of the Internet</span>
+        </div>
+
+        <div className="columns is-8">
+          <div className="is-size-6 ">Samueli School of Engineering
+          <br />
+          Electrical and Computer Engineering Department
           </div>
         </div>
-        </div>
+
+        <div className="columns is-2"> </div>
+
       </div>
+    </div>
     </div>
   );
 }

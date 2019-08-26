@@ -10,47 +10,42 @@
 
 // @import "../node_modules/bulma/sass/form/_all.sass";
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,900");
+
+// Full height!
+body {
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+}
+
 // this is the menus format
-.h5 {
-  font-family: Oswald;
+h5 {
+  font-family: "Oswald", sans-serif;
   font-weight: 500;
   text-decoration: none;
-  color: red;
+  color: $black-80;
 }
 
 .App {
-  text-align: center;
-  color: $happyblue;
-  font-size: 2rem;
-  text-align: center;
-  .sassyDiv {
-    font-size: 3rem;
-    color: $purple;
+  // display: flex;
+  font-family: "Oswald", sans-serif;
+  color: $black-80;;
+  font-size: 1rem;
+
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
   }
+
+  .App-link {
+    color: $bubbles;
+    // color: #61dafb;
+    background-color: $primary;
+  }
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: $primary;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: $bubbles;
-  // color: #61dafb;
-  background-color: $primary;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -64,3 +59,6 @@
 
 
 @import "./menu.scss";
+@import "./bubbles.scss";
+@import "./footer.scss";
+@import "./header.scss";

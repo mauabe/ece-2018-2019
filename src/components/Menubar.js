@@ -38,11 +38,11 @@ class Menubar extends Component{
 
 			html.push(
 				(<li key = {index}>
-					{/* <NavLink to={"/" + path} activeclassName ="active"> */}
-						<MenuBoxLarge>
+					<MenuBoxLarge>
+						<NavLink to={"/" + path}  activeClassName="active">
 							{label}
-						</MenuBoxLarge>
-					{/* </NavLink> */}
+						</NavLink>
+					</MenuBoxLarge>
 				</li>
 				))
 			});
@@ -67,7 +67,7 @@ class Menubar extends Component{
 		// 		(
 		// 			<li key={index}>
 		// 				<NavLink to={"/app/" + path}
-		// 					activeClassName="active"
+		// 					="active"
 		// 				>
 		// 					{title}
 		// 					<div className="indicator" />
@@ -88,7 +88,7 @@ class Menubar extends Component{
   render() {
 		const menuItem = this.state.pageView;
     return (
-      <div className="navigation">
+      <div className="menu-container">
 				<div className="menu">
 					<ul>
 						{this.navigationHtml()}
@@ -104,5 +104,4 @@ class Menubar extends Component{
   }
 }
 
-export default Menubar;
-// export default withRouter(Menubar);
+export default withRouter(Menubar);

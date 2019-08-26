@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Route, Switch, withRouter, Redirect } from "react-router-dom";
+import { Router, Route, Switch, withRouter, Redirect } from "react-router-dom";
 import '../scss/styles.css';
 import history from '../history';
 
@@ -13,38 +13,51 @@ import Alumni from './Alumni';
 import Footer from '../components/Footer';
 import ContentArea from '../components/ContentArea';
 import { createBrowserHistory } from 'history';
+import * as data from '../assets/data'
 
-// export createBrowserHistory();
 
-const App = () => {
-
-  const renderPlaceholder = () => {
+class App extends Component {
+  constructor(props) {
+		super(props);
+	  this.state = {
+      menuExpanded: false,
+      submenuExpanded: false,
+    }
+  // console.log('%c PROPS at APP CONSTRUCTOR', 'color:white;background:black;padding:6px;border:3px dashed yellow', this.props)
+  }
+  renderPlaceholder = () => {
     return (<div>
       <div style={{ "padding": "50px", "textAlign": "center" }}>
         THIS FEATURE IS NOT YET AVAILABLE
       </div>
     </div>);
-	}
+  }
 
-  return (
-    <div className="App">
-      <Router history = {history}>
-        <div>
-          <Header/>
-          <Switch>
-            <Route path='/features' exact component={Features}/>
-            <Route path='/highlights' exact component={Highlights}/>
-            <Route path='/students' exact component={Students}/>
-            <Route path='/faculty' exact component={Faculty}/>
-            <Route path='/overview' exact component={Overview}/>
-            <Route path='/alumni' exact component={Alumni}/>
-          </Switch>
-        <Footer/>
-        </div>
-      </Router>
-    </div>
-);
 
+
+  
+
+
+  render(){
+    return (
+      <div className="App">
+        <Router history = {history}>
+          <div>
+            <Header/>
+            <Switch>
+              <Route path='/features' component={Features}/>
+              <Route path='/highlights' component={Highlights}/>
+              <Route path='/students' component={Students}/>
+              <Route path='/faculty' component={Faculty}/>
+              <Route path='/overview' component={Overview}/>
+              <Route path='/alumni' component={Alumni}/>
+            </Switch>
+            <Footer/>
+          </div>
+        </Router>
+      </div>
+    );
+  }
 }
 
 export default App;

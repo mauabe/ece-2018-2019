@@ -1,9 +1,18 @@
-import React from 'react';
+import React, {Component} from 'react';
 import * as data from '../assets/data'
 import history from '../history';
 
-const Logos = props => {
-  console.log('%c PROPS at LOGOS', 'color:black;background:magenta;padding:6px;border:1px dashed black', props, history, props.location)
+class Logos extends Component {
+  constructor(props) {
+		super(props);
+	  this.state = {
+      pageView: '',
+      logoPick: "data.logos.uclaecewhite",
+    }
+		console.log('%c PROPS at LOGOS constructor', 'color:black;background:#b7ad55;padding:6px;border:4px dashed yellow', this.props, data.logos )
+	}
+    //history.location.pathname gets the location path (pageView)from path url
+    //data.logos --> gets values from assets.data.logos
 
       //   const searchBar = () => {
       //     console.log('i am a happy searchbar')
@@ -18,41 +27,29 @@ const Logos = props => {
       //   ece: "public/img/UCLA_ECE.svg",
       // };
 
-  // const logoOptions = {
-  //   "feature": "props.data.logos.uclaecewhite",
-  //   "content": "props.data.logos.ece",
-  //   uclabottom: "props.data.logos.uclabottom",
-  //   uclaeceblue: "data.logos.uclaeceblue",
-  //   ecewhite: "props.data.logos.ecewhite",
-  // }
-
-  // Check if element is in the url pathname
-  let pageView = 'content';
-  let logoPick = "props.data.logos.ece";
-  // const getPageView = (location) // (props.location, this.props.match or history?? )
-  const components = history.pathname.split('/');
-  if (components.indexOf('features') !== -1) {
-    pageView = 'features';
-    logoPick = "props.data.logos.uclaecewhite";
+  // Check if pageView is in the url pathname
+  getPageView = (history) => {
+    let pageView = this.state.pageView;
+    const components = history.location.pathname.split('/');
+    if (components.indexOf('features') !== -1) {
+      this.setState.pageView = 'features';
+      this.setState.logoPick = "data.logos.uclaecewhite";
+    } else {this.setState.logoPick = "data.logos.ecewhite"}
   }
-  // if (components.indexOf('highlights') !== -1) { pageView = 'highlights'};
-  // if (components.indexOf('students') !== -1) { pageView = 'students'};
-  // if (components.indexOf('faculty') !== -1) { pageView = 'faculty'};
-  // if (components.indexOf('overview') !== -1) { pageView = 'overview'};
-  // if (components.indexOf('alumin') !== -1) { pageView = 'alumin'};
-
-  return (
-    <div className="logo">
-      <span className={`logos${pageView}`}>
-        <img
-          className="logo-image"
-          src={logoPick}
-          alt="UCLA"
-          title="UCLA"
-        />
-      </span>
-    </div>
-  );
+    render(){
+    return (
+      <div className="logo">
+        <span className={`logos${this.state.pageView}`}>
+          <img
+            className="logo-image"
+            src={this.state.logoPick}
+            alt="UCLA"
+            title="UCLA"
+          />
+        </span>
+      </div>
+    );
+  }
 }
 
 export default Logos;

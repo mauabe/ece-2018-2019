@@ -10,7 +10,8 @@ class Highlights extends Component{
   constructor(props) {
 		super(props);
 	  this.state = {
-      pageView: 'features'
+      pageView: 'highlights',
+      headlineShort:"Tech is good!"
     }
     console.log('%c PROPS at APP constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props);
   }
@@ -22,7 +23,7 @@ class Highlights extends Component{
           <div className="bubble-circle"></div>
 
             <Bubbles/>
-          <h4>this.props.headlineShort</h4>
+          <h4>{this.state.headlineShort}</h4>
 
         </div>
       </div>

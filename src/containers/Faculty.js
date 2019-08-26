@@ -6,6 +6,7 @@ import '../scss/styles.scss';
 import Header from './Header';
 import Features from './Features';
 import Bubbles from '../components/Bubbles';
+import ContentArea from '../components/ContentArea';
 
 
 class Faculty extends Component{
@@ -23,9 +24,8 @@ class Faculty extends Component{
       <div className="bubbles">
         <div className="bubbbles section">
           <div className="bubble-circle"></div>
-
-            <Bubbles
-            />
+            <ContentArea />
+            <Bubbles />
           <h4>this.props.headlineShort</h4>
 
         </div>
