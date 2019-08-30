@@ -4,9 +4,18 @@ const MenuBoxLarge = props => {
   console.log('%c PROPS at MenuBoxLarge', 'color:black;background:magenta;padding:6px;border:1px dashed black', props)
 
 	return (
-    <div className="menu-box-large">
-      <h5 className="menu-item">{props.menuItem}</h5>
+    <div className="container">
+      <div className="menu-box-large">
+        <div className="menu-item">{props.menuItem}</div>
+      </div>
+      <div className="menu-box-large">
+        <div className="menu-item">menu-box-large</div>
+      </div>
+      <div className="menu-box-small">
+        <div className="menu-item">menu-box-small</div>
+      </div>
     </div>
+
   );
 }
 

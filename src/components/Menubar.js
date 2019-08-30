@@ -37,7 +37,7 @@ class Menubar extends Component{
 			const label = value[1];
 
 			html.push(
-				<li key = {index}>
+				<li key={index} >
 						<NavLink to={"/" + path}  activeClassName="active">
 							{label}
 						</NavLink>
@@ -58,10 +58,19 @@ class Menubar extends Component{
     return (
       <div className="menu-container">
 				<div className="top-menu">
-					<ul>
-						{this.navigationHtml()}
-					</ul>
+
+						<ul>
+							{this.navigationHtml()}
+						</ul>
+
+
 				</div>
+
+				<div className="menu-container">
+					<MenuBoxLarge> large </MenuBoxLarge>
+				</div>
+				<div className="menu-container">
+					<MenuBoxSmall> small </MenuBoxSmall></div>
 				<div>
 					<MenuBoxSmall
 						menuItem={menuItem}
