@@ -8,20 +8,20 @@
 @import "../../node_modules/bulma/sass/grid/_all.sass";
 @import "../../node_modules/bulma/sass/layout/_all.sass";
 
-// .level
-.site-footer{
-  display: flex;
-  flex-shrink: 0;
+
+.content-area{
+  // display: flex;
   // flex-direction: row;
-  // flex: 0 0 100%;
-  background-color:$grey-lighter;
-  height: 45px;
+  flex-grow: 1;
+  background-color:$grey-dark;
+  // background-color:$grey-lighter;
+  flex-shrink: 0;
 
   .container{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-grow: 1;
+    flex-grow: 1 1 fit-content;
     // align-content: space-between;
 
     .footer-logo{
@@ -38,9 +38,7 @@
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      // margin-left: 30px;
-      // justify-content: flex-start;
-      // align-items: start;
+
 
       .school-name,
       .dept-name{

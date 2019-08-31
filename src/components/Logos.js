@@ -6,10 +6,10 @@ import history from '../history';
 class Logos extends Component {
   constructor(props) {
 		super(props);
-	  // this.state = {
-    //   pageView: 'features',
-    //   logoPick: null,
-    // }
+	  this.state = {
+      pageView: 'features',
+      logoPick: uclaece,
+    }
 		console.log('%c PROPS at LOGOS constructor', 'color:black;background:#orange;padding:6px;border:4px dashed yellow', this.props,  )
 	}
     //history.location.pathname gets the location path (pageView)from path url

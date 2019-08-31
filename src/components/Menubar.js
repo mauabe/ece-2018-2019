@@ -37,7 +37,8 @@ class Menubar extends Component{
 			const label = value[1];
 
 			html.push(
-				<li key={index} >
+
+				<li key={index} className="menu-box-large">
 						<NavLink to={"/" + path}  activeClassName="active">
 							{label}
 						</NavLink>
@@ -57,25 +58,19 @@ class Menubar extends Component{
 		const menuItem = this.state.pageView;
     return (
       <div className="menu-container">
-				<div className="top-menu">
 
-						<ul>
+						<ul className="top-menu">
 							{this.navigationHtml()}
 						</ul>
 
-
-				</div>
-
-				<div className="menu-container">
+				{/* <div className="menu-container">
 					<MenuBoxLarge> large </MenuBoxLarge>
 				</div>
+
 				<div className="menu-container">
-					<MenuBoxSmall> small </MenuBoxSmall></div>
-				<div>
-					<MenuBoxSmall
-						menuItem={menuItem}
-					/>
-				</div>
+					<MenuBoxSmall> small </MenuBoxSmall>
+				</div> */}
+
       </div>
     );
   }

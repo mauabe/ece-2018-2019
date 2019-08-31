@@ -12,22 +12,25 @@
 
 .header {
   display: flex;
-  background-color: purple;
-  background-color: $primary; //ok
-  height: 165px;
-  // flex-direction: row;
-  align-items: top;
-  font-size: 2rem;
-  color: $black-20;
+  // background-color:;
+  color: white;
+  justify-content: flex-start;
+  height: 50px;
+  flex: 0 1 100%;
+  align-items: flex-start;
+  align-content: space-between;
 
   .logo{
-    flex: start;
+    margin-left: 35px;
+    margin-right: 35px;
 
     .logo-image{
-      width: 95px;
-      margin-top: 25px;
+      width: 80px;
+      height: auto;
+      margin-top: 8px;
+      // margin-left: 30px;
     }
   }
 
-
+ @import "./menu";
 }

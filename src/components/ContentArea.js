@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import{withRouter} from 'react-router-dom';
+
 
 import Bubbles from './Bubbles';
 import Content from './ContentArea';
@@ -23,7 +25,7 @@ class ContentArea extends Component{
 
   render() {
     return (
-      <div className="App">
+      <div className="content-area">
         <div>
 THIS IS CONTENT AREA RENDER: {this.props.match}
         </div>
@@ -32,4 +34,5 @@ THIS IS CONTENT AREA RENDER: {this.props.match}
   }
 }
 
+// export default withRouter(ContentArea);
 export default ContentArea;

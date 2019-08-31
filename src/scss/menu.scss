@@ -1,83 +1,126 @@
 @import "./variables.scss";
 
-.menubar{
+.menu-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  /* This aligns items to the end line on main-axis */
+  // justify-content: flex-end;
   // margin-left: 20px;
-  background-color: $borderblue;
+  // background-color: pink;
 
-  .menu-container{
-    position: relative;
-    background-color: pink;
+  .top-menu{
+    display: flex;
+    font-size: .9rem;
+    align-items: flex-start;
     flex-direction: row;
+    justify-content: flex-start;
+    // background-color: pink;
 
-    .menu-box-large{
-      position: absolute;
-      width: 163px;
-      height: 162px;
-      color: white;
-      background-color:$menublue;// #113c6f;
-      border: 1px solid $borderblue;
-      border-radius: 0 0 15px 3px;
-      width: 50px;
-      // width: 165px;
-      height: 165px;
-      margin-bottom: 7px;
-      background-position-y: -6px;
-      transition: translateY(5px);
+    u {
+      padding: 0;
+      list-style: none;
+    }
+      // li
+      // &:hover,
+      // &:active{
+      //   transform: all .5s ease-out;
+      //   background-color:$submenublue;
+      //   border-color: $orange;
+      //   font-weight: bold;
+      // }
 
-      .orange-circle{
-        position:absolute;
-        width: 110px;
-        height: 110px;
+      .menu-box-large{
+        width: 155px;
+        height: 32px;
         color: white;
-        border: 3px solid $orange;
-        border-radius: 50%;
-        margin-top: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        z-index: 20;
-
-        .navbar-icon{
-          position: relative;
-          width: 70px;
-          height: 70px;
-          margin: auto;
-        }
-
-        // img {src='../../public/img/image-name-here'}
-      }
-
-      &:hover,
-      &:active,
-      .active {
-        transform: all .5s ease-out;
-        background-color:$submenublue;
-        border-color: $black-40;
-      }
-
-      }
-    .submenu-container{
-    margin-top: 52px;
-
-      .menu-box-small{
-        color: pink;
-        position: absolute;
-        width: 175px;
-        height: 30px;
-        border-radius: 2px 2px 9px 2px;
-        background-color: $submenublue;
-        border: 1px solid $borderblue; //#C8E9D9;
-        margin-top: 2px;
-        margin-bottom: 2px;
-        align-items: center;
-        padding-left: 5px;
-
-        transition: border(1px solid $orange);
-
-        &:hover,
-        &:active {
-          transform: all .9s ease;
+        background-color:$menublue;// #113c6f;
+        border-top: 0px;
+        border-left: 1px solid $borderblue;
+        border-right: 1px solid $borderblue;
+        border-bottom: 1px solid $borderblue;
+        border-radius: 0 0 15px 3px;
+        margin-left: 7px;
+        margin-bottom: 7px;
+        background-position-y: -6px;
+        transition: translateY(5px);
+        // box-shadow: 5px 55px 50px -20px #b6b6b6;
+          // img {src='../../public/img/image-name-here'}
+        li &:hover,
+        &:active{
+          transform: all .5s ease-out;
+          background-color:$submenublue;
+          border-color: $orange;
+          font-weight: bold;
         }
       }
     }
+
+
+
+
+  .submenu-container{
+    margin-top: 52px;
+
+    .menu-box-small{
+      color: pink;
+      width: 175px;
+      height: 30px;
+      border-radius: 2px 2px 9px 2px;
+      background-color: $submenublue;
+      border: 1px solid $borderblue; //#C8E9D9;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      align-items: center;
+      padding-left: 5px;
+
+      transition: border(1px solid $orange);
+
+      &:hover,
+      &:active {
+        transform: all .9s ease;
+        background-color:$submenublue -15%;
+        border-color: $orange;
+        font-weight: bold;
+      }
+    }
   }
+
+  .orange-circle{
+    width: 110px;
+    height: 110px;
+    color: white;
+    border: 3px solid $orange;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 20;
+  }
+
+  .navbar-icon{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+  }
+
+    /* Medium screens */
+  @media all and (max-width: 800px) {
+    .navigation {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      justify-content: space-around;
+    }
+  }
+
+  /* Small screens */
+  @media all and (max-width: 500px) {
+    .navigation {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+
 }

@@ -28,22 +28,17 @@ class App extends Component {
   renderPlaceholder = () => {
     return (<div>
       <div style={{ "padding": "50px", "textAlign": "center" }}>
-        THIS FEATURE IS NOT YET AVAILABLE
+        <h3>THIS FEATURE IS NOT YET AVAILABLE</h3>
       </div>
     </div>);
   }
-
-
-
-  
-
 
   render(){
     return (
       <div className="App">
         <Router history = {history}>
-          <div>
-            <Header/>
+          <Header/>
+          <ContentArea className="container">
             <Switch>
               <Route path='/features' component={Features}/>
               <Route path='/highlights' component={Highlights}/>
@@ -52,8 +47,8 @@ class App extends Component {
               <Route path='/overview' component={Overview}/>
               <Route path='/alumni' component={Alumni}/>
             </Switch>
-            <Footer/>
-          </div>
+          </ContentArea>
+          <Footer/>
         </Router>
       </div>
     );

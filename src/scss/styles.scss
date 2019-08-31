@@ -14,8 +14,11 @@
 
 // Full height!
 body {
-  height: 100vh;
-  font-family: "Oswald", sans-serif;
+  // display: flex;
+  // flex: 0 0 100%; /* Let it fill the entire space horizontally */  font-family: "Oswald", sans-serif;
+  width: 100%;
+  height: 100%;
+  color: $black-80;;
 }
 
 // this is the menus format
@@ -27,34 +30,31 @@ h5 {
 }
 
 .App {
-  // display: flex;
-  font-family: "Oswald", sans-serif;
-  color: $black-80;;
-  font-size: 1rem;
+  display: flex;
+  flex: 0 0 100%; /* Let it fill the entire space horizontally */
+  min-height: 100vh;
+  // min-height: 100%;
+  flex-direction: column;
+  align-items: stretch;
 
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
-    pointer-events: none;
-  }
+  .container-what-container{
+    flex: 0 0 100%; /* Let it fill the entire space horizontally */
+    align-content: stretch;
+    max-width: 100%;
 
-  .App-link {
-    color: $bubbles;
-    // color: #61dafb;
-    background-color: $primary;
-  }
+    }
 
 }
 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
 
 
 

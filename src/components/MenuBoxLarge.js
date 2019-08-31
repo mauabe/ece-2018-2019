@@ -8,12 +8,6 @@ const MenuBoxLarge = props => {
       <div className="menu-box-large">
         <div className="menu-item">{props.menuItem}</div>
       </div>
-      <div className="menu-box-large">
-        <div className="menu-item">menu-box-large</div>
-      </div>
-      <div className="menu-box-small">
-        <div className="menu-item">menu-box-small</div>
-      </div>
     </div>
 
   );
