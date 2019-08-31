@@ -19,7 +19,17 @@ class Header extends Component{
       logoPick: './src/assets/UCLA_ECE_white.svg'
     }
 		console.log('%c PROPS at HEADER constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
-	}
+
+    // this.routes =
+    // [
+    //   { path: '/features', render: this.renderFeatures.bind(this), exact: true },
+    //   { path: '/highlights', render: this.renderHighlights.bind(this), exact: true },
+    //   { path: '/students', render: this.renderStudents.bind(this), exact: true },
+    //   { path: '/faculty', render: this.renderFaculty.bind(this), exact: true },
+    //   { path: '/overview', render: this.renderOverview.bind(this), exact: true },
+    //   { path: '/alumni', render: this.renderAlumni.bind(this), exact: true },
+    // ];
+  }
 
   componentDidMount(){
     let uclaece = './src/assets/UCLA_ECE_white.svg';
