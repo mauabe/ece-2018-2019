@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Route, NavLink, withRouter, Redirect } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 
 import MenuBoxLarge from './MenuBoxLarge';
 import MenuBoxSmall from './MenuBoxSmall';

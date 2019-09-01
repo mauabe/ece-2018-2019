@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "./variables.scss";
+
+.bubbles{
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 100%;
+  // background-color:$grey-dark;
+  // background-color:$grey-lighter;
+
+  .bubble-section{
+
+
+  }
+
+}
+
+.bubble{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 100%;
+  // background-color:$grey-dark;
+  background-color:$grey-lighter;
+  color: $black-60;
+
+  .bubble-circle{
+    boder: 2px solid $grey-dark;
+    border-radius: 50%;
+
+    &:hover
+    &:active{
+      border: 2px solid $orange;
+      // overlay: $black-80;
+      transparency: .6;
+    }
+
+  }
+
+  .bubble-headline{
+    font-size: 1rem;
+    color: $primary;
+    &:hover
+    &:active{
+      border: 2px solid $orange;
+      // overlay: $black-80;
+      transparency: .6;
+    }
+
+
+  }
+
+  .bubble-description{
+
+  }
+
+}

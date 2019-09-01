@@ -1,53 +1,63 @@
 import React, {Component} from 'react';
 
-import * as data from '../assets/data'
-import history from '../history';
+import Bubble from './Bubble'
+// import * as data from '../assets/data'
+// import history from '../history';
+// import {articlesFeatures} from '../assets/articlesFeatures';
+// import {articlesHighlights} from '../assets/articlesHighlights';
+// import {articlesStudents} from '../assets/articlesStudents';
+// import {articlesFaculty} from '../assets/articlesFaculty';
+// import {articlesOverview} from '../assets/articlesOverview';
+// import {articlesAlumni} from '../assets/articlesAlumni';
 
 
 class Bubbles extends Component{
-
   constructor(props) {
 		super(props);
 	  this.state = {
-      pageView: 'feature',
-      logoPick: "props.data.logos.ece",
+      pageView: this.props.pageView,
+      articleSelected:this.props.articleSelected,
     }
-		console.log('%c PROPS at BUBBLES constructor', 'color:black;background:#b7ad55;padding:6px;border:2px dashed pink', this.props)
-	}
-
-	componentDidMount() {
-		const props = this.props;
+		console.log('%c PROPS at BUBBLES constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
   }
 
-  // Check if element is in the url pathname
-  // location // (props.location, this.props.match or history?? )
+	// componentDidMount() {
+	// 	const props = this.props;
+  // }
 
-  getPageView = (location) => {
-  const components = history.location.pathname.split('/');
-  if (components.indexOf('features') !== -1) {
-    this.setState.pageView = 'features';
-    this.setState.logoPick = "props.data.logos.uclaecewhite";
+  handleBubbleClick = (e) => {
+    e.preventDefault();
+    this.props.onClick(e.target.value);
   }
-  // if (components.indexOf('highlights') !== -1) { pageView = 'highlights'};
-  // if (components.indexOf('students') !== -1) { pageView = 'students'};
-  // if (components.indexOf('faculty') !== -1) { pageView = 'faculty'};
-  // if (components.indexOf('overview') !== -1) { pageView = 'overview'};
-  // if (components.indexOf('alumin') !== -1) { pageView = 'alumin'};
 
   //iterate over submenus and populate bubbles
+  renderBubbles = () => {
+    const {articleId, articles, articleAbrevTitle, articleImage, articleDescription } = this.props;
+    const {articleSelected} = this.state;
+
+    const bubbleHtml = [];
+    articles.forEach(article => {
+      bubbleHtml.push(
+        <Bubble
+          key={article.articleId}
+          divClassName="bubble"
+          articleSelected={this.state.articleSelected}
+          articleId={articleId}
+          articleAbrevTitle={article.articleAbrevTitle}
+          articleImage ={article.articleImage}
+          articleDescription ={article.articleDescription}
+          onBubbleClick={this.props.onClick}
+        />)
+     });
+    return  bubbleHtml;
   }
 
   render() {
+    const{articleId} = this.props;
     return (
       <div className="bubbles">
-        <div className="bubbbles section">
-          <div className="bubble-circle"></div>
-
-          <h4>this.props.headlineShort</h4>
-
-          <button className="button is-danger is-outlined">
-            Hello
-          </button>
+        <div className="bubbbles-section" key={articleId}>
+          {this.renderBubbles()}
         </div>
       </div>
     );

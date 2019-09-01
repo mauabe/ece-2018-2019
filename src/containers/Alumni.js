@@ -1,69 +1,73 @@
 import React, {Component} from 'react';
-import { withRouter, Redirect } from "react-router-dom";
+import{withRouter} from 'react-router-dom';
 
-import Header from './Header';
-import Features from './Features';
 import Bubbles from '../components/Bubbles';
+import Article from '../components/Article';
+import {articlesAlumni} from '../assets/articlesAlumni.js';
 import history from '../history';
 
 class Alumni extends Component{
-
   constructor(props) {
 		super(props);
 	  this.state = {
-      pageView: 'features'
+      pageView: 'alumni',
+      articleSelected: articlesAlumni[0].articleId,
     }
-    console.log('%c PROPS at APP constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props);
 
-  // this.routes =
-  // [
-  //   { path: '/companies', render: this.renderCompanies.bind(this), exact: true },
-  //   { path: '/players', render: this.renderPlayers.bind(this), exact: true },
-  //   { path: '/brandvalues', render: this.renderBrandValues.bind(this), exact: true },
-  //   { path: '/playervalues', render: this.renderPlayerValues.bind(this), exact: true },
-  //   { path: '/equipment', render: this.renderEquipment.bind(this), exact: true },
-  //   { path: '/performance', render: this.renderPerformance.bind(this), exact: true },
-  // ];
-}
+    //articleView -> url snippet for each article. articleId uses the same string value as articleView. Compare the state of articleSelected to articleId/articleView, defaults to first article at constructor
 
-// componentDidMount(){
-//   let uclaece = './src/assets/UCLA_ECE_white.svg';
-//   let ece = './src/assets/ECE_white.svg';
+		console.log('%c PROPS at ALUMNI constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
 
-//   const components = history.location.pathname.split('/');
-//   if (components.indexOf('features') !== -1) {this.setState.pageView = 'features'}
-//   if (components.indexOf('highlights') !== -1) {this.setState.pageView = 'highlights'}
-//   if (components.indexOf('students') !== -1) {this.setState.pageView = 'students'}
-//   if (components.indexOf('faculty') !== -1) {this.setState.pageView = 'faculty'}
-//   if (components.indexOf('overview') !== -1) {this.setState.pageView = 'overview'}
-//   if (components.indexOf('alumni') !== -1) {this.setState.pageView = 'alumni'}
+  }
 
-//   if(this.setState.pageView === "features"){
-//     this.setState.logoPick = uclaece;
-//   } else this.setState.logoPick = ece;
-// }
+  componentDidMount(){
+    //default to first article in artticle list for the pageView
+    if(!this.state.articleSelected && !this.props.articleView) {
+      this.setState({articleSelected: articlesAlumni[0].articleId});
+    }
+    const components = this.props.history.location.pathname.split('/');
+    if (components.indexOf('features') !== -1) {this.setState.pageView = 'features'}
+    if (components.indexOf('highlights') !== -1) {this.setState.pageView = 'highlights'}
+    if (components.indexOf('students') !== -1) {this.setState.pageView = 'students'}
+    if (components.indexOf('faculty') !== -1) {this.setState.pageView = 'faculty'}
+    if (components.indexOf('overview') !== -1) {this.setState.pageView = 'overview'}
+    if (components.indexOf('alumni') !== -1) {this.setState.pageView = 'alumni'}
+    console.log('components[5]', components[5], components)
 
-handleSubviewModeChange = (e) => {
-// Update the selected subviewMode. This should only be utilized in mobile view.
-const subviewMode = e.target.value;
-this.props.history.push(`/app/tournaments/${subviewMode}`)
-};
+    // if(this.state.articleSelected !== components[5]){
+    //   this.renderArticle(this.state.articleSelected);
+    // }
+  }
+
+  handleClick(e){
+    e.preventDefault();
+    this.setState({articleSelected: e.target.value});
+  }
+
 
   render() {
     return (
-      <div className="bubbles">
-        <div className="bubbbles section">
-          <div className="bubble-circle"></div>
-
-            <Bubbles>
-              Hey, ya!
-            </Bubbles>
-          <h4>this.props.headlineShort</h4>
-
+      <div className="content-area">
+        <div className="bubbles">
+          <Bubbles
+            pageView={this.state.pageView}
+            articleSelected={this.state.articleSelected}
+            articles={articlesAlumni}
+            onClick={this.handleCLick}
+          />
         </div>
-      </div>
-    );
-  }
+        <div className="article">
+          <Article
+            pageView={this.state.pageView}
+            articleSelected={this.state.articleSelected}
+            articles={articlesAlumni}
+          />
+        </div>
 
+
+      </div>
+    )
+  }
 }
-export default Alumni;
+
+export default withRouter(Alumni);

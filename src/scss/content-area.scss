@@ -5,8 +5,6 @@
 @import "../../node_modules/bulma/sass/base/_all.sass";
 @import "../../node_modules/bulma/sass/elements/_all.sass";
 @import "../../node_modules/bulma/sass/components/_all.sass";
-@import "../../node_modules/bulma/sass/grid/_all.sass";
-@import "../../node_modules/bulma/sass/layout/_all.sass";
 
 
 .content-area{
@@ -16,36 +14,5 @@
   background-color:$grey-dark;
   // background-color:$grey-lighter;
 
-  .container{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-grow: 1 1 fit-content;
-    // align-content: space-between;
-
-    .footer-logo{
-      display: flex;
-      align-self: center;
-      margin-left: 30px;
-      margin-right: 15px;
-      // margin-top: 5px;
-      width: 80px;
-      height: auto;
-    }
-
-    .footer-school{
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-
-
-      .school-name,
-      .dept-name{
-        align-self: flex-start;
-        font-size: .8rem;
-        line-height: 1rem;
-      }
-
-    }
   }
 }

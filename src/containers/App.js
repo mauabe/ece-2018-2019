@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import { Router, Route, Switch, withRouter, Redirect } from "react-router-dom";
-import '../scss/styles.css';
+import { Router, Route, Switch, Redirect } from "react-router-dom";
+import '../scss/styles.scss';
 import history from '../history';
 
 import Header from './Header';
@@ -11,10 +11,7 @@ import Faculty from './Faculty';
 import Overview from './Overview';
 import Alumni from './Alumni';
 import Footer from '../components/Footer';
-import ContentArea from '../components/ContentArea';
-import { createBrowserHistory } from 'history';
-import * as data from '../assets/data'
-
+import ContentArea from './ContentArea';
 
 class App extends Component {
   constructor(props) {
@@ -38,7 +35,7 @@ class App extends Component {
       <div className="App">
         <Router history = {history}>
           <Header/>
-          <ContentArea className="container">
+          {/* <ContentArea className="container"> */}
             <Switch>
               <Route path='/features' component={Features}/>
               <Route path='/highlights' component={Highlights}/>
@@ -46,8 +43,14 @@ class App extends Component {
               <Route path='/faculty' component={Faculty}/>
               <Route path='/overview' component={Overview}/>
               <Route path='/alumni' component={Alumni}/>
+              <Route path='/features' render={() => <Redirect to="/highlights/chair" exact={true} />} />,
+              <Route path='/highlights' render={() => <Redirect to="/highlights/main" exact={true} />} />,
+              <Route path='/students' render={() => <Redirect to="/students/main" exact={true}  />}/>,
+              <Route path='/faculty' render={() => <Redirect to="/faculty/main"  exact={true} />}/>,
+              <Route path='/overview' render={() => <Redirect to="/overview/main"  exact={true} />}/>,
+              <Route path='/alumni' render={() => <Redirect to="/alumni/alumni"  exact={true} />}/>,
             </Switch>
-          </ContentArea>
+          {/* </ContentArea> */}
           <Footer/>
         </Router>
       </div>

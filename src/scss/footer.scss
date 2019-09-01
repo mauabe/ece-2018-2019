@@ -5,8 +5,8 @@
 @import "../../node_modules/bulma/sass/base/_all.sass";
 @import "../../node_modules/bulma/sass/elements/_all.sass";
 @import "../../node_modules/bulma/sass/components/_all.sass";
-@import "../../node_modules/bulma/sass/grid/_all.sass";
-@import "../../node_modules/bulma/sass/layout/_all.sass";
+// @import "../../node_modules/bulma/sass/grid/_all.sass";
+// @import "../../node_modules/bulma/sass/layout/_all.sass";
 
 // .level
 .site-footer{
@@ -17,11 +17,11 @@
   background-color:$grey-lighter;
   height: 45px;
 
-  .container{
+  .footer-container{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-grow: 1;
+    flex: 1 1 100%;
     // align-content: space-between;
 
     .footer-logo{
