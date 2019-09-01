@@ -19,25 +19,25 @@
 
     u {
       padding: 0;
+      flex: 0 0 100%;
+
       li{
-      font-size: .7em;
-      list-style: none;
-      color: $black-20;
+        list-style: none;
       }
-      &:hover,
-      &:active{
-        transform: all .5s ease-out;
-        font-weight: bold;
-        color: $orange;
-        // background-color:$submenublue;
-        // border-color: $orange;
+      // &:hover,
+      // &:active{
+        //   // transform: all .5s ease-out;
+        //   // font-weight: bold;
+        // }
       }
-    }
 
       .menu-box-large{
+        font-weight: 500;
+        font-family: Oswald;
+        color: $black-60;
+        font-size: .9em;
         width: 145px;
         height: 32px;
-        // color: white;
         background-color:$menublue;// #113c6f;
         border-top: 0px;
         border-left: 2px solid $borderblue;
@@ -46,32 +46,31 @@
         border-radius: 0 0 10px 3px;
         margin-right: 7px;
         margin-bottom: 7px;
-        // background-position-y: -16px;
-        // transition: translateY(15px);
-        // box-shadow: 5px 55px 50px -20px #b6b6b6;
-          // img {src='../../public/img/image-name-here'}
-        li &:hover,
-        &:active{
-          transform: all .5s ease-out;
-          background-color:$submenublue;
-          border-color: $orange;
-          // font-weight: bold;
-        }
+        cursor: pointer;
+        text-decoration: none
+      // background-position-y: -16px;
+      // transition: translateY(15px);
+      // box-shadow: 5px 55px 50px -20px #b6b6b6;
+        // img {src='../../public/img/image-name-here'}
+      &:hover,
+      &:active{
+        transform: all .5s ease-out;
+        color: $black-10;
+        // background-color:$submenublue;
+        border-color: $orange;
+        // color: $happyblue;
       }
     }
-
-
-
-
+  }
   .submenu-container{
     margin-top: 52px;
 
     .menu-box-small{
-      color: pink;
+      // color: pink;
       width: 175px;
       height: 30px;
       border-radius: 2px 2px 9px 2px;
-      background-color: $submenublue;
+      background-color: $menublue;
       border: 1px solid $borderblue; //#C8E9D9;
       margin-top: 2px;
       margin-bottom: 2px;
@@ -85,6 +84,7 @@
         transform: all .9s ease;
         background-color:$submenublue -15%;
         border-color: $orange;
+
         font-weight: bold;
       }
     }

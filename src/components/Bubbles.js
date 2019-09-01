@@ -55,10 +55,8 @@ class Bubbles extends Component{
   render() {
     const{articleId} = this.props;
     return (
-      <div className="bubbles">
-        <div className="bubbbles-section" key={articleId}>
+      <div className="bubbles" key={articleId}>
           {this.renderBubbles()}
-        </div>
       </div>
     );
   }

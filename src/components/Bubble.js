@@ -30,7 +30,7 @@ class Bubble extends Component{
     const {articleSelection, articleId, articleAbrevTitle, articleImage, articleDescription} = this.props;
 
     return (
-      <div className="bubble" id={articleId}>
+      <div className="bubble-entry" id={articleId}>
         <div className="bubble-circle">
           <img src={articleImage} alt="bubble image" title="bubble link" />
         </div>

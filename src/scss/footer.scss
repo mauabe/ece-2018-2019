@@ -1,10 +1,10 @@
 @charset "utf-8";
 @import "./variables.scss";
 
-@import "../../node_modules/bulma/sass/utilities/_all.sass";
-@import "../../node_modules/bulma/sass/base/_all.sass";
-@import "../../node_modules/bulma/sass/elements/_all.sass";
-@import "../../node_modules/bulma/sass/components/_all.sass";
+// @import "../../node_modules/bulma/sass/utilities/_all.sass";
+// @import "../../node_modules/bulma/sass/base/_all.sass";
+// @import "../../node_modules/bulma/sass/elements/_all.sass";
+// @import "../../node_modules/bulma/sass/components/_all.sass";
 // @import "../../node_modules/bulma/sass/grid/_all.sass";
 // @import "../../node_modules/bulma/sass/layout/_all.sass";
 
@@ -14,7 +14,7 @@
   flex-shrink: 0;
   // flex-direction: row;
   // flex: 0 0 100%;
-  background-color:$grey-lighter;
+  background-color:$blgrey-lighter;
   height: 45px;
 
   .footer-container{

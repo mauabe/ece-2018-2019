@@ -1,56 +1,61 @@
 @charset "utf-8";
 @import "./variables.scss";
 
-.bubbles{
-  display: flex;
-  flex-direction: row;
-  flex: 1 0 100%;
-  // background-color:$grey-dark;
-  // background-color:$grey-lighter;
 
-  .bubble-section{
-
-
-  }
-
-}
-
-.bubble{
+.content-area{
   display: flex;
   flex-direction: column;
-  flex: 1 0 100%;
-  // background-color:$grey-dark;
-  background-color:$grey-lighter;
-  color: $black-60;
+  flex: 1 1 100%;
+  background-color:magenta;
+  justify-content: center;
+  align-items: flex-start;
+  // background-color:$blgrey-lighter;
 
-  .bubble-circle{
-    boder: 2px solid $grey-dark;
-    border-radius: 50%;
+  .bubbles{
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 100%;
 
-    &:hover
-    &:active{
-      border: 2px solid $orange;
-      // overlay: $black-80;
-      transparency: .6;
+    // background-color:$grey-dark;
+    // background-color:$blgrey-lighter;
+
+    .bubble-entry{
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 100%;
+      // background-color:$grey-dark;
+      background-color:$blgrey-lighter;
+      color: $black-60;
+
+      .bubble-circle{
+        boder: 2px solid $grey-dark;
+        border-radius: 50%;
+        height: 4rem;
+
+        &:hover
+        &:active{
+          border: 2px solid $orange;
+          // overlay: $black-80;
+          transparency: .6;
+        }
+
+      }
+
+      .bubble-headline{
+        font-size: 1rem;
+        color: $primary;
+        &:hover
+        &:active{
+          color: pink;
+          border: 2px solid $orange;
+          // overlay: $black-80;
+          transparency: .6;
+        }
+      }
+
+      .bubble-description{
+
+      }
     }
-
   }
-
-  .bubble-headline{
-    font-size: 1rem;
-    color: $primary;
-    &:hover
-    &:active{
-      border: 2px solid $orange;
-      // overlay: $black-80;
-      transparency: .6;
-    }
-
-
-  }
-
-  .bubble-description{
-
-  }
-
 }

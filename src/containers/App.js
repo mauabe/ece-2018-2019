@@ -35,7 +35,7 @@ class App extends Component {
       <div className="App">
         <Router history = {history}>
           <Header/>
-          {/* <ContentArea className="container"> */}
+          {/* <div className="container"> */}
             <Switch>
               <Route path='/features' component={Features}/>
               <Route path='/highlights' component={Highlights}/>

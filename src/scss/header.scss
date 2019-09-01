@@ -1,10 +1,10 @@
 @charset "utf-8";
 @import "./variables.scss";
 
-@import "../../node_modules/bulma/sass/utilities/_all.sass";
-@import "../../node_modules/bulma/sass/base/_all.sass";
-@import "../../node_modules/bulma/sass/elements/_all.sass";
-@import "../../node_modules/bulma/sass/components/_all.sass";
+// @import "../../node_modules/bulma/sass/utilities/_all.sass";
+// @import "../../node_modules/bulma/sass/base/_all.sass";
+// @import "../../node_modules/bulma/sass/elements/_all.sass";
+// @import "../../node_modules/bulma/sass/components/_all.sass";
 
 
 
@@ -13,14 +13,15 @@
   background-color: $brown;
   color: white;
   justify-content: flex-start;
-  height: 50px;
-  flex: 1 1 100%;
+  height: 40px;
+  flex: 0 1 100%;
   align-items: flex-start;
   align-content: space-between;
 
   .logo{
     margin-left: 35px;
     margin-right: 35px;
+    flex: none;
 
     .logo-image{
       width: 80px;

@@ -49,14 +49,12 @@ class Features extends Component{
   render() {
     return (
       <div className="content-area">
-        <div className="bubbles">
           <Bubbles
             pageView={this.state.pageView}
             articleSelected={this.state.articleSelected}
             articles={articlesFeatures}
             onClick={this.handleCLick}
           />
-        </div>
         <div className="article">
           <Article
             pageView={this.state.pageView}

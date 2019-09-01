@@ -1,10 +1,10 @@
 @charset "utf-8";
 @import "./variables.scss";
 
-@import "../../node_modules/bulma/sass/utilities/_all.sass";
-@import "../../node_modules/bulma/sass/base/_all.sass";
-@import "../../node_modules/bulma/sass/elements/_all.sass";
-@import "../../node_modules/bulma/sass/components/_all.sass";
+// @import "../../node_modules/bulma/sass/utilities/_all.sass";
+// @import "../../node_modules/bulma/sass/base/_all.sass";
+// @import "../../node_modules/bulma/sass/elements/_all.sass";
+// @import "../../node_modules/bulma/sass/components/_all.sass";
 // @import "../../node_modules/bulma/sass/grid/_all.sass";
 // @import "../../node_modules/bulma/sass/layout/_all.sass";
 
@@ -21,6 +21,59 @@ body {
   color: $black-80;;
 }
 
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: Oswald;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Oswald;
+  font-size: 100%;
+  font-weight: normal; }
+
+ul {
+  list-style: none; }
+
+button,
+input,
+select,
+textarea {
+  margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
 // this is the menus format
 h5 {
   font-family: "Oswald", sans-serif;
@@ -30,7 +83,10 @@ h5 {
 }
 
 a{
-  color: white;
+  color: $black-20;
+  &:hover, &:active{
+    color: $happyblue;
+  }
 }
 
 .App {
@@ -65,4 +121,6 @@ a{
 @import "./menu.scss";
 @import "./bubbles.scss";
 @import "./footer.scss";
+@import "./header.scss";
+@import "./article.scss";
 @import "./header.scss";
