@@ -11,7 +11,8 @@ import Faculty from './Faculty';
 import Overview from './Overview';
 import Alumni from './Alumni';
 import Footer from '../components/Footer';
-import ContentArea from './ContentArea';
+// import ContentArea from './ContentArea';
+
 
 class App extends Component {
   constructor(props) {
@@ -30,12 +31,15 @@ class App extends Component {
     </div>);
   }
 
+
+
+
   render(){
     return (
       <div className="App">
         <Router history = {history}>
           <Header/>
-          {/* <div className="container"> */}
+          {/* <div className="content-area"> */}
             <Switch>
               <Route path='/features' component={Features}/>
               <Route path='/highlights' component={Highlights}/>

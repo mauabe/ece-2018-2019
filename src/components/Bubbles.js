@@ -21,12 +21,8 @@ class Bubbles extends Component{
 		console.log('%c PROPS at BUBBLES constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
   }
 
-	// componentDidMount() {
-	// 	const props = this.props;
-  // }
 
   handleBubbleClick = (e) => {
-    e.preventDefault();
     this.props.onClick(e.target.value);
   }
 
@@ -42,11 +38,11 @@ class Bubbles extends Component{
           key={article.articleId}
           divClassName="bubble sheihaiha"
           articleSelected={this.state.articleSelected}
-          articleId={articleId}
+          articleId={article.articleId}
           articleAbrevTitle={article.articleAbrevTitle}
           articleImage ={article.articleImage}
           articleDescription ={article.articleDescription}
-          onBubbleClick={this.props.onClick}
+          onBubbleClick={this.handleBubbleClick}
         />)
      });
     return  bubbleHtml;

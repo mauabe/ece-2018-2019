@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
-// import * as image from '../assets/UCLA_footer_600.svg';
 import logo from '../assets/UCLA_footer_600.svg';
+import aiello from '../assets/aiello01.png';
+import samii from '../assets/rahmat-samii01.png';
+
+
+
 
 class Bubble extends Component{
 
@@ -8,7 +12,7 @@ class Bubble extends Component{
 		super(props);
     this.state = { }
 
-		console.log('%c PROPS at ARTICLE constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
+		console.log('%c PROPS at BUBBLE constructor', 'color:black;background:yellow;padding:6px;border:1px dashed black', this.props)
   }
 
   handleClick =(e) => {
@@ -30,11 +34,12 @@ class Bubble extends Component{
 
   render() {
     const {articleSelection, articleId, articleAbrevTitle, articleImage, articleImageAltText1, articleDescription} = this.props;
+    console.log(`${articleImage}`,`${articleImageAltText1}`);
 
     return (
-      <div className="bubble-entry" id={articleId}>
+      <div className="bubble-entry" id={articleId} onClick={this.handleClick}>
         <div className="bubble-circle sheigaiha">
-          <img src={`${articleImage}`} alt={`${articleImageAltText1}`} title={`${articleImageAltText1}`} />
+          <img src={`${articleImage}`} alt={`${articleImageAltText1}`} title={`${articleId}`} />
           {/* <img src={logo} alt="article image" title="article imagelink" /> */}
         </div>
         <div className="bubble-headline">
