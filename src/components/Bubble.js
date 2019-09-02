@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+// import * as image from '../assets/UCLA_footer_600.svg';
+import logo from '../assets/UCLA_footer_600.svg';
 
 class Bubble extends Component{
 
@@ -27,12 +29,13 @@ class Bubble extends Component{
 
 
   render() {
-    const {articleSelection, articleId, articleAbrevTitle, articleImage, articleDescription} = this.props;
+    const {articleSelection, articleId, articleAbrevTitle, articleImage, articleImageAltText1, articleDescription} = this.props;
 
     return (
       <div className="bubble-entry" id={articleId}>
-        <div className="bubble-circle">
-          <img src={articleImage} alt="bubble image" title="bubble link" />
+        <div className="bubble-circle sheigaiha">
+          <img src={`${articleImage}`} alt={`${articleImageAltText1}`} title={`${articleImageAltText1}`} />
+          {/* <img src={logo} alt="article image" title="article imagelink" /> */}
         </div>
         <div className="bubble-headline">
           {articleAbrevTitle}

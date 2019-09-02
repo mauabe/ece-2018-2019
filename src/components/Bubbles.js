@@ -36,11 +36,11 @@ class Bubbles extends Component{
     const {articleSelected} = this.state;
 
     const bubbleHtml = [];
-    articles.forEach(article => {
+    this.props.articles.forEach(article => {
       bubbleHtml.push(
         <Bubble
           key={article.articleId}
-          divClassName="bubble"
+          divClassName="bubble sheihaiha"
           articleSelected={this.state.articleSelected}
           articleId={articleId}
           articleAbrevTitle={article.articleAbrevTitle}

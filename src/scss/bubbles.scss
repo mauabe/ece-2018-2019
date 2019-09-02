@@ -1,36 +1,42 @@
 @charset "utf-8";
 @import "./variables.scss";
-
+@import './patterns';
 
 .content-area{
   display: flex;
   flex-direction: column;
   flex: 1 1 100%;
-  background-color:magenta;
-  justify-content: center;
-  align-items: flex-start;
+  background-color:$menublue--70;
+  justify-content: space-evenly;
+  align-items: center;
   // background-color:$blgrey-lighter;
 
   .bubbles{
     display: flex;
-    flex-direction: row;
-    flex: 1 0 100%;
+    justify-content: space-evenly;
+    // flex-direction: row;
+    // flex: 0 0 100%;
 
     // background-color:$grey-dark;
     // background-color:$blgrey-lighter;
 
-    .bubble-entry{
+    div.bubble-entry {
       display: flex;
       flex-direction: column;
-      flex: 1 0 100%;
-      // background-color:$grey-dark;
-      background-color:$blgrey-lighter;
-      color: $black-60;
+      width: 120px;
+      height: 120px;
+      background: $blgrey-lighter--50;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
 
-      .bubble-circle{
-        boder: 2px solid $grey-dark;
-        border-radius: 50%;
-        height: 4rem;
+      .bubble-circle>img .sheigaiha{
+        boder: 4px solid pink;
+        max-height: 100%;
+        max-width: 100%;
 
         &:hover
         &:active{
@@ -38,16 +44,17 @@
           // overlay: $black-80;
           transparency: .6;
         }
-
       }
 
+      // background-color:$grey-dark;
+      // background-color:$blgrey-lighter;
       .bubble-headline{
         font-size: 1rem;
-        color: $primary;
+        color: $black-60;
         &:hover
         &:active{
           color: pink;
-          border: 2px solid $orange;
+          border: 8px solid purple;
           // overlay: $black-80;
           transparency: .6;
         }
@@ -59,3 +66,4 @@
     }
   }
 }
+@import './patterns';

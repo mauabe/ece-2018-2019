@@ -2,13 +2,14 @@
   "name": "ece-2018-2019",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ucla-ece-report.com",
   "scripts": {
     "css-build": "node-sass --omit-source-map-url src/scss/styles.scss src/scss/styles.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "react-scripts start css-watch",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject???": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "XXXXreact-app"

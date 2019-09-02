@@ -5,6 +5,9 @@ $happyblue: #61dafb;
 //used colors for ECE
 $orange: #f99e39;
 $menublue: #113c6f;
+$menublue--30: rgba(17, 60, 111, .3);
+$menublue--50: rgba(17, 60, 111, .5);
+$menublue--70: rgba(17, 60, 111, .7);
 $submenublue: #4976AB;
 $borderblue: #c8e9D9;
 $bubbles: #b7ad55;
@@ -49,6 +52,8 @@ $blgrey-dark:	hsl(0, 0%, 29%);
 $blgrey:	hsl(0, 0%, 48%);
 $blgrey-light:	hsl(0, 0%, 71%);
 $blgrey-lighter:	hsl(0, 0%, 86%);
+$blgrey-lighter--50:	rgba(	219, 219, 219, .5);
+$blgrey-lighter--80:	rgba(	219, 219, 219, .8);
 $blwhite-ter:	hsl(0, 0%, 96%);
 $blwhite-bis:	hsl(0, 0%, 98%);
 $blwhite:	hsl(0, 0%, 100%);
