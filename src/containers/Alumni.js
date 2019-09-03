@@ -4,11 +4,11 @@ import{withRouter} from 'react-router-dom';
 import Bubbles from '../components/Bubbles';
 import Article from '../components/Article';
 import {articlesAlumni} from '../assets/articlesAlumni.js';
-import history from '../history';
+// import history from '../history';
 
-import aiello3 from '../assets/images/aiello03.png';
-import aiello1 from '../assets/images/aiello01.png';
-import aiello2 from '../assets/images/aiello02.png';
+// import aiello3 from '../assets/images/aiello03.png';
+// import aiello1 from '../assets/images/aiello01.png';
+// import aiello2 from '../assets/images/aiello02.png';
 // import aiello2 from './img/santos.jpg';
 
 
@@ -65,9 +65,9 @@ class Alumni extends Component{
             articleSelected={this.state.articleSelected}
             articles={articlesAlumni}
             onClick={this.handleCLick}
-            img1={aiello1}
-            img2={aiello1}
-            img3={aiello1}
+
+
+            
           />
         </div>
         <div className="article">

@@ -1,53 +1,41 @@
 import React, {Component} from 'react';
+import { Router, Route, Switch, Redirect, Link } from "react-router-dom";
 
 import Bubble from './Bubble'
-// import * as data from '../assets/data'
-// import history from '../history';
-// import {articlesFeatures} from '../assets/articlesFeatures';
-// import {articlesHighlights} from '../assets/articlesHighlights';
-// import {articlesStudents} from '../assets/articlesStudents';
-// import {articlesFaculty} from '../assets/articlesFaculty';
-// import {articlesOverview} from '../assets/articlesOverview';
-// import {articlesAlumni} from '../assets/articlesAlumni';
+import Article from '../components/Article';
 
 
 class Bubbles extends Component{
   constructor(props) {
 		super(props);
-	  this.state = {
-      pageView: this.props.pageView,
-      articleSelected:this.props.articleSelected,
-    }
-		console.log('%c PROPS at BUBBLES constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
+	  this.state = { }
+		console.log('%c PROPS at BUBBLES constructor', 'color:black;background:pink;padding:6px;border:1px dashed red', this.props)
   }
 
-
-  handleBubbleClick = (e) => {
-    this.props.onClick(e.target.value);
+  handleBubbleClick = (articleId) => {
+     this.props.onClick(articleId);
   }
 
   //iterate over submenus and populate bubbles
   renderBubbles = () => {
-    const {articleId, articles, articleAbrevTitle, articleImage, articleDescription } = this.props;
-    const {img1, img2, img3} = this.props;
-    const {articleSelected} = this.state;
+    const {articles, pageView, articleSelected, story, articleId } = this.props;
 
     const bubbleHtml = [];
     this.props.articles.forEach(article => {
       bubbleHtml.push(
-        <Bubble
-          key={article.articleId}
-          divClassName="bubble sheihaiha"
-          articleSelected={this.state.articleSelected}
-          articleId={article.articleId}
-          articleAbrevTitle={article.articleAbrevTitle}
-          articleImage ={article.articleImage}
-          articleDescription ={article.articleDescription}
-          onBubbleClick={this.handleBubbleClick}
-          img1={img1}
-          img2={img2}
-          img3={img3}
-        />)
+
+        <Link to={`/${pageView}/${article.articleId}`} component={Article} activeClassName="active" >
+          <Bubble
+            key={article.articleId}
+            divClassName="bubble sheihaiha"
+            articleId={article.articleId}
+            articles={articles}
+            story={story}
+            articleSelected={this.props.articleSelected}
+            onClick={this.handleBubbleClick}
+          />
+        </Link>
+      )
      });
     return  bubbleHtml;
   }
@@ -55,8 +43,17 @@ class Bubbles extends Component{
   render() {
     const{articleId} = this.props;
     return (
-      <div className="bubbles" key={articleId}>
-          {this.renderBubbles()}
+      <div key={articleId}>
+        <div className="bubbles" >
+            {this.renderBubbles()}
+        </div>
+        <div className="article">
+          <Article
+            pageView={this.props.pageView}
+            articleSelected={this.props.articleSelected}
+            articleId={this.props.articleId}
+        />
+        </div>
       </div>
     );
   }

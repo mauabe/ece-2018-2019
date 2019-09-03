@@ -15,9 +15,9 @@ class Logos extends Component {
     //history.location.pathname gets the location path (pageView)from path url
     //data.logos --> gets values from assets.data.logos
 
-      //   const searchBar = () => {
-      //     console.log('i am a happy searchbar')
-      //   }
+    //   const searchBar = () => {
+    //     console.log('i am a happy searchbar')
+    //   }
 
   // Check if pageView is in the url pathname
   // componentDidMount(){
@@ -32,10 +32,7 @@ class Logos extends Component {
   //   if (components.indexOf('overview') !== -1) {this.setState.pageView = 'overview'}
   //   if (components.indexOf('alumni') !== -1) {this.setState.pageView = 'alumni'}
 
-  //   if(this.setState.pageView === "features"){
-  //     this.setState.logoPick = uclaece
-  //   } else {this.setState.logoPick = ece};
-  // }
+
 
   render(){
     return (

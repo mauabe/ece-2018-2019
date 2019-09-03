@@ -4,7 +4,6 @@ import {withRouter} from 'react-router-dom';
 import Bubbles from '../components/Bubbles';
 import Article from '../components/Article';
 import {articlesStudents} from '../assets/articlesStudents.js';
-import santos from '../assets/images/santos.jpg';
 
 class Students extends Component{
   constructor(props) {

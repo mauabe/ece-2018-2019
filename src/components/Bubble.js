@@ -1,42 +1,30 @@
 import React, {Component} from 'react';
 import logo from '../assets/images/UCLA_footer_600.svg';
-// import aiello from '../assets/images/aiello01.png';
-// import samii from '../assets/images/rahmat-samii01.png';
 
 class Bubble extends Component{
 
   constructor(props) {
 		super(props);
-    this.state = { }
-
-		console.log('%c PROPS at BUBBLE constructor', 'color:black;background:yellow;padding:6px;border:1px dashed black', this.props)
+    this.state = {
+    }
+    this.handleBubbleClick=this.handleBubbleClick.bind(this);
+		console.log('%c PROPS at BUBBLE constructor', 'color:black;background:cyan;padding:6px;border:1px dashed black', this.props)
   }
 
-  handleClick =(e) => {
+  handleBubbleClick = (e, articleId) => {
     e.preventDefault();
-    let selection = e.target.value
-    this.props.onBubbleClick(selection);
+    this.props.onClick(e.target.value, {articleId});
+    console.log('%c PROPS at BUBBLE handleclick', 'color:black;background:cyan;padding:6px;border:1px dashed black', e.target.value)
   }
 
-  //renderArticleDescription
-  //articleSelected={this.state.articleSelected}
-  //articleId={articleId}
-  //articleAbrevTitle={article.articleAbrevTitle}
-  //a//rticleImage ={article.articleImage}
-  //articleDescription ={article.articleDescription}
-  // onBubleClick={this.handleBubbleClick}
-
-        //  <div className="bubble-tag">
-        //   {articleDescription}
-        // </div>
 
 
   render() {
-    const {articleSelection, articleId, articleAbrevTitle, articleImage, articleImageAltText, articleDescription, img1, img2, img3} = this.props;
-    console.log(`${articleImage}`,`${articleImageAltText}`);
+    const {articleId, articleAbrevTitle, articleImage, articleImageAltText, articleDescription} = this.props.articleSelected;
+    console.log('BUBBLE RENDER articleImage alttext', `${articleImage}`,`${articleImageAltText}`);
 
     return (
-      <div className="bubble-entry" id={articleId} onClick={this.handleClick}>
+      <div className="bubble-entry" key={articleId} onClick={this.handleBubbleClick}>
         <div className="bubble-cropper">
           <img src={`${articleImage}`} alt={`${articleImageAltText}`} title={`${articleId}`} className="bubble-image" />
         </div>

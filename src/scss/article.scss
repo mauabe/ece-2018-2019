@@ -4,6 +4,7 @@
 .article{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   flex: 0 0 100%;
   background-color:$grey-dark;
   // background-color:$blgrey-lighter;

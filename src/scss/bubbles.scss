@@ -36,7 +36,7 @@
       text-align: center;
       align-content: center;
       align-items: center;
-      margin: 10px 0 10px 0;
+      margin: 10px 10px 10px 0;
       // border-radius: 50%;
 
       div.bubble-cropper{
@@ -47,33 +47,37 @@
         // border-radius: 50%;
 
         .bubble-image{
-          display: inline;
+          display: flex;
+          flex: 1 1 auto;
           margin: 0 auto;
           // margin-left: -25%; //centers the image
           height: 100%;
-          width: auto;
+          width: 100%;
           border-radius: 50%;
           border: 2px solid $black-40;
           &:focus,
-          &:hover {
+          &:hover,
+          &:active {
             border: 2px solid $submenublue;
             background-color: $black-40;
             box-shadow: none;
           }
         }
-      }
 
-      .bubble-headline{
-        font-size: 1rem;
-        margin-top: 1rem;
-        flex-wrap: wrap;
-        color: $black-80;
-        &:focus,
-        &:hover {
-          color: $black-40; //$submenublue
-          box-shadow: none;
-          // pointer: 
-          // border: 8px solid purple;
+        .bubble-headline{
+          max-width: 140px;
+          font-size: 1rem;
+          // margin-top: 1rem;
+          flex-wrap: wrap;
+          color: $black-80;
+          &:focus,
+          &:hover,
+          &:active {
+            color: $submenublue;
+            box-shadow: none;
+            // pointer:
+            // border: 8px solid purple;
+          }
         }
       }
 
