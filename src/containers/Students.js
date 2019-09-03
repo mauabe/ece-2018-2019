@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import{withRouter} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 
 import Bubbles from '../components/Bubbles';
 import Article from '../components/Article';
 import {articlesStudents} from '../assets/articlesStudents.js';
+import santos from '../assets/images/santos.jpg';
 
 class Students extends Component{
   constructor(props) {
@@ -61,7 +62,8 @@ class Students extends Component{
   render() {
     return (
       <div className="content-area">
-        <div className="bubbles">
+
+        <div className="bubbles-submenu">
           <Bubbles
             pageView={this.state.pageView}
             articleSelected={this.state.articleSelected}

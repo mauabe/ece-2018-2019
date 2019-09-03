@@ -1,6 +1,6 @@
 // import {zip} from 'lodash.zip';
 import {zip} from 'lodash';
-import * as data from '../assets/data'
+// import * as data from '../assets/data'
 
 export const topMenuLinks = ['features', 'highlights', 'students', 'faculty', 'overview', 'alumni'];
 export const topMenuLabels = ['From the Chairman', 'Faculty Highlights', 'Students & Teaching', 'Faculty & Staff', 'Department Overview', 'Alumni & Partnerships'];
@@ -23,30 +23,27 @@ export const logos = {
   "ece": "public/img/ECE.png",
 };
 
-//moved to individual article... {file}.js
+export const featuresLinks = ['chairman', 'aiello', 'linyang'];
+export const featuresLabels = ['A Message', 'New Faculty: Aiello', 'New Faculty: linyang'];
+export const featuresSubmenu = zip(featuresLinks, featuresLinks);
 
-// export const articles = [
-//   {
-//     articleAbrevTitle:'articleAbrevTitle',
-//     articleImage:'articleImage',
-//     articleDescription: 'articleDescription',
-//     articleMenu:'articleMenu',
-//     articleHeadline:'article headline',
-//     articleSubhead: 'subhead here',
-//     articleCallout1: 'Great Callout here',
-//     articleCallout2: 'Great Callout2 here',
-//     professorTitle: 'Professor',
-//     professorFirstName: 'Fistname H. G.',
-//     professorLastName: 'LastName',
-//     professorName: 'Fistname H. G. Lastname',
-//     textCopy: 'text copy goes here ... and here ... and here'
-//   }
-// ];
-// export const images = {
-//   'features': { prof1: ['assets.image/faculty/prof1a.png','assets.image/faculty/prof1b.png' ]},
-//   'highlights': { prof1: ['assets.image/highlights/prof1a.png','assets.image/highlights/prof1b.png' ]},
-//   'students': { article1: ['assets.image/students/stud1a.png','assets.image/students/stud1b.png' ]},
-//   'faculty': { prof3: ['assets.image/faculty/prof3a.png','assets.image/faculty/prof3b.png' ]},
-//   'overview': { article1: ['assets.image/overview/article1a.png','assets.image/overview/article1b.png' ]},
-//   'alumni': { alumni3: ['assets.image/alumni/article3a.png','assets.image/alumni/article3b.png' ]},
-// }
+export const highlightsLinks = ['ieeefellows', 'ozcan', 'wong', 'candler', 'stafsudd', 'madni',  'rahmat-samii', 'frankchang', 'Emaminejad '];
+export const highlightsLabels = ['ieeefellows', 'ozcan', 'wong', 'candler', 'stafsudd', 'madni',  'rahmat-samii', 'frankchang', 'Emaminejad '];
+export const highlightsMenu = zip(highlightsLinks, highlightsLabels);
+
+
+export const studentsLinks = ['awards', 'santos', 'studentcenters', 'studentinitiatives'];
+export const studentsLabels = ['Student and Teaching Awards', 'J.P. Santos', 'Student Centers', 'Student Initiatives'];
+export const studentsSubmenu = zip(studentsLinks, studentsLabels);
+
+export const facultyLinks = ['ces', 'pwe', 'ss', 'academies'];
+export const facultyLabels = ['Circuits & Embedded Systems', 'Physical & Wave Electronics', 'Signals & Systems', 'Members of National Academies'];
+export const facultySubmenu = zip(facultyLinks, facultyLabels);
+
+export const overviewLinks = ['researchcenters', 'facultystaff', 'studentbody', 'fellowships', 'applicants'];
+export const overviewLabels = ['Research Centers', 'Faculty amd Staff', 'Student Body', 'Graduate Fellowships', 'Graduate Applicants'];
+export const overviewSubmenu = zip(overviewLinks, overviewLabels);
+
+export const alumniLinks = ['alumnae', 'alumni', 'partnerships'];
+export const alumniLabels = ['Alumnae Advisory Committee', 'Alumni Advisory Board', 'Department Partnerships'];
+export const alumniSubmenu = zip(alumniLinks, alumniLabels);

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import ece from '../assets/ECE_white.svg';
-import uclaece from '../assets/UCLA_ECE_white.svg';
+import ece from '../assets/images/ECE_white.svg';
+import uclaece from '../assets/images/UCLA_ECE_white.svg';
 import history from '../history';
 
 class Logos extends Component {

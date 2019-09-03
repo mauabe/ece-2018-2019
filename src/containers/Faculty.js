@@ -62,7 +62,8 @@ class Faculty extends Component{
     // console.log('this.state.articleSelected', this.state.articleSelected)
     return (
       <div className="content-area">
-        <div className="bubbles">
+
+        <div className="bubbles-submenu">
           <Bubbles
             pageView={this.state.pageView}
             articleSelected={this.state.articleSelected}

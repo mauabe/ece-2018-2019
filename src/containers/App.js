@@ -41,7 +41,7 @@ class App extends Component {
           <Header/>
           {/* <div className="content-area"> */}
             <Switch>
-              <Route path='/features' component={Features}/>
+              <Route path='/features'  activeClassName="selected" component={Features}/>
               <Route path='/highlights' component={Highlights}/>
               <Route path='/students' component={Students}/>
               <Route path='/faculty' component={Faculty}/>

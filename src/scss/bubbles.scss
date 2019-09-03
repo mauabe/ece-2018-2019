@@ -6,62 +6,111 @@
   display: flex;
   flex-direction: column;
   flex: 1 1 100%;
-  background-color:$menublue--70;
+  background-color:$beige-lighter;
   justify-content: space-evenly;
   align-items: center;
   // background-color:$blgrey-lighter;
 
-  .bubbles{
+  .bubbles-submenu{
     display: flex;
-    justify-content: space-evenly;
-    // flex-direction: row;
-    // flex: 0 0 100%;
+    flex-direction: row;
+    flex: 0 1 100%;
+    align-items: flex-start;
+    align-content: space-between;
 
-    // background-color:$grey-dark;
-    // background-color:$blgrey-lighter;
+    .bubbles{
+      display: flex;
+      justify-content: space-evenly;
+      // flex-direction: row;
+      // flex: 0 0 100%;
+
+      // background-color:$grey-dark;
+      // background-color:$blgrey-lighter;
+    }
+  }
+}
 
     div.bubble-entry {
       display: flex;
       flex-direction: column;
-      width: 120px;
-      height: 120px;
-      background: $blgrey-lighter--50;
       text-align: center;
       align-content: center;
       align-items: center;
-      border-radius: 50%;
+      margin: 10px 0 10px 0;
+      // border-radius: 50%;
 
-      .bubble-circle>img .sheigaiha{
-        boder: 4px solid pink;
-        max-height: 100%;
-        max-width: 100%;
+      div.bubble-cropper{
+        width: 90px;
+        height: 90px;
+        position: relative;
+        overflow: hidden;
+        // border-radius: 50%;
 
-        &:hover
-        &:active{
-          border: 2px solid $orange;
-          // overlay: $black-80;
-          transparency: .6;
+        .bubble-image{
+          display: inline;
+          margin: 0 auto;
+          // margin-left: -25%; //centers the image
+          height: 100%;
+          width: auto;
+          border-radius: 50%;
+          border: 2px solid $black-40;
+          &:focus,
+          &:hover {
+            border: 2px solid $submenublue;
+            background-color: $black-40;
+            box-shadow: none;
+          }
         }
       }
 
-      // background-color:$grey-dark;
-      // background-color:$blgrey-lighter;
       .bubble-headline{
         font-size: 1rem;
-        color: $black-60;
-        &:hover
-        &:active{
-          color: pink;
-          border: 8px solid purple;
-          // overlay: $black-80;
-          transparency: .6;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        color: $black-80;
+        &:focus,
+        &:hover {
+          color: $black-40; //$submenublue
+          box-shadow: none;
+          // pointer: 
+          // border: 8px solid purple;
         }
       }
 
-      .bubble-description{
+          // width: 120px;
+          // height: 120px;
+          // background: $blgrey-lighter--50;
+        // &:hover,
+        // &:active{
+        //   border: 2px solid $orange;
+        //   // overlay: $black-80;
+        //   transparency: .6;
+        //   }
 
-      }
     }
+
+      // .bubble-circle>img .sheigaiha{
+      //   boder: 4px solid pink;
+      //   max-height: 100%;
+      //   max-width: 100%;
+
+      //   &:hover
+      //   &:active{
+      //     border: 2px solid $orange;
+      //     // overlay: $black-80;
+      //     transparency: .6;
+      //   }
+      // }
+
+
+    // // background-color:$grey-dark;
+    // // background-color:$blgrey-lighter;
+
+
+
+  .bubble-description{
   }
-}
-@import './patterns';
+
+
+
+@import './patterns.scss';

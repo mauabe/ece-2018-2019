@@ -4,9 +4,11 @@
 .article{
   display: flex;
   flex-direction: column;
-  flex: 1 0 100%;
+  flex: 0 0 100%;
   background-color:$grey-dark;
   // background-color:$blgrey-lighter;
+  margin-left: 20%;
+  margin-right: 20%;
 
 
 

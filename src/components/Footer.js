@@ -1,5 +1,5 @@
 import React from 'react';
-import logoFooter from '../assets/UCLA_footer_600.svg';
+import logoFooter from '../assets/images/UCLA_footer_600.svg';
 
 
 const Footer = () => {

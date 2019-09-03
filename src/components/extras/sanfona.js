@@ -4,7 +4,6 @@ import { Accordion, AccordionItem } from 'react-sanfona';
 
 export default class Sanfona extends Component {
 
-}
 
 
 
@@ -23,3 +22,4 @@ export default class Sanfona extends Component {
       </Accordion>
     );
   }
+}

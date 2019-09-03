@@ -53,7 +53,8 @@ class Highlights extends Component{
   render() {
     return (
       <div className="content-area">
-        <div className="bubbles">
+
+        <div className="bubbles-submenu">
           <Bubbles
             pageView={this.state.pageView}
             articleSelected={this.state.articleSelected}

@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
-import logo from '../assets/UCLA_footer_600.svg';
-import aiello from '../assets/aiello01.png';
-import samii from '../assets/rahmat-samii01.png';
-
-
-
+import logo from '../assets/images/UCLA_footer_600.svg';
+// import aiello from '../assets/images/aiello01.png';
+// import samii from '../assets/images/rahmat-samii01.png';
 
 class Bubble extends Component{
 
@@ -29,25 +26,24 @@ class Bubble extends Component{
   //articleDescription ={article.articleDescription}
   // onBubleClick={this.handleBubbleClick}
 
-
+        //  <div className="bubble-tag">
+        //   {articleDescription}
+        // </div>
 
 
   render() {
-    const {articleSelection, articleId, articleAbrevTitle, articleImage, articleImageAltText1, articleDescription} = this.props;
-    console.log(`${articleImage}`,`${articleImageAltText1}`);
+    const {articleSelection, articleId, articleAbrevTitle, articleImage, articleImageAltText, articleDescription, img1, img2, img3} = this.props;
+    console.log(`${articleImage}`,`${articleImageAltText}`);
 
     return (
       <div className="bubble-entry" id={articleId} onClick={this.handleClick}>
-        <div className="bubble-circle sheigaiha">
-          <img src={`${articleImage}`} alt={`${articleImageAltText1}`} title={`${articleId}`} />
-          {/* <img src={logo} alt="article image" title="article imagelink" /> */}
+        <div className="bubble-cropper">
+          <img src={`${articleImage}`} alt={`${articleImageAltText}`} title={`${articleId}`} className="bubble-image" />
         </div>
         <div className="bubble-headline">
           {articleAbrevTitle}
         </div>
-        <div className="bubble-tag">
-          {articleDescription}
-        </div>
+
       </div>
     );
 

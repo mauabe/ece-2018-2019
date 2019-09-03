@@ -1,32 +1,38 @@
 import React, {Component} from 'react';
-import{withRouter} from 'react-router-dom';
+import{withRouter, Route, Redirect} from 'react-router-dom';
 
 import Bubbles from '../components/Bubbles';
 import Article from '../components/Article';
 import {articlesOverview} from '../assets/articlesOverview.js';
+import * as data from '../assets/data'
 
 class Overview extends Component{
   constructor(props) {
 		super(props);
 	  this.state = {
-      pageView: 'faculty',
+      pageView: 'overview',
+      article: articlesOverview,
       articleSelected: articlesOverview[0].articleId,
     }
+
+    //TODO: SETUP NEW ROUTER HERE FOR ARTICLES:
 
     //articleView -> url snippet for each article.
     //articleId uses the same string value as articleView.
     //compare the state of articleSelected to articleId/articleView
     //defaults to first article at constructor
 
-		console.log('%c PROPS at FACUL:TUY constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
+		console.log('%c PROPS at OVERVIEW constructor', 'color:black;background:red;padding:6px;border:1px dashed black', this.props)
   }
 
   componentWillMount(){
-
   }
 
-  
   componentDidMount(){
+
+    const imgPath = `${process.env.PUBLIC_URL}/img/hogan.jpg`;
+
+
     //default to first article in artticle list for the pageView
     if(!this.state.articleSelected && !this.props.articleView) {
       this.setState({articleSelected: articlesOverview[0].articleId});
@@ -64,7 +70,8 @@ class Overview extends Component{
   render() {
     return (
       <div className="content-area">
-        <div className="bubbles">
+        
+        <div className="bubbles-submenu">
           <Bubbles
             pageView={this.state.pageView}
             articleSelected={this.state.articleSelected}

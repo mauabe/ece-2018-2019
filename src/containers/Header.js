@@ -6,8 +6,10 @@ import Logos from '../components/Logos';
 import history from '../history';
 
 import * as data from '../assets/data'
-import uclaece from '../assets/UCLA_ECE_white.svg';
-import ece from '../assets/ECE_white.svg';
+import logos from '../assets/data';
+// import ece from '../assets/ECE_white.svg';
+import uclaece from '../assets/images/UCLA_ECE_white.svg';
+// import ece from '../assets/ECE_white.svg';
 
 
 
@@ -22,8 +24,8 @@ class Header extends Component{
   }
 
   componentDidMount(){
-    let uclaece = './src/assets/UCLA_ECE_white.svg';
-    let ece = './src/assets/ECE_white.svg';
+    let uclaece = './src/assets/images/UCLA_ECE_white.svg';
+    let ece = './src/assets/images/ECE_white.svg';
 
     const components = history.location.pathname.split('/');
     if (components.indexOf('features') !== -1) {this.setState.pageView = 'features'}

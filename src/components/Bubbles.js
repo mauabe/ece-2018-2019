@@ -29,6 +29,7 @@ class Bubbles extends Component{
   //iterate over submenus and populate bubbles
   renderBubbles = () => {
     const {articleId, articles, articleAbrevTitle, articleImage, articleDescription } = this.props;
+    const {img1, img2, img3} = this.props;
     const {articleSelected} = this.state;
 
     const bubbleHtml = [];
@@ -43,6 +44,9 @@ class Bubbles extends Component{
           articleImage ={article.articleImage}
           articleDescription ={article.articleDescription}
           onBubbleClick={this.handleBubbleClick}
+          img1={img1}
+          img2={img2}
+          img3={img3}
         />)
      });
     return  bubbleHtml;

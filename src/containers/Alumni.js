@@ -6,6 +6,16 @@ import Article from '../components/Article';
 import {articlesAlumni} from '../assets/articlesAlumni.js';
 import history from '../history';
 
+import aiello3 from '../assets/images/aiello03.png';
+import aiello1 from '../assets/images/aiello01.png';
+import aiello2 from '../assets/images/aiello02.png';
+// import aiello2 from './img/santos.jpg';
+
+
+
+
+
+
 class Alumni extends Component{
   constructor(props) {
 		super(props);
@@ -48,12 +58,16 @@ class Alumni extends Component{
   render() {
     return (
       <div className="content-area">
-        <div className="bubbles">
+
+        <div className="bubbles-submenu">
           <Bubbles
             pageView={this.state.pageView}
             articleSelected={this.state.articleSelected}
             articles={articlesAlumni}
             onClick={this.handleCLick}
+            img1={aiello1}
+            img2={aiello1}
+            img3={aiello1}
           />
         </div>
         <div className="article">
@@ -63,7 +77,6 @@ class Alumni extends Component{
             articles={articlesAlumni}
           />
         </div>
-
 
       </div>
     )
