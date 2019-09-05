@@ -18,11 +18,11 @@ class Article extends Component{
       articleId, articleCallout1, articleCallout2, articleImage, articleImage2, articleImage3, articleImage4, articleImageProf, articleImageMain } = this.props.articleSelected;
     let articleClassname = `${articleId}`;
 
-    if(articleImage.length === 0){console.log('no image found')}
-    if(articleImage3.length === 0){console.log('no image found')}
-    if(articleImage3.length === 0){console.log('no image found')}
-    if(articleImage4.length === 0){console.log('no image found')}
-    if(articleImageMain.length === 0){console.log('no image found')}
+    if(articleImage.length === 0){console.log('Image: no image found')}
+    if(articleImage2.length === 0){console.log('Image2:no image found')}
+    if(articleImage3.length === 0){console.log('Image3:no image found')}
+    if(articleImage4.length === 0){console.log('Image4:no image found')}
+    if(articleImageMain.length === 0){console.log('ImageMain:no image found')}
   }
 
 

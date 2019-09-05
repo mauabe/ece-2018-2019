@@ -18,42 +18,40 @@ class Bubbles extends Component{
 
   //iterate over submenus and populate bubbles
   renderBubbles = () => {
-    const {articles, pageView, articleSelected, story, articleId } = this.props;
+    const {articles, pageView, articleSelected, articleId } = this.props;
 
     const bubbleHtml = [];
-    this.props.articles.forEach(article => {
-      bubbleHtml.push(
 
-        <Link to={`/${pageView}/${article.articleId}`} component={Article} activeClassName="active" >
+    this.props.articles.map(obj => {
+      bubbleHtml.push(
           <Bubble
-            key={article.articleId}
+            key={obj.articleId}
             divClassName="bubble sheihaiha"
-            articleId={article.articleId}
-            articles={articles}
-            story={story}
+            articleId={obj.articleId}
+            articles={this.props.articles}
             articleSelected={this.props.articleSelected}
             onClick={this.handleBubbleClick}
           />
-        </Link>
       )
      });
     return  bubbleHtml;
   }
 
   render() {
-    const{articleId} = this.props;
     return (
-      <div key={articleId}>
+      <div>
         <div className="bubbles" >
-            {this.renderBubbles()}
-        </div>
-        <div className="article">
-          <Article
-            pageView={this.props.pageView}
-            articleSelected={this.props.articleSelected}
-            articleId={this.props.articleId}
+          {this.renderBubbles()}
+      </div>
+
+      <Link to={`/${this.props.pageView}/${this.props.articleId}`} component={Article} activeClassName="active" >
+        <Article
+          pageView={this.props.pageView}
+          articleSelected={this.props.articleSelected}
+          articleId={this.props.articleId}
+          articles={this.props.articles}
         />
-        </div>
+      </Link>
       </div>
     );
   }

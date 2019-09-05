@@ -18,8 +18,6 @@ class App extends Component {
   constructor(props) {
 		super(props);
 	  this.state = {
-      menuExpanded: false,
-      submenuExpanded: false,
     }
   // console.log('%c PROPS at APP CONSTRUCTOR', 'color:white;background:black;padding:6px;border:3px dashed yellow', this.props)
   }
@@ -47,12 +45,12 @@ class App extends Component {
               <Route path='/faculty' component={Faculty}/>
               <Route path='/overview' component={Overview}/>
               <Route path='/alumni' component={Alumni}/>
-              <Route path='/features' render={() => <Redirect to="/highlights/pottie" exact={true} />} />,
-              <Route path='/highlights' render={() => <Redirect to="/highlights/main" exact={true} />} />,
-              <Route path='/students' render={() => <Redirect to="/students/main" exact={true}  />}/>,
-              <Route path='/faculty' render={() => <Redirect to="/faculty/main"  exact={true} />}/>,
-              <Route path='/overview' render={() => <Redirect to="/overview/main"  exact={true} />}/>,
-              <Route path='/alumni' render={() => <Redirect to="/alumni/alumni"  exact={true} />}/>,
+              <Route path='/features' render={() => <Redirect to="/highlights/pottie" />} />,
+              <Route path='/highlights' render={() => <Redirect to="/highlights/ieeefellows" />} />,
+              <Route path='/students' render={() => <Redirect to="/students/awards"  />}/>,
+              <Route path='/faculty' render={() => <Redirect to="/faculty/ces" />}/>,
+              <Route path='/overview' render={() => <Redirect to="/overview/researchcenters" />}/>,
+              <Route path='/alumni' render={() => <Redirect to="/alumni/alumni"  />}/>,
             </Switch>
           {/* </ContentArea> */}
           <Footer/>
