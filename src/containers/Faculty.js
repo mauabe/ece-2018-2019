@@ -11,13 +11,13 @@ class Faculty extends Component{
 	  this.state = {
       pageView: 'faculty',
       articles: articlesFaculty,
-      articleSelected: articlesFaculty[0].articleId,
+      articleSelection: articlesFaculty[0].articleId,
     }
 
     //TODO: SETUP NEW ROUTER HERE FOR ARTICLES:
 
-    //articleId === -> url snippet for each article. === articleSelected after it is selected
-    //compare the state of articleSelected to articleId, defaults to first article at constructor
+    //articleId === -> url snippet for each article. === articleSelection after it is selected
+    //compare the state of articleSelection to articleId, defaults to first article at constructor
 		// console.log('%c PROPS at FACULtY constructor', 'color:black;background:orange;padding:6px;border:1px dashed black', this.props)
   }
 
@@ -31,13 +31,13 @@ class Faculty extends Component{
    if (components.indexOf('overview') !== -1) {this.setState.pageView = 'overview'};
    if (components.indexOf('alumni') !== -1) {this.setState.pageView = 'alumni'};
 
-    if(components[2] === undefined){this.setState({articleSelected: articlesFaculty[0].articleId}, () =>{console.log('updating state inside ComponentDidMount...')})}
+    if(components[2] === undefined){this.setState({articleSelection: articlesFaculty[0].articleId}, () =>{console.log('updating state inside ComponentDidMount...')})}
 
     console.log('%c PROPS at FACULTY ', 'color:black;background:orange;padding:10px;border:1px solid black', 'articleId:' , articlesFaculty[0].articleId)
 
     console.log('%c PROPS at FACULTY ', 'color:black;background:orange;padding:10px;border:1px solid black', 'HC: components[2]:', components[2], 'HC: components:', components)
 
-    console.log('%c PROPS at FACULTY ', 'color:black;background:orange;padding:10px;border:1px solid black','state.articleSelected:', this.state.articleSelected)
+    console.log('%c PROPS at FACULTY ', 'color:black;background:orange;padding:10px;border:1px solid black','state.articleSelection:', this.state.articleSelection)
   }
 
   handlePageViewChange = e =>
@@ -54,19 +54,19 @@ class Faculty extends Component{
   // }
 
   handleArticleClick(e){
-    this.setState({articleSelected: e.target.value});
+    this.setState({articleSelection: e.target.value});
   }
 
 
   render() {
-    // console.log('this.state.articleSelected', this.state.articleSelected)
+    // console.log('this.state.articleSelection', this.state.articleSelection)
     return (
       <div className="content-area">
 
         <div className="bubbles-submenu">
           <Bubbles
             pageView={this.state.pageView}
-            articleSelected={this.state.articleSelected}
+            articleSelection={this.state.articleSelection}
             articles={articlesFaculty}
             onClick={this.handleArticleClick}
           />
@@ -74,7 +74,7 @@ class Faculty extends Component{
         <div className="article">
           <Article
             pageView={this.state.pageView}
-            articleSelected={this.state.articleSelected}
+            articleSelection={this.state.articleSelection}
             articleId={articlesFaculty.articleId}
             articles={articlesFaculty}
           />

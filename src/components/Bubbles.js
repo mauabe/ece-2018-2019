@@ -8,52 +8,62 @@ import Article from '../components/Article';
 class Bubbles extends Component{
   constructor(props) {
 		super(props);
-	  this.state = { }
+	  this.state = {
+      articleSelection: this.props.articles[0].articleId
+     }
 		console.log('%c PROPS at BUBBLES constructor', 'color:black;background:pink;padding:6px;border:1px dashed red', this.props)
   }
 
-  handleBubbleClick = (articleId) => {
-     this.props.onClick(articleId);
-  }
-  handleMouseOver = (articleId) => {
-    //  this.props.onClick(articleId); change color of border and apply filter
+  handleClick = (articleId) => {
+    this.setState(state => ({articleSelection: articleId}));
   }
 
   //iterate over submenus and populate bubbles
   renderBubbles = () => {
-    const {articles, pageView, articleSelected, articleId } = this.props;
+    const {articles} = this.props;
+
     const bubbleHtml = [];
-    this.props.articles.map(obj => {
+    articles.map(obj => {
       bubbleHtml.push(
-          <Bubble
-            key={obj.articleId}
-            divClassName="bubble sheihaiha"
-            articleId={obj.articleId}
-            articles={this.props.articles}
-            articleSelected={this.props.articleSelected}
-            onClick={this.handleBubbleClick}
-          />
+        <Bubble
+          key={obj.articleId}
+          divClassName={`bubble sheihaiha ${obj.articleId}`}
+          articleId={obj.articleId}
+          articleSelection={this.state.articleSelection}
+          professorTitle={obj.professorTitle}
+          professorName={obj.professorName}
+          articleAbrevTitle={obj.articleAbrevTitle}
+          articleImage={obj.articleImage}
+          articleImageAltText={obj.articleImageAltText}
+          onClick={this.handleClick}
+        />
       )
      });
     return bubbleHtml;
   }
 
   renderArticle = () => {
-    const{pageView, articleId} = this.props;
+    const {articles} = this.props;
+    const {articleSelection} = this.state;
+
+    // find story that matches articleSelection and pass it to Article
+    const story = articles.find(obj => obj.articleId === articleSelection)
+    console.log('%c PROPS at BUBBLES render article', 'color:black;background:red;padding:16px;border:1px dashed black', story)
+
     return(
-        <Article
-          pageView={this.props.pageView}
-          articleSelected={this.props.articleSelected}
-          articleId={this.props.articleId}
-          articles={this.props.articles}
-        />
+      <Article
+        story={story}
+      />
     )
   }
 
   render() {
+    const {} = this.props;
+    const {} = this.state;
+
     return (
       <div className="page-bubbles-article">
-        <NavLink to={`/${this.props.pageView}/${this.props.articleId}`} component={Article} onMouseOver={this.handleMouseOver} activeClassName="active" >
+        <NavLink to={`/${this.props.pageView}/${this.state.articleSelection}`} component={Article}  activeClassName="active" >
             {this.renderBubbles()}
         </NavLink>
         <div>

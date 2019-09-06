@@ -8,14 +8,14 @@ class Article extends Component{
 		super(props);
 	  this.state = {
       pageView: this.props.pageView,
-      articleSelected: this.props.articleSelected,
+      articleSelection: this.props.articleSelection,
     }
 		console.log('%c PROPS at ARTICLE COMPONENTS constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
   }
 
   doesItExhist = () => {
     const {
-      articleId, articleCallout1, articleCallout2, articleImage, articleImage2, articleImage3, articleImage4, articleImageProf, articleImageMain } = this.props.articleSelected;
+      articleId, articleCallout1, articleCallout2, articleImage, articleImage2, articleImage3, articleImage4, articleImageProf, articleImageMain } = this.props.articleSelection;
     let articleClassname = `${articleId}`;
 
     if(articleImage.length === 0){console.log('Image: no image found')}
@@ -30,7 +30,7 @@ class Article extends Component{
     const {pageView} = this.props;
     const {
       articleId, professorTitle, professorFirstName, professorName, professorLastName, articleHeadline, articleSubhead, articleCallout1, articleCallout2, articleImage, articleImage2, articleImage3, articleImage4, articleImageProf, articleImageMain, articleImageAltText, articleImageAltText2, articleImageAltText3, articleImageAltText4, articleImageAltTextProf, articleImageAltTextMain, articleCaption, articleAuthor, articleImageCred, textCopy
-    } = this.props.articleSelected;
+    } = this.props.story;
 
 
     return (

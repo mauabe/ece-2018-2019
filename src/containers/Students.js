@@ -10,12 +10,12 @@ class Students extends Component{
 		super(props);
 	  this.state = {
       pageView: 'faculty',
-      articleSelected: articlesStudents[0].articleId,
+      articleSelection: articlesStudents[0].articleId,
     }
 
     //articleView -> url snippet for each article.
     //articleId uses the same string value as articleView.
-    //compare the state of articleSelected to articleId/articleView
+    //compare the state of articleSelection to articleId/articleView
     //defaults to first article at constructor
 
 		console.log('%c PROPS at Studentsconstructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
@@ -25,8 +25,8 @@ class Students extends Component{
 
   componentDidMount(){
     //default to first article in artticle list for the pageView
-    if(!this.state.articleSelected && !this.props.articleView) {
-      this.setState({articleSelected: articlesStudents[0].articleId});
+    if(!this.state.articleSelection && !this.props.articleView) {
+      this.setState({articleSelection: articlesStudents[0].articleId});
     }
 
     const components = this.props.history.location.pathname.split('/');
@@ -38,21 +38,21 @@ class Students extends Component{
     if (components.indexOf('alumni') !== -1) {this.setState.pageView = 'alumni'}
     console.log('components[5]', components[5], components)
 
-    // if(this.state.articleSelected !== components[5]){
-    //   this.renderArticle(this.state.articleSelected);
+    // if(this.state.articleSelection !== components[5]){
+    //   this.renderArticle(this.state.articleSelection);
     // }
   }
 
   handleClick(e){
     e.preventDefault();
-    this.setState({articleSelected: e.target.value});
+    this.setState({articleSelection: e.target.value});
   }
 
   // find article to render
 //???????
-  // renderArticle = (articleSelected) => {
-  //  if(this.state.articleSelected !== this.props.articleView){
-  //     this.setState({articleView: articleSelected});
+  // renderArticle = (articleSelection) => {
+  //  if(this.state.articleSelection !== this.props.articleView){
+  //     this.setState({articleView: articleSelection});
   //  };
   // }
 
@@ -65,7 +65,7 @@ class Students extends Component{
         <div className="bubbles-submenu">
           <Bubbles
             pageView={this.state.pageView}
-            articleSelected={this.state.articleSelected}
+            articleSelection={this.state.articleSelection}
             articles={articlesStudents}
             onClick={this.handleCLick}
           />
@@ -73,7 +73,7 @@ class Students extends Component{
         <div className="article">
           <Article
             pageView={this.state.pageView}
-            articleSelected={this.state.articleSelected}
+            articleSelection={this.state.articleSelection}
           />
         </div>
 

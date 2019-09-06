@@ -10,15 +10,15 @@ class Highlights extends Component{
 		super(props);
 	  this.state = {
       pageView: 'faculty',
-      articleSelected: articlesHighlights[0].articleId,
+      articleSelection: articlesHighlights[0].articleId,
     }
     console.log('%c PROPS at Highlights constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
   }
 
   componentDidMount(){
     //default to first article in artticle list for the pageView
-    if(!this.state.articleSelected && !this.props.articleView) {
-      this.setState({articleSelected: articlesHighlights[0].articleId});
+    if(!this.state.articleSelection && !this.props.articleView) {
+      this.setState({articleSelection: articlesHighlights[0].articleId});
     }
 
     const components = this.props.history.location.pathname.split('/');
@@ -30,21 +30,21 @@ class Highlights extends Component{
     if (components.indexOf('alumni') !== -1) {this.setState.pageView = 'alumni'}
     console.log('components[5]', components[5], components)
 
-    // if(this.state.articleSelected !== components[5]){
-    //   this.renderArticle(this.state.articleSelected);
+    // if(this.state.articleSelection !== components[5]){
+    //   this.renderArticle(this.state.articleSelection);
     // }
   }
 
   handleClick(e){
     e.preventDefault();
-    this.setState({articleSelected: e.target.value});
+    this.setState({articleSelection: e.target.value});
   }
 
   // find article to render
 //???????
-  // renderArticle = (articleSelected) => {
-  //  if(this.state.articleSelected !== this.props.articleView){
-  //     this.setState({articleView: articleSelected});
+  // renderArticle = (articleSelection) => {
+  //  if(this.state.articleSelection !== this.props.articleView){
+  //     this.setState({articleView: articleSelection});
   //  };
   // }
 
@@ -57,7 +57,7 @@ class Highlights extends Component{
         <div className="bubbles-submenu">
           <Bubbles
             pageView={this.state.pageView}
-            articleSelected={this.state.articleSelected}
+            articleSelection={this.state.articleSelection}
             articles={articlesHighlights}
             onClick={this.handleCLick}
           />
@@ -65,7 +65,7 @@ class Highlights extends Component{
         <div className="article">
           <Article
             pageView={this.state.pageView}
-            articleSelected={this.state.articleSelected}
+            articleSelection={this.state.articleSelection}
           />
         </div>
       </div>

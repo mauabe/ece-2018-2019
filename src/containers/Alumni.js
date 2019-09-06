@@ -21,10 +21,10 @@ class Alumni extends Component{
 		super(props);
 	  this.state = {
       pageView: 'alumni',
-      articleSelected: articlesAlumni[0].articleId,
+      articleSelection: articlesAlumni[0].articleId,
     }
 
-    //articleView -> url snippet for each article. articleId uses the same string value as articleView. Compare the state of articleSelected to articleId/articleView, defaults to first article at constructor
+    //articleView -> url snippet for each article. articleId uses the same string value as articleView. Compare the state of articleSelection to articleId/articleView, defaults to first article at constructor
 
 		console.log('%c PROPS at ALUMNI constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
 
@@ -32,8 +32,8 @@ class Alumni extends Component{
 
   componentDidMount(){
     //default to first article in artticle list for the pageView
-    if(!this.state.articleSelected && !this.props.articleView) {
-      this.setState({articleSelected: articlesAlumni[0].articleId});
+    if(!this.state.articleSelection && !this.props.articleView) {
+      this.setState({articleSelection: articlesAlumni[0].articleId});
     }
     const components = this.props.history.location.pathname.split('/');
     if (components.indexOf('features') !== -1) {this.setState.pageView = 'features'}
@@ -44,14 +44,14 @@ class Alumni extends Component{
     if (components.indexOf('alumni') !== -1) {this.setState.pageView = 'alumni'}
     console.log('components[5]', components[5], components)
 
-    // if(this.state.articleSelected !== components[5]){
-    //   this.renderArticle(this.state.articleSelected);
+    // if(this.state.articleSelection !== components[5]){
+    //   this.renderArticle(this.state.articleSelection);
     // }
   }
 
   handleClick(e){
     e.preventDefault();
-    this.setState({articleSelected: e.target.value});
+    this.setState({articleSelection: e.target.value});
   }
 
 
@@ -62,18 +62,18 @@ class Alumni extends Component{
         <div className="bubbles-submenu">
           <Bubbles
             pageView={this.state.pageView}
-            articleSelected={this.state.articleSelected}
+            articleSelection={this.state.articleSelection}
             articles={articlesAlumni}
             onClick={this.handleCLick}
 
 
-            
+
           />
         </div>
         <div className="article">
           <Article
             pageView={this.state.pageView}
-            articleSelected={this.state.articleSelected}
+            articleSelection={this.state.articleSelection}
             articles={articlesAlumni}
           />
         </div>

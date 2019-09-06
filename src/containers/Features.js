@@ -10,12 +10,12 @@ class Features extends Component{
     super(props);
     this.state = {
       pageView: 'faculty',
-      articleSelected: articlesFeatures[0].articleId,
+      articleSelection: articlesFeatures[0].articleId,
     }
 
     //articleView -> url snippet for each article.
     //articleId uses the same string value as articleView.
-    //compare the state of articleSelected to articleId/articleView
+    //compare the state of articleSelection to articleId/articleView
     //defaults to first article at constructor
     console.log('%c PROPS at FACUL:TUY constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
 
@@ -23,8 +23,8 @@ class Features extends Component{
 
   componentDidMount(){
     //default to first article in artticle list for the pageView
-    if(!this.state.articleSelected && !this.props.articleView) {
-      this.setState({articleSelected: articlesFeatures[0].articleId});
+    if(!this.state.articleSelection && !this.props.articleView) {
+      this.setState({articleSelection: articlesFeatures[0].articleId});
     }
 
     const components = this.props.history.location.pathname.split('/');
@@ -36,14 +36,14 @@ class Features extends Component{
     if (components.indexOf('alumni') !== -1) {this.setState.pageView = 'alumni'}
     console.log('components[5]', components[5], components)
 
-    // if(this.state.articleSelected !== components[5]){
-    //   this.renderArticle(this.state.articleSelected);
+    // if(this.state.articleSelection !== components[5]){
+    //   this.renderArticle(this.state.articleSelection);
     // }
   }
 
   handleClick(e){
     e.preventDefault();
-    this.setState({articleSelected: e.target.value});
+    this.setState({articleSelection: e.target.value});
   }
 
   render() {
@@ -53,7 +53,7 @@ class Features extends Component{
         <div className="bubbles-submenu">
           <Bubbles
             pageView={this.state.pageView}
-            articleSelected={this.state.articleSelected}
+            articleSelection={this.state.articleSelection}
             articles={articlesFeatures}
             onClick={this.handleCLick}
           />
@@ -61,7 +61,7 @@ class Features extends Component{
         <div className="article">
           <Article
             pageView={this.state.pageView}
-            articleSelected={this.state.articleSelected}
+            articleSelection={this.state.articleSelection}
           />
         </div>
 

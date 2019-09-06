@@ -4,7 +4,6 @@ import uclaece from '../assets/images/UCLA_ECE_white.svg';
 import logos from '../assets/data';
 import history from '../history';
 
-import * as data from '../assets/data'
 
 class Logos extends Component {
   constructor(props) {
