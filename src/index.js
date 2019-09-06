@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import '../src/scss/styles.css';
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
+import {Router} from 'react-router';
+import {createBrowserHistory} from "history";
 
+const history = createBrowserHistory();
 
 ReactDOM.render(
-  <App />,
+  <Router history={history}>
+    <App />
+  </Router>,
   document.getElementById('root')
 );
 

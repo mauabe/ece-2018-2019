@@ -17,10 +17,9 @@ class Header extends Component{
   constructor(props) {
 		super(props);
 	  this.state = {
-      menuExpanded: false,
-      submenuExpanded: false,
-      pageView: 'features',
-      logoPick: './src/assets/UCLA_ECE_white.svg'
+      menuSelected: false,
+      submenuSelected: false,
+      pageView: '',
     }
 		console.log('%c PROPS at HEADER constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
   }
@@ -48,10 +47,11 @@ class Header extends Component{
     return (
       <div className="header">
         <Logos
-          pageView={this.state.pageView}
           logoPick={this.state.logoPick}
         />
-        <Menubar/>
+        <Menubar
+          pageView={this.state.pageView}
+        />
 
       </div>
     );

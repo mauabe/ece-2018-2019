@@ -35,11 +35,11 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Router history = {history}>
+        {/* <Router history = {history}> */}
           <Header/>
           {/* <div className="content-area"> */}
             <Switch>
-              <Route path='/features'  activeClassName="active" component={Features}/>
+              <Route path='/features' component={Features}/>
               <Route path='/highlights' component={Highlights}/>
               <Route path='/students' component={Students}/>
               <Route path='/faculty' component={Faculty}/>
@@ -54,7 +54,7 @@ class App extends Component {
             </Switch>
           {/* </ContentArea> */}
           <Footer/>
-        </Router>
+        {/* </Router> */}
       </div>
     );
   }
