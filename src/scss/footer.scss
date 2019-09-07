@@ -1,14 +1,7 @@
 @charset "utf-8";
 @import "./variables.scss";
 
-// @import "../../node_modules/bulma/sass/utilities/_all.sass";
-// @import "../../node_modules/bulma/sass/base/_all.sass";
-// @import "../../node_modules/bulma/sass/elements/_all.sass";
-// @import "../../node_modules/bulma/sass/components/_all.sass";
-// @import "../../node_modules/bulma/sass/grid/_all.sass";
-// @import "../../node_modules/bulma/sass/layout/_all.sass";
 
-// .level
 .site-footer{
   display: flex;
   flex-shrink: 0;
@@ -27,25 +20,25 @@
     .footer-logo{
       display: flex;
       align-self: center;
-      margin-left: 30px;
-      margin-right: 15px;
+      margin-left: 130px;
+      margin-right: 115px;
       // margin-top: 5px;
-      width: 80px;
+      width: 180px;
       height: auto;
     }
 
     .footer-school{
       display: flex;
-      align-items: flex-start;
-      flex-direction: column;
+      align-items: flex-end;
+      // flex-direction: column;
       // margin-left: 30px;
       // justify-content: flex-start;
       // align-items: start;
 
       .school-name,
       .dept-name{
-        align-self: flex-start;
-        font-size: .8rem;
+        align-self: flex-end;
+        font-size: .9rem;
         line-height: 1rem;
       }
 

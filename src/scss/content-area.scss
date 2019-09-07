@@ -6,6 +6,12 @@
 // @import "../../node_modules/bulma/sass/elements/_all.sass";
 // @import "../../node_modules/bulma/sass/components/_all.sass";
 
+.page{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 100%;
+
+}
 
 .article{
   display: flex;
@@ -13,9 +19,9 @@
   flex: 1 0 100%;
   background-color:$grey-dark;
   // background-color:$blgrey-lighter;
+  margin-bottom: 1em;
 
 }
-// https://leaverou.github.io/css3patterns/#
 
 
 .carbon-fibre{

@@ -20,7 +20,7 @@ class Bubbles extends Component{
 
   //iterate over submenus and populate bubbles
   renderBubbles = () => {
-    const {articles} = this.props;
+    const {articles, pageView} = this.props;
 
     const bubbleHtml = [];
     articles.map(obj => {
@@ -28,6 +28,7 @@ class Bubbles extends Component{
         <Bubble
           key={obj.articleId}
           divClassName={`bubble sheihaiha ${obj.articleId}`}
+          pageView={pageView}
           articleId={obj.articleId}
           articleSelection={this.state.articleSelection}
           professorTitle={obj.professorTitle}
@@ -53,22 +54,17 @@ class Bubbles extends Component{
     return(
       <Article
         story={story}
+        articleSelection={this.state.articleSelection}
       />
     )
   }
 
   render() {
-    const {} = this.props;
-    const {} = this.state;
 
     return (
-      <div className="page-bubbles-article">
-        <NavLink to={`/${this.props.pageView}/${this.state.articleSelection}`} component={Article}  activeClassName="active" >
-            {this.renderBubbles()}
-        </NavLink>
-        <div>
-          {this.renderArticle()}
-        </div>
+      <div className="page">
+        {this.renderBubbles()}
+        {this.renderArticle()}
       </div>
     );
   }

@@ -47,18 +47,12 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: $black-80;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Oswald;
-  font-size: 100%;
-  font-weight: normal; }
 
 ul {
   list-style: none; }
@@ -73,20 +67,14 @@ html {
   box-sizing: border-box; }
 
 *, *::before, *::after {
-  box-sizing: inherit; }
-
-// this is the menus format
-h5 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-  text-decoration: none;
-  color: $black-80;
+  box-sizing: inherit;
 }
 
 a{
-  color: $black-20;
+  color: $black-40;
+  text-decoration: none;
   &:hover, &:active{
-    color: $happyblue;
+    color: $black-20;
   }
 }
 
@@ -94,7 +82,6 @@ a{
   display: flex;
   flex: 0 0 100%; /* Let it fill the entire space horizontally */
   min-height: 100vh;
-  // min-height: 100%;
   flex-direction: column;
   align-items: stretch;
 
@@ -102,22 +89,8 @@ a{
     flex: 0 0 100%; /* Let it fill the entire space horizontally */
     align-content: stretch;
     max-width: 100%;
-
     }
-
 }
-
-
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
-
-
 
 @import "./menu.scss";
 @import "./bubbles.scss";

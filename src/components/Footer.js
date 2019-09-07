@@ -1,5 +1,5 @@
 import React from 'react';
-import logoFooter from '../assets/images/UCLA_footer_600.svg';
+import logoFooter from '../assets/images/ucla-samueli-logo.svg';
 
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
           />
         </div>
         <div className="footer-school">
-          <div className="school-name">Samueli School of Engineering</div>
+          {/* <div className="school-name">Samueli School of Engineering</div> */}
           <div className="school-name">Electrical and Computer Engineering Department </div>
         </div>
       </div>

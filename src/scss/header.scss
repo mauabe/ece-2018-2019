@@ -1,29 +1,23 @@
 @charset "utf-8";
 @import "./variables.scss";
 
-// @import "../../node_modules/bulma/sass/utilities/_all.sass";
-// @import "../../node_modules/bulma/sass/base/_all.sass";
-// @import "../../node_modules/bulma/sass/elements/_all.sass";
-// @import "../../node_modules/bulma/sass/components/_all.sass";
-
 .header {
   display: flex;
   // background-color: $brown;
   flex-direction: row;
-  color: black;
   justify-content: flex-start;
-  height: 40px;
+  height: 3.3rem;
   flex: 0 1 100%;
   align-items: flex-start;
   align-content: space-between;
 
   .logos{
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 3rem;
+    margin-right: 3rem;
     flex: none;
 
     .logo-features{
-
+      background-color: pink;
     }
 
     .logo-image{

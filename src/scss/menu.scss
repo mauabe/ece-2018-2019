@@ -21,22 +21,22 @@
       padding: 0;
       flex: 0 0 100%;
 
-      li{
+      a, li{
         list-style: none;
+        &:hover,
+        &:active{
+          //   // transform: all .5s ease-out;
+          //   // font-weight: bold;
+        }
       }
-      // &:hover,
-      // &:active{
-        //   // transform: all .5s ease-out;
-        //   // font-weight: bold;
-        // }
-      }
+    }
 
     .menu-box-large{
+      color: $black-60;
       font-weight: 500;
       font-family: Oswald;
-      color: $black-60;
       font-size: .9em;
-      width: 145px;
+            width: 145px;
       height: 32px;
       background-color:$menublue;// #113c6f;
       border-top: 0px;
@@ -47,7 +47,6 @@
       margin-right: 7px;
       margin-bottom: 7px;
       cursor: pointer;
-      text-decoration: none;
       -webkit-filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.4));
       filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.4));
 
@@ -58,14 +57,15 @@
 
       &:hover,
       &:active{
-        transform: all .5s ease-out;
         color: $black-10;
-        // background-color:$submenublue;
+        transform: all .5s ease-out;
         border-color: $orange;
+        // background-color:$submenublue;
         // color: $happyblue;
         -webkit-filter: drop-shadow(4px 8px 6px rgba(0,0,0,0.6));
         filter: drop-shadow(4px 8px 6px rgba(0,0,0,0.6));
       }
+
     }
 
   }
