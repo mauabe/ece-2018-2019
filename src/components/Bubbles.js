@@ -1,9 +1,13 @@
 import React, {Component} from 'react';
-import {NavLink, Router, Route, Switch, Redirect, Link } from "react-router-dom";
+// import {NavLink, Router, Route, Switch, Redirect, Link } from "react-router-dom";
 
 import Bubble from './Bubble'
 import Article from '../components/Article';
 
+//TODO: PROPTYPES
+//PROPS:
+//pageView: location of first menu layer
+//articles: all articles for this page, feeds the second lauyer menu, the bubbles
 
 class Bubbles extends Component{
   constructor(props) {
@@ -11,9 +15,12 @@ class Bubbles extends Component{
 	  this.state = {
       articleSelection: this.props.articles[0].articleId
      }
+     //articleId uses the same string value as articleSelection(which is also pathname).
+     //defaults to first articleId at constructor
 		console.log('%c PROPS at BUBBLES constructor', 'color:black;background:pink;padding:6px;border:1px dashed red', this.props)
   }
 
+  // sends articleId of bubble menu selected
   handleClick = (articleId) => {
     this.setState(state => ({articleSelection: articleId}));
   }
@@ -27,7 +34,7 @@ class Bubbles extends Component{
       bubbleHtml.push(
         <Bubble
           key={obj.articleId}
-          divClassName={`bubble sheihaiha ${obj.articleId}`}
+          // divClassName={`bubble sheihaiha ${obj.articleId}`}
           pageView={pageView}
           articleId={obj.articleId}
           articleSelection={this.state.articleSelection}
@@ -63,7 +70,9 @@ class Bubbles extends Component{
 
     return (
       <div className="page">
-        {this.renderBubbles()}
+        <div className="bubbles">
+          {this.renderBubbles()}
+        </div>
         {this.renderArticle()}
       </div>
     );

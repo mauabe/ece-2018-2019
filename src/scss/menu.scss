@@ -25,14 +25,13 @@
         list-style: none;
         &:hover,
         &:active{
-          //   // transform: all .5s ease-out;
-          //   // font-weight: bold;
+          transform: all .5s ease-out;
         }
       }
     }
 
     .menu-box-large{
-      color: $black-60;
+      color: $black-40;
       font-weight: 500;
       font-family: Oswald;
       font-size: .9em;
@@ -52,16 +51,13 @@
 
       // background-position-y: -16px;
       // transition: translateY(15px);
-      // box-shadow: 5px 55px 50px -20px #b6b6b6;
         // img {src='../../public/img/image-name-here'}
 
       &:hover,
       &:active{
-        color: $black-10;
+        color: $black-20;
         transform: all .5s ease-out;
         border-color: $orange;
-        // background-color:$submenublue;
-        // color: $happyblue;
         -webkit-filter: drop-shadow(4px 8px 6px rgba(0,0,0,0.6));
         filter: drop-shadow(4px 8px 6px rgba(0,0,0,0.6));
       }

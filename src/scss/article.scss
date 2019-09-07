@@ -10,10 +10,17 @@
   // background-color:$blgrey-lighter;
   margin-left: 20%;
   margin-right: 20%;
+  margin-top: 1em;
   margin-bottom: 1em;
 
+}
 
-
-
+.article{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 100%;
+  background-color:$grey-dark;
+  // background-color:$blgrey-lighter;
+  margin-bottom: 1em;
 
 }

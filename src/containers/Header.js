@@ -7,6 +7,7 @@ import history from '../history';
 
 import ece from '../assets/images/ECE_white.svg';
 import uclaece from '../assets/images/ECE.svg';
+// import pixel from '../assets/images/pixel.png';
 
 
 class Header extends Component{
@@ -15,8 +16,8 @@ class Header extends Component{
 	  this.state = {
       pageView: '',
       logoPick: ece,
-      menuSelected: false,
-      submenuSelected: false,
+      // menuSelected: false,
+      // submenuSelected: false,
     }
 		// console.log('%c PROPS at HEADER constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
   }

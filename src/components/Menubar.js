@@ -1,34 +1,23 @@
 import React, {Component} from 'react';
-import { NavLink, withRouter } from "react-router-dom";
-
-import MenuBoxLarge from './MenuBoxLarge';
-import MenuBoxSmall from './MenuBoxSmall';
+import { NavLink } from "react-router-dom";
+// import MenuBoxLarge from './MenuBoxLarge';
 import * as data from '../assets/data'
-import history from '../history';
-
 
 class Menubar extends Component{
   constructor(props) {
 		super(props);
 	  this.state = {
 			pageView: 'features',
-			menuExpanded: false,
-			submenuExpanded: false,
     }
 		console.log('%c PROPS at MENUBAR', 'color:black;background:dodgerblue;padding:6px;border:1px dashed black', data.topMenu);
 	}
 
 	componentDidMount() {
 		const props = this.props;
+		// GET LOCATION AND UPDATE PAGE VIEw - why???
+		//PASS MENU DATA DOWN -check
+		//BUILD MENUS FROM DATA - check
   }
-
-  // GET LOCATION AND UPDATE PAGE VIEw
-
-  //PASS MENU DATA DOWN
-
-  //BUILD MENUS FROM DATA
-
-
 
 	navigationHtml = () => {
 		let html = [];
@@ -37,15 +26,14 @@ class Menubar extends Component{
 			const label = value[1];
 
 			html.push(
-
-				<li key={index} className="menu-box-large">
-						<NavLink to={"/" + path}  activeClassName="active">
-							{label}
-						</NavLink>
-				</li>
+				<NavLink to={"/" + path}  activeClassName="active">
+					<li key={index} className="menu-box-large">
+						{label}
+					</li>
+				</NavLink>
 				)
 			});
-			return html;
+		return html;
 	}
 
   buildSubMenus = props => {
@@ -55,25 +43,14 @@ class Menubar extends Component{
 
 
   render() {
-		const menuItem = this.state.pageView;
     return (
       <div className="menu-container">
-
-						<ul className="top-menu">
-							{this.navigationHtml()}
-						</ul>
-
-				{/* <div className="menu-container">
-					<MenuBoxLarge> large </MenuBoxLarge>
-				</div>
-
-				<div className="menu-container">
-					<MenuBoxSmall> small </MenuBoxSmall>
-				</div> */}
-
+				<ul className="top-menu">
+					{this.navigationHtml()}
+				</ul>
       </div>
     );
   }
 }
 
-export default withRouter(Menubar);
+export default Menubar;

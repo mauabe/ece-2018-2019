@@ -65,6 +65,7 @@ class Article extends Component{
 
         <div className={`picture-area ${articleId}`}>
           <div className="pictures">
+            <img src={`${articleImage}`} alt={`${articleImageAltText}`} title={`${articleId}`} className={`articleImage ${articleId}`} />
             <img src={`${articleImage2}`} alt={`${articleImageAltText2}`} title={`${articleId}`} className={`articleImage2 ${articleId}`} />
             <img src={`${articleImage3}`} alt={`${articleImageAltText3}`} title={`${articleId}`}  className={`articleImage3 ${articleId}`} />
             <img src={`${articleImage4}`} alt={`${articleImageAltText4}`} title={`${articleId}`}  className={`articleImage4 ${articleId}`} />

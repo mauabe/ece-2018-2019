@@ -1,27 +1,11 @@
 @charset "utf-8";
 @import "./variables.scss";
 
-// @import "../../node_modules/bulma/sass/utilities/_all.sass";
-// @import "../../node_modules/bulma/sass/base/_all.sass";
-// @import "../../node_modules/bulma/sass/elements/_all.sass";
-// @import "../../node_modules/bulma/sass/components/_all.sass";
+//this file is not in use
 
-.page{
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 100%;
 
-}
 
-.article{
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 100%;
-  background-color:$grey-dark;
-  // background-color:$blgrey-lighter;
-  margin-bottom: 1em;
 
-}
 
 
 .carbon-fibre{
