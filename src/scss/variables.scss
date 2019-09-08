@@ -57,3 +57,7 @@ $blgrey-lighter--80:	rgba(	219, 219, 219, .8);
 $blwhite-ter:	hsl(0, 0%, 96%);
 $blwhite-bis:	hsl(0, 0%, 98%);
 $blwhite:	hsl(0, 0%, 100%);
+
+  // -webkit-filter: grayscale(70%); filter: grayscale(70%);
+  // -webkit-filter: brightness(70%); filter: brightness(70%);
+  // -webkit-filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.4)));; filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.4)));

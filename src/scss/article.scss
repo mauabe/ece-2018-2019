@@ -1,26 +1,221 @@
 @charset "utf-8";
 @import "./variables.scss";
 
+// font-family: 'Open Sans', sans-serif;  font-weight: 400,600,700,900;font-size: .7em;
+// font-family: 'Oswald', sans-serif;  font-weight: 300,500,700;font-size: .7em;
+// font-family: 'Libre Caslon Text', serif;  font-weight:  400,400i,700;font-size: .7em;
+// font-family: 'Lobster Two', cursive; font-weight: 700;font-size: .7em;
+
 .article{
+  position: relative;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   flex: 0 0 100%;
-  background-color:$grey-dark;
-  // background-color:$blgrey-lighter;
+  background:$grey-dark;
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 1em;
   margin-bottom: 1em;
+  justify-content: flex-start;
+  // text-align: left;
+  // background-color:$grey-dark;
+  // background-color:$blgrey-lighter;
 
+  .prof-frame{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    left: -150px;
+    top: 5em;
+    border-radius: 50%;
+    -webkit-filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.4));
+    filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.4));
+
+    .articleImageProf{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
 }
 
-.article{
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 100%;
-  background-color:$grey-dark;
-  // background-color:$blgrey-lighter;
-  margin-bottom: 1em;
+  .photo-main-frame{
+    position: absolute;
+    left: 0;
+    top: 0;
+    // width: cover;
+    height: auto;
+    object-fit: cover;
+    object-position: -20% 0;
+
+     .article-photo-main{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+
+    }
+  }
+
+  .article-header{
+    position: relative;
+    left: 2em;
+    top: 1em;
+    bottom: 1em;
+    position: relative;
+    margin: 2em;
+    // z-index: 1;
+
+    .article-professor-title{
+      font-family: 'Lobster Two', cursive;
+      font-weight: 700;
+      font-size: 3em;
+    }
+    .article-professor-name{
+      font-family: 'Oswald', sans-serif;
+      font-weight: 300,;
+      font-size: 3em;
+    }
+    .article-Headline{
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      font-size: 3em;
+
+    }
+    .article-Subhead{
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      font-size: 2em;
+    }
+  }
+
+
+  .text-body{
+    font-family: 'Libre Caslon Text', serif;
+    font-weight:  400;
+    font-size: 1em;
+    position: absolute;
+    margin: 2em;
+  }
+
+  .callout-left{
+    position: absolute;
+    top: 10em;
+    right: -5em;
+    width: 10em;
+    height: 4em;
+    margin:1em;
+  }
+
+  .callout-right{
+    position: absolute;
+    top: 20em;
+    right: calc(80% - 5em);
+    width: 10em;
+    height: 4em;
+    margin:13em;
+    border: 2px solid $menublue;
+  }
+
+  .pictures-area{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    justify-content: flex-start;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    // flex: 0 0 100%;
+    // background:$grey-dark;
+
+    .frame{
+      position: relative;
+      width: 100%;
+      height:150px;
+      overflow: hidden;
+      left: 0;
+      top: 0;
+      // flex: 0 0 100%;
+
+      &:focus,
+      &:hover,
+      &:active {
+        filter: greysacle(50%);
+        // border: 2px solid $submenublue;
+        // background: $black-40;
+        // color: $submenublue;
+      }
+    }
+
+    .articleImage1{
+      position: absolute;
+      object-fit: cover;
+      object-position: 50% 50%;
+      flex: 0 0 25%;
+    }
+
+
+    .articleImage2{
+      position: absolute;
+      object-fit: cover;
+      object-position: 50% 50%;
+      flex: 0 0 25%;
+    }
+    .articleImage3{
+      position: absolute;
+      object-fit: cover;
+      object-position: 50% 50%;
+      width: 25%;
+      height: 150px;
+    }
+    .articleImage4{
+      position: absolute;
+      object-fit: cover;
+      object-position: 50% 50%;
+      flex: 0 0 25%;
+    }
+    .articleImage5{
+      position: absolute;
+      object-fit: cover;
+      object-position: 50% 50%;
+      width: 25%;
+      height: 150px;
+    }
+    .articleImage6{
+      position: absolute;
+      object-fit: cover;
+      object-position: 50% 50%;
+      flex: 0 0 25%;
+    }
+    .credits{
+      margin: 1em;
+
+      .caption{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        font-size: .6em;
+      }
+      .image-credits{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        font-size: .6em;
+      }
+      .author-credits{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        font-size: .6em;
+      }
+    }
+
 
 }

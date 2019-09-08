@@ -49,6 +49,15 @@ h6 {
   text-decoration: none;
   color: $black-80;
 }
+h3{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+p > span{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
 
 ul {
   list-style: none; }
@@ -88,10 +97,10 @@ a{
     }
 }
 
-@import "./menu.scss";
+@import "./article.scss";
 @import "./bubbles.scss";
 @import "./footer.scss";
 @import "./header.scss";
-@import "./article.scss";
-@import "./header.scss";
+@import "./menu.scss";
+@import "./mixins.scss";
 @import "./patterns.scss";

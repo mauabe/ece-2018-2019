@@ -30,3 +30,9 @@
   @include flex(1 200px);
   @include order(2);
 }
+
+// transform:scale(1.5);
+// -ms-transform:scale(1.5); /* IE 9 */
+// -moz-transform:scale(1.5); /* Firefox */
+// -webkit-transform:scale(1.5); /* Safari and Chrome */
+// -o-transform:scale(1.5); /* Opera */

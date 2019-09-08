@@ -41,8 +41,8 @@ class Bubbles extends Component{
           professorTitle={obj.professorTitle}
           professorName={obj.professorName}
           articleAbrevTitle={obj.articleAbrevTitle}
-          articleImage={obj.articleImage}
-          articleImageAltText={obj.articleImageAltText}
+          articleImage1={obj.articleImage1}
+          articleImageAltText1={obj.articleImageAltText1}
           onClick={this.handleClick}
         />
       )

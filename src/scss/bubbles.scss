@@ -62,9 +62,9 @@
   // border-radius: 50%;
 
   .bubble-cropper{
+    position: relative;
     width: 90px;
     height: 90px;
-    position: relative;
     overflow: hidden;
     border-radius: 50%;
     margin: 10px;
@@ -81,20 +81,22 @@
 
     img.bubble-image{
       display: flex;
-      // flex: 1 1 auto;
       margin: 0 auto;
-      // margin-left: -25%; //centers the image
       width: 100px;
       height: auto;
       object-fit: cover;
       color: $black-80;
+      transition: all 1s ease;
+      // margin-left: -25%; //centers the image
+      // flex: 1 1 auto;
 
       &:focus,
       &:hover,
       &:active {
         width: 120px;
         height: auto;
-        // filter: greysacle(65%);
+        -webkit-filter: grayscale(80%);filter: grayscale(80%);
+        -webkit-filter: brightness(70%);filter: brightness(70%);
         // color: $submenublue;
       }
     }
@@ -103,20 +105,20 @@
   .bubble-profTitle{
     font-family: 'Lobster Two', cursive;
     font-weight: 700;
-    font-size: .8em;
+    font-size: 1.1em;
   }
 
   .bubble-profName{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: .9em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
   }
 
   .bubble-headline{
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    // font-size: .9em;
-    font-size: 1rem;
+    font-size: 1.1em;
+    font-size: 1.1rem;
 
     // max-width: 200px;
     // margin-top: 1rem;
