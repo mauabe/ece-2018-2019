@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Router, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Router, Route, Switch, Redirect } from "react-router-dom";
 import '../scss/styles.scss';
 import history from '../history';
 
@@ -36,6 +36,7 @@ class App extends Component {
     return (
       <div className="App">
         {/* <Router history = {history}> */}
+        <BrowserRouter basename="/calendar" />
           <Header/>
           {/* <div className="content-area"> */}
             <Switch>

@@ -6,18 +6,10 @@ import * as data from '../assets/data'
 class Menubar extends Component{
   constructor(props) {
 		super(props);
-	  this.state = {
-			pageView: 'features',
-    }
+	  this.state = { }
 		console.log('%c PROPS at MENUBAR', 'color:black;background:dodgerblue;padding:6px;border:1px dashed black', data.topMenu);
 	}
 
-	componentDidMount() {
-		const props = this.props;
-		// GET LOCATION AND UPDATE PAGE VIEw - why???
-		//PASS MENU DATA DOWN -check
-		//BUILD MENUS FROM DATA - check
-  }
 
 	navigationHtml = () => {
 		let html = [];
@@ -36,11 +28,10 @@ class Menubar extends Component{
 		return html;
 	}
 
-  buildSubMenus = props => {
-		console.log('%c PROPS at Navbar', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
-		// pageView={this.state.pageView}
-  }
-
+  // buildSubMenus = props => {
+	// 	console.log('%c PROPS at Navbar', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
+	// 	// pageView={this.state.pageView}
+  // }
 
   render() {
     return (

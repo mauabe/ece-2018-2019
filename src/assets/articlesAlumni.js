@@ -1,6 +1,6 @@
 export const articlesAlumni = [
   {
-    articleId: 'mikeaustin-alumni',
+    articleId: 'taptapkaboom',
     professorTitle: 'Professor',
     professorFirstName: 'Mike',
     professorLastName: 'Austin',
@@ -25,8 +25,9 @@ export const articlesAlumni = [
     articleImageAltTextProf: 'professor H',
     articleImageCred: 'Luiza Feldman',
     articleAuthor: 'Luiza Feldman',
-    articleCaption: 'Mike Austin hold the Guinness record for the longest drive',
-    textCopy: 'In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak. /r  In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. /r  In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak. /r In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak. /r  In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak. /r  In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak.'
+    articleCaption1: 'captoin1 Mike Austin hold the Guinness record for the longest drive',
+    articleCaption2: 'caption2 Mike Austin hold the Guinness record for the longest drive',
+    articleCaption3: 'caption3 Mike Austin hold the Guinness record for the longest drive',    textCopy: '  <div>Rich from Tap Tap Kaboom presents </div> <h1>The Silliest &amp;<br/>   Most Awesome Gang<br/> In the World </h1>   <h3>   It\'s Circle Guy, Hat Guy &amp; Red Guy. <br/> They are the best of friends. </h3> <div className="pictures-area">    <img class="articleImage1" src="/img/linfyang5.jpg" width:"735" height="399"  alt="the gang">      <img class="articleImage1" src="/img/linfyang6.jpg" width:"735" height="399"  alt="the gang">      <img class="articleImage1" src="/img/linfyang2.png" width:"735" height="399"  alt="the gang">    </div> '
   },
   {
     articleId: 'hogan-alumni',
@@ -50,11 +51,13 @@ export const articlesAlumni = [
     articleImageAltText4: 'Hogan\'s mentor kinesiology',
     articleImageMain: '/img/pixel.png',
     articleImageAltTextMain: 'Hogan\'s mentor kinesiology',
-    articleImageProf: '/img/austin.jpg',
-    articleImageAltTextProf: 'professor H',
+    articleImageProf: '',
+    articleImageAltTextProf: '',
     articleImageCred: 'Luiza Feldman',
     articleAuthor: 'Luiza Feldman',
-    articleCaption: 'Mike Austin hold the Guinness record for the longest drive',
+    articleCaption1: 'captoin1 Mike Austin hold the Guinness record for the longest drive',
+    articleCaption2: 'caption2 Mike Austin hold the Guinness record for the longest drive',
+    articleCaption3: 'caption3 Mike Austin hold the Guinness record for the longest drive',
     textCopy: 'In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak. /r  In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. /r  In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak. /r In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak. /r  In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak. /r  In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak.'
   }
 ];
