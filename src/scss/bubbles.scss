@@ -21,22 +21,22 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  // background:$blgrey-lighter;
   // background: $menublue--50;
   align-items: flex-start;
   align-items: center;
   padding-bottom: 1em;
-
 }
 
 .bubble-link{
   display: flex;
+  justify-content: center;
   .active{
     img {
       -webkit-filter: grayscale(0.2);
       filter: grayscale(0.2);
     }
   }
+  &:active,
   &:hover{
     color: $menublue--50;
     img.animated {-webkit-animation: filter-animation 2s ;}
@@ -58,8 +58,8 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   align-items: center;
+  // align-items: flex-start;
   color: $black-60;
   max-width: 160px;
   // border-radius: 50%;

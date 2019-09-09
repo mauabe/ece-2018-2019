@@ -13,6 +13,7 @@ $submenublue: #4976AB;
 $borderblue: RGBA(116, 141, 181, 1.00);
 $bubbles: #b7ad55;
 $brown: #757763;
+$grey-dark:  #757763;
 $black-80: #2b2b2b;
 $black-70: #515151;
 $black-60: #646464;
@@ -32,32 +33,11 @@ $beige-lighter: rgba(239, 240, 235, .5);
 
 // Update Bulma's global variables
 $family-sans-serif: "Oswald", sans-serif;
-$grey-dark:  #757763;
 $grey-light: $beige-light;
-$primary: $submenublue;
-$link: $black-20;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
-
-// Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
-$control-border-width: 2px;
-$input-border-color: $borderblue;
-$input-shadow: none;
-
-$blblack: hsl(0, 0%, 4%);
-$blblack-bis:	hsl(0, 0%, 7%);
-$blblack-ter:	hsl(0, 0%, 14%);
-$blgrey-darker:	hsl(0, 0%, 21%);
-$blgrey-dark:	hsl(0, 0%, 29%);
-$blgrey:	hsl(0, 0%, 48%);
-$blgrey-light:	hsl(0, 0%, 71%);
-$blgrey-lighter:	hsl(0, 0%, 86%);
+//Update some of Bulma's component variables
 $blgrey-lighter--50:	rgba(	219, 219, 219, .5);
 $blgrey-lighter--80:	rgba(	219, 219, 219, .8);
-$blwhite-ter:	hsl(0, 0%, 96%);
-$blwhite-bis:	hsl(0, 0%, 98%);
-$blwhite:	hsl(0, 0%, 100%);
+
 
   // -webkit-filter: grayscale(70%); filter: grayscale(70%);
   // -webkit-filter: brightness(70%); filter: brightness(70%);
