@@ -7,7 +7,7 @@
     "css-build": "node-sass --omit-source-map-url src/scss/styles.scss src/scss/styles.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "react-scripts start css-watch",
-    "build": "react-scripts build  && react-snapshot",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject???": "react-scripts eject"
   },

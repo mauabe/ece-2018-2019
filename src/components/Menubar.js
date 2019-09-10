@@ -18,7 +18,7 @@ class Menubar extends Component{
 			const label = value[1];
 
 			html.push(
-				<NavLink to={"/" + path}  activeClassName="active">
+				<NavLink to={"/" + path}  activeClassName="active" key={index}>
 					<li key={index} className="menu-box-large">
 						{label}
 					</li>
