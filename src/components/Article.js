@@ -22,7 +22,7 @@ class Article extends Component{
 
   renderHeader = () => {
     const {
-      articleId, professorTitle, professorFirstName, professorName, professorLastName, articleHeadline, articleSubhead,  articleImage3, articleImage4, articleImage5, articleImage6, articleImageProf,
+      articleId, professorTitle, professorName, articleHeadline, articleSubhead
     } = this.props.story;
     return(
       <div className={`article-header ${articleId}`}>
@@ -56,7 +56,7 @@ class Article extends Component{
     let articleImage4Class = (articleImage4.length === 0)? 'none' : `${articleId}`;
     let articleImage5Class = (articleImage5.length === 0)? 'none' : `${articleId}`;
     let articleImage6Class = (articleImage6.length === 0)? 'none' : `${articleId}`;
-    let articleImageMainClass = (articleImageMain.length === 0)? 'none' : `${articleId}`;
+    let articleImageProfClass = (articleImageProf.length === 0)? 'none' : `${articleId}`;
 
 
     return (
@@ -71,13 +71,10 @@ class Article extends Component{
       {this.renderHeader()}
 
       <div className={`prof-frame ${articleId}`}>
-          <img src={`${articleImageProf}`} alt={`${articleImageAltTextProf}`} title={`${professorName}`} className={`articleImageProf ${articleId}`}/>
+          <img src={`${articleImageProf}`} alt={`${articleImageAltTextProf}`} title={`${professorName}`} className={`articleImageProf ${articleImageProfClass}`}/>
       </div>
 
       {this.renderTextCopy()}
-
-
-
 
       <div className={`picture-area ${articleId}`}>
         <div className="row">
@@ -87,14 +84,14 @@ class Article extends Component{
         </div>
           <p className="caption">{articleCaption1}</p>
         <div className="row">
-          <img src={`${articleImage3}`} alt={`${articleImageAltText1}`} title={`${articleId}`} className={`articleImageLeft ${articleImage3Class}`} />
-          <img src={`${articleImage4}`} alt={`${articleImageAltText2}`} title={`${articleId}`}
+          <img src={`${articleImage3}`} alt={`${articleImageAltText3}`} title={`${articleId}`} className={`articleImageLeft ${articleImage3Class}`} />
+          <img src={`${articleImage4}`} alt={`${articleImageAltText4}`} title={`${articleId}`}
           className={`articleImageRight ${articleImage4Class}`} />
         </div>
           <p className="caption">{articleCaption2}</p>
         <div className="row">
-          <img src={`${articleImage5}`} alt={`${articleImageAltText1}`} title={`${articleId}`} className={`articleImageLeft ${articleImage5Class}`} />
-          <img src={`${articleImage6}`} alt={`${articleImageAltText2}`} title={`${articleId}`}
+          <img src={`${articleImage5}`} alt={`${articleImageAltText5}`} title={`${articleId}`} className={`articleImageLeft ${articleImage5Class}`} />
+          <img src={`${articleImage6}`} alt={`${articleImageAltText6}`} title={`${articleId}`}
           className={`articleImageRight ${articleImage6Class}`} />
         </div>
           <p className="caption">{articleCaption3}</p>

@@ -1,7 +1,16 @@
 @charset "utf-8";
 @import "./variables.scss";
 
-.articleImageRight .madni {
-  object-position: 59% 50%;
+img.articleImageRight.madni{
+  object-fit: contain;
+  object-position: -10% 50%;
+  height: 112%;
+  max-width: 100%;
+  justify-content: center;
+  margin: 0 20px;
+}
 
+img.articleImageLeft.none{
+  display: none;
+  max-height: 10px;
 }

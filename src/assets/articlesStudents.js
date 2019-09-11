@@ -27,11 +27,11 @@ export const articlesStudents = [
     articleImageAltTextMain: 'UCLA at night',
     articleImageProf: '',
     articleImageAltTextProf: '',
-    articleImageCred: 'Photos by: ',
-    articleCaption1: 'Undergraduates Etha Liang and Yanhao Jiang ',
-    articleCaption2: '',
+    articleImageCred: ' ',
+    articleCaption1: 'Undergraduate student Ethan Liang and with Chair Greg Pottie',
+    articleCaption2: 'Undergraduate student Yanhao Jiang, Christina Huang Memorial Prize recipient',
     articleCaption3: '',
-    articleAuthor: 'Greg Pottie',
+    articleAuthor: '',
     textCopy: "<h3>Electrical & Computer Engineering Department  2018-2019</h3><br><p>Outstanding Bachelor of Science Award:<br> <span>Ethan Liang</span></p> <p>Christina Huang Memorial Prize:<br> <span> Yanhao Jiang </span></p>"
   },
   {
