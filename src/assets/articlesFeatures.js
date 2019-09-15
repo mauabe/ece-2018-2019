@@ -35,7 +35,7 @@ export const articlesFeatures = [
   },
   {
     articleId: 'aiello',
-    professorTitle: 'Ass. Professor',
+    professorTitle: 'Asst. Professor',
     professorFirstName: 'Clarice D.',
     professorLastName: 'Aiello',
     professorName: 'Clarice Aiello',
@@ -70,7 +70,7 @@ export const articlesFeatures = [
   },
   {
     articleId: 'linyang',
-    professorTitle: 'Ass. Professor',
+    professorTitle: 'Asst. Professor',
     professorFirstName: 'Lin',
     professorLastName: 'Yang',
     professorName: 'Lin Yang',
