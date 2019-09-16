@@ -9,26 +9,26 @@ export const articlesOverview = [
     professorFirstName: 'Ben',
     professorLastName: 'Hogan',
     professorName: 'Centers',
-    articleAbrevTitle:'Ben Hogan and the Centers',
-    articleDescription: 'How one man made his swing part of golf history',
-    articleHeadline:'Ben Hogan, the swing of history.',
-    articleSubhead: 'Revolutionary swing, maybe not',
+    articleAbrevTitle:'Research Centers',
+    articleDescription: 'Research Centers',
+    articleHeadline:'Research Centers.',
+    articleSubhead: '',
     articleCallout1: '',
     articleCallout2: '',
     articleImage1: '/img/hogan.jpg',
     articleImage2: '/img/hogan6.jpg',
-    articleImage3: '/img/hogan5.jpg',
+    articleImage3: '',
     articleImage4: '',
     articleImage5: '',
     articleImage6: '',
     articleImageAltText1: 'Hogan set the stage for a generation',
     articleImageAltText2: 'After his accident, his putting was compromised',
-    articleImageAltText3: 'The Hogan\'s fade',
-    articleImageAltText4: 'Hogan\'s mentor kinesiology',
+    articleImageAltText3: '',
+    articleImageAltText4: '',
     articleImageAltText5: '',
     articleImageAltText6: '',
-    articleImageMain: '/img/cnsi.jpg',
-    articleImageAltTextMain: 'cnsi',
+    articleImageMain: '/img/students-lab.jpg',
+    articleImageAltTextMain: 'engineering lab',
     articleImageProf: '',
     articleImageAltTextProf: '',
     articleImageCred: '',
@@ -36,7 +36,7 @@ export const articlesOverview = [
     articleCaption1: '',
     articleCaption2: '',
     articleCaption3: '',
-    textCopy: 'In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak. /r  In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today.it a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak. /r  In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak.'
+    textCopy: '<div><p>Research Centers </p><p>  The Electrical and Computer Engineering Department ­contributes to the ­following Research Centers: </p> <ul><li>• Anderson School of Management – Easton Technology Management Center (ETMC)</li><li>• California NanoSystems Institute (CNSI)</li><li>• Center for Design-Enabled Nanofabrication (C-DEN)</li><li>• Center for Development of Emerging Data Storage Systems (CoDES2)</li><li>• Center for Domain-Specific Computing (CDSC)</li><li>• Center for Engineering Economics, Learning and Networks (CEELN)</li><li>• Center for Heterogeneous Integration and Performance Scaling (CHIPS)</li><li>• Center for High Frequency Electronics (CHFE)</li><li>• Center of Excellence for Green Nanotechnologies (CEGN)</li><li>• Function Accelerated nanoMaterial Engineering (FAME)</li><li>• Institute for Digital Research and Education (IDRE)</li><li>• Institute for Pure and Applied Mathematics (IPAM)</li><li>• Institute for Technology Advancement (ITA)</li><li>• Integrated Systems Nanofabrication Clean Room (ISNCR)</li><li>• Interconnected & Integrated Bioelectronics Lab (I2BL)</li><li>• Joint Institute for Regional Earth System Science and Engineering (JIFRESSE)</li><li>• Nanoelectronics Research Facility (NRF)</li><li>• Public Safety Network Systems (PSNS)</li><li>• Translational Applications for Nanoscale Multiferroic Systems (TANMS)</li><li>• Variability Expedition, Variability-Aware Software for Efficient Computing with Nanoscale Devices (VE) </li> <li>• Water Technology Research Center (WaTer) <li>• Western Institute for Nanoelectronics (WIN) <li>• Wireless Health Institute (WHI)<li> </ul> </div>  '
   },
   {
     articleId: 'facultystaff',
@@ -62,100 +62,16 @@ export const articlesOverview = [
     articleImageAltText4: '',
     articleImageAltText5: '',
     articleImageAltText6: '',
-    articleImageMain: '/img/hogan.jpg',
-    articleImageAltTextMain: 'UCLA Samueli School of Engineering',
-    articleImageProf: '/img/hogan.jpg',
-    articleImageAltTextProf: '',
+    articleImageMain: '/img/ucla-royce-hall.jpg',
+    articleImageAltTextMain: 'UCLA Royce Hall',
+    articleImageProf: '/img/students-blackshirts.jpg',
+    articleImageAltTextProf: 'UCLA Royce Hall',
     articleImageCred: '',
     articleAuthor: '',
     articleCaption1: '',
     articleCaption2: '',
     articleCaption3: '',
-    textCopy: '<FacultyStaff />'
+    textCopy: '<div><span><p>Faculty and Staff</p></span><ul><li>Ladder Faculty: 48</li><li>      Courtesy Appointments": 14</li><li>      "Emeriti Faculty": 14</li><li>      "Adjunct Faculty":	4</li><li>      "Lecturers": 9</li><li>      "Post-Doc":	40</li><li>      "Staff":43</li><li></div>  <div> <span><p>Recognitionsf</p></span><ul><li>   Society Fellows 	49</li><li>     NAE Members 	18</li><li>    NAS Members	3</li><li>    National Academy of Inventors 	8</li><li>    Marconi Prize 	1</li><li>    </div>'
 
   },
 ];
-
-const cars = [
-	{ brand: 'VW', year: 2012, color: 'Orange', vin: 'dsad231ff' },
-	{ brand: 'Audi', year: 2011, color: 'Black', vin: 'gwregre345' },
-	{ brand: 'Renault', year: 2005, color: 'Gray', vin: 'h354htr' },
-	{ brand: 'BMW', year: 2003, color: 'Blue', vin: 'j6w54qgh' },
-	{ brand: 'Mercedes', year: 1995, color: 'Orange', vin: 'hrtwy34' },
-	{ brand: 'Volvo', year: 2005, color: 'Black', vin: 'jejtyj' },
-	{ brand: 'Honda', year: 2012, color: 'Yellow', vin: 'g43gr' },
-	{ brand: 'Jaguar', year: 2013, color: 'Orange', vin: 'greg34' },
-	{ brand: 'Ford', year: 2000, color: 'Black', vin: 'h54hw5' },
-	{ brand: 'Fiat', year: 2013, color: 'Red', vin: '245t2s' }
-];
-
-
-export class FacultyStaff extends Component {
-  constructor() {
-      super();
-      this.state = {};
-      this.facultyStaff = {
-        "Ladder Faculty": 48,
-        "Courtesy Appointments": 14,
-        "Emeriti Faculty": 14,
-        "Adjunct Faculty":	4,
-        "Lecturers": 9,
-        "Post-Doc":	40,
-        "Staff":43
-      };
-
-      this.playersYears =
-      [
-        {
-        "PlayerName": "AFFRUNTI, JOE",
-        "PGASeason": 2016
-        },
-        {
-        "PlayerName": "AIKEN, THOMAS",
-        "PGASeason": 2017
-        },
-        {
-        "PlayerName": "AIKEN, THOMAS",
-        "PGASeason": 2016
-        },
-        {
-        "PlayerName": "AKIYOSHI, SHOTA",
-        "PGASeason": 2018
-        },
-        {
-        "PlayerName": "ALBERTSON, ANDERS",
-        "PGASeason": 2019
-        },
-        {
-        "PlayerName": "ALDRIDGE, TYLER",
-        "PGASeason": 2016
-        }
-      ]
-  }
-
-  render() {
-    return (
-      <div style={{ width: 500 }}>
-      <DataTable value={cars}>
-        <Column field='vin' header='Vin' />
-        <Column field='year' header='Year' />
-        <Column field='brand' header='Brand' />
-        <Column field='color' header='Color' />
-      </DataTable>
-      </div>
-    );
-  }
-}
-
-
-// export default (
-// 	<div style={{ width: 500 }}>
-// 		<PrimereactStyle />
-// 		<DataTable value={cars}>
-// 			<Column field='vin' header='Vin' />
-// 			<Column field='year' header='Year' />
-// 			<Column field='brand' header='Brand' />
-// 			<Column field='color' header='Color' />
-// 		</DataTable>
-// 	</div>
-// );
