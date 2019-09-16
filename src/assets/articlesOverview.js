@@ -29,12 +29,12 @@ export const articlesOverview = [
     articleImageAltText6: '',
     articleImageMain: '/img/cnsi.jpg',
     articleImageAltTextMain: 'cnsi',
-    articleImageProf: '/img/hogan3.jpg',
-    articleImageAltTextProf: 'professor H',
-    articleImageCred: 'Luiza Feldman',
-    articleAuthor: 'Luiza Feldman',
-    articleCaption1: 'Hogan was a Mike Austin believer',
-    articleCaption2: 'Hogan was a Mike Austin believer',
+    articleImageProf: '',
+    articleImageAltTextProf: '',
+    articleImageCred: '',
+    articleAuthor: '',
+    articleCaption1: '',
+    articleCaption2: '',
     articleCaption3: '',
     textCopy: 'In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak. /r  In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today.it a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak. /r  In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak.'
   },
@@ -135,41 +135,27 @@ export class FacultyStaff extends Component {
 
   render() {
     return (
-        <DataTable value={this.cars}>
-            <Column field="brand" header="Brand Model" style={{width:'20%'}}/>
-            <Column field="year" header="Year Instrocudes" style={{width:'20%'}}/>
-        </DataTable>
+      <div style={{ width: 500 }}>
+      <DataTable value={cars}>
+        <Column field='vin' header='Vin' />
+        <Column field='year' header='Year' />
+        <Column field='brand' header='Brand' />
+        <Column field='color' header='Color' />
+      </DataTable>
+      </div>
     );
   }
 }
 
 
-// import React from 'react';
-// import { DataTable } from '@bit/primefaces.primereact.datatable';
-// import { Column } from '@bit/primefaces.primereact.column';
-// import PrimereactStyle from '@bit/primefaces.primereact.internal.stylelinks';
-
-const cars = [
-	{ brand: 'VW', year: 2012, color: 'Orange', vin: 'dsad231ff' },
-	{ brand: 'Audi', year: 2011, color: 'Black', vin: 'gwregre345' },
-	{ brand: 'Renault', year: 2005, color: 'Gray', vin: 'h354htr' },
-	{ brand: 'BMW', year: 2003, color: 'Blue', vin: 'j6w54qgh' },
-	{ brand: 'Mercedes', year: 1995, color: 'Orange', vin: 'hrtwy34' },
-	{ brand: 'Volvo', year: 2005, color: 'Black', vin: 'jejtyj' },
-	{ brand: 'Honda', year: 2012, color: 'Yellow', vin: 'g43gr' },
-	{ brand: 'Jaguar', year: 2013, color: 'Orange', vin: 'greg34' },
-	{ brand: 'Ford', year: 2000, color: 'Black', vin: 'h54hw5' },
-	{ brand: 'Fiat', year: 2013, color: 'Red', vin: '245t2s' }
-];
-
-export default (
-	<div style={{ width: 500 }}>
-		<PrimereactStyle />
-		<DataTable value={cars}>
-			<Column field='vin' header='Vin' />
-			<Column field='year' header='Year' />
-			<Column field='brand' header='Brand' />
-			<Column field='color' header='Color' />
-		</DataTable>
-	</div>
-);
+// export default (
+// 	<div style={{ width: 500 }}>
+// 		<PrimereactStyle />
+// 		<DataTable value={cars}>
+// 			<Column field='vin' header='Vin' />
+// 			<Column field='year' header='Year' />
+// 			<Column field='brand' header='Brand' />
+// 			<Column field='color' header='Color' />
+// 		</DataTable>
+// 	</div>
+// );

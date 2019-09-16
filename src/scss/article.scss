@@ -208,9 +208,10 @@
   font-family: 'Libre Caslon Text', serif;
   font-weight: 400;
   font-size: 1em;
-  padding: 20px;
-  text-align:justify;
+  padding: 1.5em;
+  text-align: justify;
   text-justify: inter-word;
+  text-indent: 2em;
   .text-body {
     text-align:justify;
     text-justify: inter-word;
@@ -218,6 +219,9 @@
   .text-body span{
     font-family: 'Libre Caslon Text', serif;
     font-weight: 400i;
+  }
+  p {
+    margin-bottom:1.5em
   }
 }
 
