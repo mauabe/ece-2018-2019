@@ -12,7 +12,7 @@ import {createBrowserHistory} from "history";
 const history = createBrowserHistory();
 
 ReactDOM.render(
-  <Router history={history}>
+  <Router history={history}  basename={'/2018-2019'}>
     <App />
   </Router>,
   document.getElementById('root')
