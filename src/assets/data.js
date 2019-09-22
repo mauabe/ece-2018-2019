@@ -3,7 +3,7 @@ import {zip} from 'lodash';
 // import * as data from '../assets/data'
 
 export const topMenuLinks = ['features', 'highlights', 'students', 'faculty', 'overview', 'alumni'];
-export const topMenuLabels = ['From the Chairman', 'Faculty Highlights', 'Students & Teaching', 'Faculty & Staff', 'Department Overview', 'Alumni & Partnerships'];
+export const topMenuLabels = ['Department News', 'Faculty Highlights', 'Students & Teaching', 'Faculty & Staff', 'Department Overview', 'Alumni & Partnerships'];
 export const topMenu = zip(topMenuLinks, topMenuLabels);
 
 export const subMenus = {

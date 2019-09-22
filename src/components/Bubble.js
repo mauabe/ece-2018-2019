@@ -23,14 +23,14 @@ class Bubble extends Component{
 
 
   render() {
-    const {pageView, articleId, articleSelection, articleAbrevTitle, articleImage1, articleImageAltText1, professorTitle, professorName} = this.props ;
+    const {pageView, articleId, articleSelection, articleAbrevTitle, articleImageProf, articleImageAltTextProf, professorTitle, professorName} = this.props ;
     const className = ( articleSelection === articleId) ? `${articleId} active`: `${articleId}`;
 
     return (
       <NavLink exact to={`/${pageView}/${articleId}`} activeClassName="active" className="bubble-link">
         <div className={`bubble ${className}`} key={articleId} onClick={(e) => this.handleBubbleClick(articleId, e)} >
           <div className="bubble-cropper">
-            <img src={`${articleImage1}`} alt={`${articleImageAltText1}`} title={`${articleId}`} className={`bubble-image ${className}`} />
+            <img src={`${articleImageProf}`} alt={`${articleImageAltTextProf}`} title={`${articleId}`} className={`bubble-image ${className}`} />
           </div>
           <div>
             <span className={`bubble-profTitle ${className}`}>{professorTitle} </span><nbsp/><span className={`bubble-profName ${className}`}>{professorName}</span>
