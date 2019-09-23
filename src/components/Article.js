@@ -58,6 +58,12 @@ class Article extends Component{
     let articleImage6Class = (articleImage6.length === 0)? 'none' : `${articleId}`;
     let articleImageProfClass = (articleImageProf.length === 0)? 'none' : `${articleId}`;
 
+    let row2ClassName = (articleImage3.length === 0 && articleImage4.length  === 0)? 'none' : 'row';
+    let row3ClassName = (articleImage5.length === 0 && articleImage5.length  === 0)? 'none' : 'row';
+
+    let caption2ClassName = (articleCaption2.length === 0) ? "caption-none" : "caption";
+    let caption3ClassName = (articleCaption3.length === 0) ? "caption-none" : "caption";
+
 
     return (
     <div className={`article ${articleId}`}>
@@ -82,19 +88,21 @@ class Article extends Component{
           <img src={`${articleImage2}`} alt={`${articleImageAltText2}`} title={`${articleId}`}
           className={`articleImageRight ${articleImage2Class}`} />
         </div>
-          <p className="caption">{articleCaption1}</p>
-        <div className="row">
+        <p className="caption">{articleCaption1}</p>
+
+        <div className={`${row2ClassName}`}>
           <img src={`${articleImage3}`} alt={`${articleImageAltText3}`} title={`${articleId}`} className={`articleImageLeft ${articleImage3Class}`} />
           <img src={`${articleImage4}`} alt={`${articleImageAltText4}`} title={`${articleId}`}
           className={`articleImageRight ${articleImage4Class}`} />
         </div>
-          <p className="caption">{articleCaption2}</p>
-        <div className="row">
+        <p className={caption2ClassName}>{articleCaption2}</p>
+
+        <div className={`${row3ClassName}`}>
           <img src={`${articleImage5}`} alt={`${articleImageAltText5}`} title={`${articleId}`} className={`articleImageLeft ${articleImage5Class}`} />
           <img src={`${articleImage6}`} alt={`${articleImageAltText6}`} title={`${articleId}`}
           className={`articleImageRight ${articleImage6Class}`} />
         </div>
-          <p className="caption">{articleCaption3}</p>
+        <p className={caption3ClassName}>{articleCaption3}</p>
       </div>
 
       <div className={`credits ${articleId}`}>

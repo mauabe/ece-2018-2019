@@ -34,7 +34,7 @@
   border: 1px solid $black-40;
   background: $black-20;
   left: -140px;
-  top: 2em;
+  top: -20px;
   transition: all 1s ease;
   -webkit-filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.4));
   filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.4));
@@ -119,14 +119,14 @@
     grid-template-areas:
       "articleImageLeft articleImageRight";
     padding: 20px 20px;
-    margin: 0px ;
+    margin-top: 0.3em;
     position: relative;
     overflow: hidden;
   }
   .articleImageLeft >img {
     object-fit: cover;
     width: 100%;
-    max-height: 120%;
+    max-height: 100%;
     // display: block;
     overflow: hidden;
     transform: translate(-50%, -50%);
@@ -140,7 +140,7 @@
     object-fit: cover;
     object-position: 50% 50%;
     width: 100%;
-    max-height: 120%;
+    max-height: 100%;
     // display: block;
     overflow: hidden;
     transform: translate(-50%, -50%);
@@ -151,7 +151,6 @@
     filter: drop-shadow(4px 6px 6px rgba(0,0,0,0.4));
   }
 
-
     // .articleImage1{
     //   width: 100%;
     //   background-color: lightgreen;
@@ -160,30 +159,19 @@
     //   width: 100%;
     //   background-color: lightgreen;
     // }
-    // .articleImage3{
-    //   width: 100%;
-    //   background-color: lightgreen;
-    // }
-    // .articleImage4{
-    //   width: 100%;
-    //   background-color: lightgreen;
-    // }
-    // .articleImage5{
-    //   width: 100%;
-    //   background-color: lightgreen;
-    // }
-    // .articleImage6{
-    //   width: 100%;
-    //   background-color: lightgreen;
-    // }
 
 .caption{
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 1em;
-  padding: 1em;
-  // margin-bottom: 2em;
+  padding: 0.5em 1em ;
+  // margin-bottom: 1em;
 }
+.caption-none{
+  padding: 0em ;
+  display: none;
+}
+
 
 .credits{
   margin: 1em;
@@ -212,6 +200,7 @@
   text-align: justify;
   text-justify: inter-word;
   text-indent: 2em;
+  // top: -120px;
   .text-body {
     text-align:justify;
     text-justify: inter-word;
@@ -223,6 +212,9 @@
   p {
     margin-bottom:1.5em
   }
+  a{
+    color: $black-95;
+  }
 }
 
 img.none {
@@ -231,3 +223,4 @@ img.none {
 
 
 @import './students.scss';
+@import './table.scss';
