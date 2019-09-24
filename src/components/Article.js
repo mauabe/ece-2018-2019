@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import{withRouter} from 'react-router-dom';
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 
@@ -44,9 +44,9 @@ class Article extends Component{
   }
 
   render() {
-    const {pageView} = this.props;
+    // const {pageView} = this.props;
     const {
-      articleId, professorTitle, professorFirstName, professorName, professorLastName, articleHeadline, articleSubhead, articleImage1, articleImage2, articleImage3, articleImage4, articleImage5, articleImage6, articleImageProf, articleImageMain, articleImageAltText1, articleImageAltText2, articleImageAltText3, articleImageAltText4, articleImageAltText5,articleImageAltText6, articleImageAltTextProf, articleImageAltTextMain, articleCaption1, articleCaption2, articleCaption3, articleAuthor, articleImageCred, textCopy
+      articleId, professorName, articleImage1, articleImage2, articleImage3, articleImage4, articleImage5, articleImage6, articleImageProf, articleImageMain, articleImageAltText1, articleImageAltText2, articleImageAltText3, articleImageAltText4, articleImageAltText5,articleImageAltText6, articleImageAltTextProf, articleImageAltTextMain, articleCaption1, articleCaption2, articleCaption3, articleAuthor, articleImageCred
     } = this.props.story;
 
     //check if image exists, assing class name none it is...
@@ -58,9 +58,9 @@ class Article extends Component{
     let articleImage6Class = (articleImage6.length === 0)? 'none' : `${articleId}`;
     let articleImageProfClass = (articleImageProf.length === 0)? 'none' : `${articleId}`;
 
+    //check if images on row or caption exist, if not assing class 'none' to hide it
     let row2ClassName = (articleImage3.length === 0 && articleImage4.length  === 0)? 'none' : 'row';
     let row3ClassName = (articleImage5.length === 0 && articleImage5.length  === 0)? 'none' : 'row';
-
     let caption2ClassName = (articleCaption2.length === 0) ? "caption-none" : "caption";
     let caption3ClassName = (articleCaption3.length === 0) ? "caption-none" : "caption";
 

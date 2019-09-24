@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import { BrowserRouter, Router, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import '../scss/styles.scss';
-import history from '../history';
+// import history from '../history';
 
 import Header from './Header';
 import Features from './Features';

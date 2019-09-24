@@ -42,7 +42,6 @@ export const articlesFaculty = [
     professorName: 'Physical & Wave Electronics',
     articleDescription: 'Physical & Wave Electronics',
     articleAbrevTitle:'Physical & Wave Electronics',
-    articleDescription: 'Physical & Wave Electronics',
     articleHeadline1:'Distland Medal of Honor ',
     articleHeadline2:'DistMedal of Honor ',
     articleSubhead: 'Physical & Wave Electronics',

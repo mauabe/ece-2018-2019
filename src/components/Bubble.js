@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from '../assets/images/UCLA_footer_600.svg';
+// import logo from '../assets/images/UCLA_footer_600.svg';
 import {NavLink} from "react-router-dom";
 
 
@@ -28,7 +28,7 @@ class Bubble extends Component{
 
     return (
       <NavLink exact to={`/${pageView}/${articleId}`} activeClassName="active" className="bubble-link">
-        <div className={`bubble ${className}`} key={articleId} onClick={(e) => this.handleBubbleClick(articleId, e)} >
+        <div className={`bubble ${className}`} key={articleId} onClick={this.handleBubbleClick} >
           <div className="bubble-cropper">
             <img src={`${articleImageProf}`} alt={`${articleImageAltTextProf}`} title={`${articleId}`} className={`bubble-image ${className}`} />
           </div>

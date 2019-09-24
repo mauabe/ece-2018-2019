@@ -5,7 +5,7 @@
   background: $black-10;
   border-radius:3px;
   border-collapse: collapse;
-  padding:1em;
+  padding: 1em;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   animation: float 5s infinite;
   // margin: 1em;
@@ -16,9 +16,9 @@
 
 .table-layout{
   padding: 1em;
+  width: 100%;
   // margin: 1em;
   // max-width: 600px;
-  // width: 100%;
 }
 
 th.data {
@@ -34,7 +34,7 @@ th.data {
   // font-weight: 100;
   // paddi÷ng: 1em;
 }
-th.layout{
+th{
   font-size: 1em;
   text-align:top;
   vertical-align:middle;
@@ -72,10 +72,6 @@ tr.data{
   text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
 }
 
-tr:hover td {
-  background: transparent;
-  border-top: 0px;
-}
 tr.data:hover td {
   background:#4E5066;
   color:#FFFFFF;

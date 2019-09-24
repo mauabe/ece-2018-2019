@@ -2,7 +2,7 @@
   "name": "ece-2018-2019",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ucla-ece-report.com/2018-2019/",
+  "homepage": "http://ucla-ece-report.com/",
   "scripts": {
     "css-build": "node-sass --omit-source-map-url src/scss/styles.scss src/scss/styles.css",
     "css-watch": "npm run css-build -- --watch",

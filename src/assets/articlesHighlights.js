@@ -189,7 +189,6 @@ export const articlesHighlights = [
     professorName: 'Yahya Rahmat-Samii',
     articleDescription: 'Prof. Rahmat-Samii Awarded Ellis Island Medal of Honor',
     articleAbrevTitle:'Ellis Island Medal of Honor',
-    articleDescription: 'Distinguished Prof. Yahya Rahmat-Samii Awarded 2019 Ellis Island Medal of Honor',
     articleHeadline1:'Distinguished Prof. Yahya Rahmat-Samii Awarded 2019 Ellis Island Medal of Honor ',
     articleHeadline2:'Distinguished Prof. Yahya Rahmat-Samii Awarded 2019 Ellis Island Medal of Honor ',
     articleSubhead: 'Awarded 2019 Ellis Island Medal of Honor ',
