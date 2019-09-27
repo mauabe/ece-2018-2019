@@ -1,6 +1,12 @@
 @charset "utf-8";
 @import "./variables.scss";
 
+
+
+
+
+
+
 .table-fill {
   background: $black-10;
   border-radius:3px;
@@ -72,37 +78,37 @@ tr.data{
   text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
 }
 
-tr.data:hover td {
+tr:hover td {
   background:#4E5066;
   color:#FFFFFF;
   border-top: 1px solid #22262e;
 }
 
-tr.data:first-child {
+tr:first-child {
   border-top:none;
 }
 
-tr.data:last-child {
+tr:last-child {
   border-bottom:none;
 }
 
-tr.data:nth-child(odd) td {
+tr:nth-child(odd) td {
   background:#EBEBEB;
 }
 
-tr.data:nth-child(odd):hover td {
+tr:nth-child(odd):hover td {
   background:#4E5066;
 }
 
-tr.data:last-child td.data:first-child {
+tr:last-child td.data:first-child {
   border-bottom-left-radius:3px;
 }
 
-tr.data:last-child td.data:last-child {
+tr:last-child td.data:last-child {
   border-bottom-right-radius:3px;
 }
 
-td.data {
+td {
   background:#FFFFFF;
   padding:20px;
   text-align:left;

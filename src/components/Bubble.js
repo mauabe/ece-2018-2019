@@ -33,7 +33,7 @@ class Bubble extends Component{
             <img src={`${articleImageProf}`} alt={`${articleImageAltTextProf}`} title={`${articleId}`} className={`bubble-image ${className}`} />
           </div>
           <div>
-            <span className={`bubble-profTitle ${className}`}>{professorTitle} </span><nbsp/><span className={`bubble-profName ${className}`}>{professorName}</span>
+            <span className={`bubble-profTitle ${className}`}>{professorTitle} </span>&nbsp;<span className={`bubble-profName ${className}`}>{professorName}</span>
           </div>
           <div className={`bubble-headline ${className}`}>{articleAbrevTitle}</div>
         </div>

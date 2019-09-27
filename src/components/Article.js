@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import{withRouter} from 'react-router-dom';
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import Story from './Story';
 
 class Article extends Component{
 
@@ -12,13 +13,6 @@ class Article extends Component{
     }
 		// console.log('%c PROPS at ARTICLE COMPONENTS constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
   }
-
-//   <div className={`callout-left ${articleId}`}>
-//   <h4>{articleCallout1}</h4>
-// </div>
-// <div className={`callout-right ${articleId}`}>
-//   <h4>{articleCallout2}</h4>
-// </div>
 
   renderHeader = () => {
     const {
@@ -35,7 +29,7 @@ class Article extends Component{
   }
 
   renderTextCopy = () => {
-    const html = `${this.props.story.textCopy}`;
+    const html = (this.props.story.textCopy.length === 0) ? <Story /> : `${this.props.story.textCopy}`;
     return (
       <div className="text-copy">
       <div className={`text-body ${this.props.story.articleId}`}>{ ReactHtmlParser(html) }</div>
@@ -58,7 +52,7 @@ class Article extends Component{
     let articleImage6Class = (articleImage6.length === 0)? 'none' : `${articleId}`;
     let articleImageProfClass = (articleImageProf.length === 0)? 'none' : `${articleId}`;
 
-    //check if images on row or caption exist, if not assing class 'none' to hide it
+    //check if images or caption on row exist, if not assing class 'none' to hide it
     let row2ClassName = (articleImage3.length === 0 && articleImage4.length  === 0)? 'none' : 'row';
     let row3ClassName = (articleImage5.length === 0 && articleImage5.length  === 0)? 'none' : 'row';
     let caption2ClassName = (articleCaption2.length === 0) ? "caption-none" : "caption";

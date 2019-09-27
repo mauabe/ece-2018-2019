@@ -1,0 +1,107 @@
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(325px, 2fr)) ;
+  /* grid-template-columns: auto 1fr 2fr ; */
+  grid-template-rows: auto;
+  // grid-template-rows: repeat(2, 2fr);
+  grid-gap: 0.75em;
+  padding: 1em;
+  width: 100%;
+  /* justify-items: center; */
+  /* justify-items: start center end; */
+  /* align-items: start center end; */
+
+  .full {
+    grid-column: span 2;
+    justify-self: center;
+    align-content: start;
+    margin-bottom: 0.5em;
+
+
+    div.full.page-title{
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      font-size: 1.5em;
+      color: $black-20;
+      text-indent: 0;
+    }
+
+    div.full.page-subtitle{
+      font-family: 'Libre Caslon Text', serif;
+      font-weight: 400;
+      font-size: 1em;
+      text-align: justify;
+      text-justify: inter-word;
+      // text-indent: 0;
+    }
+  }
+  //grid-column: 1/-1;
+  //  grid-row: 1/3; //start at one, ends at 3 (two columns wide)
+  //  justify-self: center;
+
+
+  .half {
+    grid-column: span 1;
+    align-content: start;
+    justify-self: center;
+    //  grid-row: 1/2;
+    /* grid-column: 1/-1; */
+    //  grid-row: 1/3; //start at one, ends at 3 (two row deep)
+
+    .award{
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+    }
+
+    .name{
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      font-size: 1.3em;
+      margin-bottom: 0.5em;
+    }
+
+    .subcaption{
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      font-size: 1em;
+      margin-bottom: 1.5em;
+      text-indent: 0;
+    }
+  }
+
+
+  .zone {
+    cursor:pointer;
+    /* display:inline-block; */
+    text-align: center;
+    font-size:10em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+  }
+
+
+  div > img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
+    max-height: 456px;
+    transition: all 0.3s linear;
+
+    // width: 100%;
+    // display: block;
+    // padding: 0.5em;
+    // transform: translate(-50%, -50%);
+    // top: 50%;
+    // left: 50%;
+    // padding: 20px 20px;
+    img:hover {
+      -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+      -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+      -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+      box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    }
+  }
+}

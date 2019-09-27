@@ -32,7 +32,7 @@ export const articlesStudents = [
     articleCaption2: '',
     articleCaption3: '',
     articleAuthor: '',
-    textCopy: ' <table class="table-layout"> <tr><th>Outstanding Bachelor of Science Award</th><th>Christina Huang Memorial Prize</th>    </tr><tr><td>Ethan Liang</td><td>Yanhao Jiang</td></tr><tr><td><img src="/img/students_amandamarotto_ms_pwe.jpg"></img></td><td><img src="/img/students_amandamarotto_ms_pwe.jpg"></img></td></tr><tr><td class="caption">Undergraduate student Ethan Liang and with Chair Greg Pottie</td><td  class="caption">Undergraduate student Yanhao Jiang</td></tr></table>'
+    textCopy: '<div class="grid-layout"><div class="full page-title">This is the title professorFirstName s is the title is the title professo professorFirstName </div><div class="half award"><div>Outstanding Bachelor of Science Award</div><div class="name">Edivan Liang</div><img src="/img/student-break.jpg"></img><div class="subcaption">Undergraduate student Edivan Liang and widiv Chair Greg Pottie</div></div><div class="half"><div>Christina Huang Memorial Prize</div><div>Yanhao Jiang</div><div><img src="/img/students_hani_with_pamarti_pottie.jpg"></img></div><div class="caption">Undergraduate student Yanhao Jiang</div></div></div>',
   },
   {
     articleId: 'awardsgrad',
