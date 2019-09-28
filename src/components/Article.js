@@ -53,11 +53,16 @@ class Article extends Component{
     let articleImageProfClass = (articleImageProf.length === 0)? 'none' : `${articleId}`;
 
     //check if images or caption on row exist, if not assing class 'none' to hide it
+    let row1ClassName = (articleImage1.length === 0 && articleImage2.length  === 0)? 'none' : 'row';
     let row2ClassName = (articleImage3.length === 0 && articleImage4.length  === 0)? 'none' : 'row';
     let row3ClassName = (articleImage5.length === 0 && articleImage5.length  === 0)? 'none' : 'row';
+    let caption1ClassName = (articleCaption1.length === 0) ? "caption-none" : "caption";
     let caption2ClassName = (articleCaption2.length === 0) ? "caption-none" : "caption";
     let caption3ClassName = (articleCaption3.length === 0) ? "caption-none" : "caption";
-
+    let imgCreditClassName = (articleImageCred.length === 0) ? "none" : "image-credits";
+    let authorCreditClassName = (articleAuthor.length === 0) ? "none" : "author-credits";
+    let pictClassName = (row1ClassName === 'none') ? "none" : "pict-area";
+    let creditsClassName = (articleImageCred.length === 0 && articleAuthor.length === 0) ? "none" : "credits";
 
     return (
     <div className={`article ${articleId}`}>
@@ -76,13 +81,13 @@ class Article extends Component{
 
       {this.renderTextCopy()}
 
-      <div className={`picture-area ${articleId}`}>
-        <div className="row">
+      <div className={`picture-area ${articleId} ${pictClassName}`}>
+        <div className={row1ClassName}>
           <img src={`${articleImage1}`} alt={`${articleImageAltText1}`} title={`${articleId}`} className={`articleImageLeft ${articleImage1Class}`} />
           <img src={`${articleImage2}`} alt={`${articleImageAltText2}`} title={`${articleId}`}
           className={`articleImageRight ${articleImage2Class}`} />
         </div>
-        <p className="caption">{articleCaption1}</p>
+        <p className={caption1ClassName}>{articleCaption1}</p>
 
         <div className={`${row2ClassName}`}>
           <img src={`${articleImage3}`} alt={`${articleImageAltText3}`} title={`${articleId}`} className={`articleImageLeft ${articleImage3Class}`} />
@@ -99,9 +104,9 @@ class Article extends Component{
         <p className={caption3ClassName}>{articleCaption3}</p>
       </div>
 
-      <div className={`credits ${articleId}`}>
-        <p className="image-credits">{articleImageCred}</p>
-        <p className="author-credits">{articleAuthor}</p>
+      <div className={`${creditsClassName} ${articleId}`}>
+        <p className={imgCreditClassName}>{articleImageCred}</p>
+        <p className={authorCreditClassName}>{articleAuthor}</p>
       </div>
 
     </div>

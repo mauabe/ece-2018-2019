@@ -30,7 +30,7 @@ class Bubbles extends Component{
     const {articles, pageView} = this.props;
 
     const bubbleHtml = [];
-    articles.map(obj => {
+    articles.map(obj =>
       bubbleHtml.push(
         <Bubble
           key={obj.articleId}
@@ -46,7 +46,7 @@ class Bubbles extends Component{
           onClick={this.handleClick}
         />
       )
-     });
+    );
     return bubbleHtml;
   }
 
