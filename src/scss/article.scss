@@ -11,17 +11,18 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  // flex-wrap: wrap;
-  // flex: 0 0 100%;
   background:$grey-dark;
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 1em;
   margin-bottom: 2em;
   justify-content: flex-start;
+  // flex: 0 0 100%;
   // text-align: left;
-  // background-color:$grey-dark;
 
+  .article-content{
+    max-width: 1200px;
+  }
 }
 
 .prof-frame{
@@ -94,7 +95,7 @@
     .article-subhead{
       font-family: 'Oswald', sans-serif;
       font-weight: 500;
-      font-size: 2.5em;
+      font-size: 2.2em;
       color: $black-20;
     }
 }
@@ -200,7 +201,7 @@
   text-align: justify;
   text-justify: inter-word;
   text-indent: 2em;
-  // top: -120px;
+  margin-top: -40px;
   .text-body {
     text-align:justify;
     text-justify: inter-word;
@@ -221,6 +222,12 @@ img.none {
   display: none;
 }
 
+
+//additional CSS for spcific pages:
+img.darpa {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @import './students.scss';
 @import './table.scss';
