@@ -66,7 +66,7 @@ class Article extends Component{
 
     return (
     <div className={`article ${articleId}`}>
-
+      <div className='article-content'>
       <div className={`article-main-photo ${articleId}`}>
         <img src={`${articleImageMain}`}
         alt={`${articleImageAltTextMain}`}
@@ -109,6 +109,7 @@ class Article extends Component{
         <p className={authorCreditClassName}>{articleAuthor}</p>
       </div>
 
+      </div>
     </div>
     )
   }

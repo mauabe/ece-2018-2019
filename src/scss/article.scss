@@ -5,23 +5,23 @@
 // font-family: 'Libre Caslon Text', serif;  font-weight:  400,400i,700;font-size: .7em;
 // font-family: 'Lobster Two', cursive; font-weight: 700;font-size: .7em;
 
-
 .article{
-  position: relative;
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   flex-direction: column;
-  background:$grey-dark;
+  background: $greyish-brown;
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 1em;
   margin-bottom: 2em;
   justify-content: flex-start;
+  // min-width: 550px;
   // flex: 0 0 100%;
-  // text-align: left;
 
   .article-content{
-    max-width: 1200px;
+    text-align: center;
+    // max-width: 1200px;
   }
 }
 
@@ -202,6 +202,7 @@
   text-justify: inter-word;
   text-indent: 2em;
   margin-top: -40px;
+  color: $black-95;
   .text-body {
     text-align:justify;
     text-justify: inter-word;
@@ -222,11 +223,59 @@ img.none {
   display: none;
 }
 
-
 //additional CSS for spcific pages:
 img.darpa {
   margin-left: auto;
   margin-right: auto;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .article {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .prof-frame{
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    // content-justify: center;
+    left: 1px;
+  }
+
+  .article-professor-title{
+    font-size: 1.4em;
+  }
+  .article-professor-name{
+    font-size: 1.7em;
+  }
+  .article-headline{
+    font-size: 2em;
+  }
+  .article-subhead{
+    font-size: 1.4em;
+  }
+  .pictures-area{
+    padding: 20px;
+    margin: 20px;
+  }
+  .row{
+    grid-template-columns: 1fr;
+  }
+  .text-copy{
+    text-indent: 2em;
+    margin-top: 0px;
+  }
+  .article-header{
+    bottom-margin: 2em;
+  }
+  .article-subhead{
+    font-size: 2em;
+    margin-bottom: 2em;
+
+  }
 }
 
 @import './students.scss';
