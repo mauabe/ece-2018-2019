@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import{withRouter} from 'react-router-dom';
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 import Story from './Story';
+import Menubar from './Menubar';
 
 class Article extends Component{
 
@@ -36,6 +37,16 @@ class Article extends Component{
       </div>
     )
   }
+
+  // renderText = () => {
+  //   console.log('%c PROPS at ARTICLE renderText', 'color:black;background:magenta;padding:16px;border:1px dashed black', 'this is text, on console')
+  //   return(
+  //     <>
+  //   <span className="article-subhead"> hello </span>
+  //   <div><Menubar /></div>
+  //   </>
+  //   )
+  // }
 
   render() {
     // const {pageView} = this.props;

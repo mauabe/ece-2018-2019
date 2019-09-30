@@ -257,13 +257,6 @@ img.darpa {
   .article-subhead{
     font-size: 1.4em;
   }
-  .pictures-area{
-    padding: 20px;
-    margin: 20px;
-  }
-  .row{
-    grid-template-columns: 1fr;
-  }
   .text-copy{
     text-indent: 2em;
     margin-top: 0px;
@@ -274,10 +267,25 @@ img.darpa {
   .article-subhead{
     font-size: 2em;
     margin-bottom: 2em;
-
   }
+  .pictures-area{
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+  .row{
+    display: block;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .article {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
 }
 
 @import './students.scss';
 @import './table.scss';
 @import './grid.scss';
+@import './transfers.scss';

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 // import logo from '../assets/images/UCLA_footer_600.svg';
 import {NavLink} from "react-router-dom";
-
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 
 class Bubble extends Component{
 
@@ -10,14 +10,14 @@ class Bubble extends Component{
     this.state = {
     }
     this.handleBubbleClick = this.handleBubbleClick.bind(this);
-		console.log('%c PROPS at BUBBLE constructor', 'color:black;background:cyan;padding:6px;border:1px dashed black', this.props)
+		// console.log('%c PROPS at BUBBLE constructor', 'color:black;background:cyan;padding:6px;border:1px dashed black', this.props)
   }
 
   handleBubbleClick (e) {
     const{articleId} = this.props;
     // e.preventDefault();
     this.props.onClick(articleId, e);
-    console.log('%c PROPS at BUBBLE handleclick e', 'color:black;background:cyan;padding:6px;border:1px dashed black', e)
+    // console.log('%c PROPS at BUBBLE handleclick e', 'color:black;background:cyan;padding:6px;border:1px dashed black', e)
   }
 
 
@@ -35,7 +35,7 @@ class Bubble extends Component{
           <div>
             <span className={`bubble-profTitle ${className}`}>{professorTitle} </span>&nbsp;<span className={`bubble-profName ${className}`}>{professorName}</span>
           </div>
-          <div className={`bubble-headline ${className}`}>{articleAbrevTitle}</div>
+          <div className={`bubble-headline ${className}`}>{ ReactHtmlParser(articleAbrevTitle) }</div>
         </div>
        </NavLink>
     );

@@ -21,7 +21,6 @@ import loop from './loop.WAV';
 const songs = {
   blip: new Audio(blip),
   bassStab: new Audio(bassStab),
-  blip: new Audio(blip),
   bassStab: new Audio(bassStab),
   bongo: new Audio(bongo),
   clap: new Audio(clap),
@@ -42,4 +41,8 @@ const songs = {
   // snare: new Audio(snare)
 }
 
-export default songs;
+const songs1 = () => {
+  console.log( 'hello, dude!')
+}
+
+export default songs1;

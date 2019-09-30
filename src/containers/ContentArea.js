@@ -30,10 +30,9 @@ class ContentArea extends Component{
       articles: articlesFeatures,
       articleSelection: articlesFeatures[0].articleId,
     }
-    console.log('%c PROPS at CONTENT AREA constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
+    // console.log('%c PROPS at CONTENT AREA constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
 
   }
-
 
   componentDidMount(){
     //find from location if there is a article loded, if not use first article,
@@ -49,7 +48,6 @@ class ContentArea extends Component{
 
   }
 
-
   handlePageViewChange = e =>
   {
     // Update the selected subviewMode. This should only be utilized in mobile view.
@@ -58,9 +56,6 @@ class ContentArea extends Component{
     this.setState({pageView: newPageView})
     this.props.history.push(`/${newPageView}/${firstArticle}`)
   }
-
-
-
 
   render() {
     return (

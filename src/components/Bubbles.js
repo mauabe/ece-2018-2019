@@ -17,7 +17,7 @@ class Bubbles extends Component{
      }
      //articleId uses the same string value as articleSelection(which is also pathname).
      //defaults to first articleId at constructor
-		console.log('%c PROPS at BUBBLES constructor', 'color:black;background:pink;padding:6px;border:1px dashed red', this.props)
+		// console.log('%c PROPS at BUBBLES constructor', 'color:black;background:pink;padding:6px;border:1px dashed red', this.props)
   }
 
   // sends articleId of bubble menu selected
@@ -56,7 +56,7 @@ class Bubbles extends Component{
 
     // find story that matches articleSelection and pass it to Article
     const story = articles.find(obj => obj.articleId === articleSelection)
-    console.log('%c PROPS at BUBBLES render article', 'color:black;background:red;padding:16px;border:1px dashed black', story)
+    // console.log('%c PROPS at BUBBLES render article', 'color:black;background:red;padding:16px;border:1px dashed black', story)
 
     return(
       <Article

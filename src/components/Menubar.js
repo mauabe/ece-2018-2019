@@ -7,7 +7,7 @@ class Menubar extends Component{
   constructor(props) {
 		super(props);
 	  this.state = { }
-		console.log('%c PROPS at MENUBAR', 'color:black;background:dodgerblue;padding:6px;border:1px dashed black', data.topMenu);
+		// console.log('%c PROPS at MENUBAR', 'color:black;background:dodgerblue;padding:6px;border:1px dashed black', data.topMenu);
 	}
 
 
