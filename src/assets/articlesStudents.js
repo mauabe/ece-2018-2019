@@ -131,7 +131,7 @@ export const articlesStudents = [
     articleImageAltText6: '',
     articleImageMain: '/img/ieee-lab.jpg',
     articleImageAltTextMain: 'students ieee lab',
-    articleImageProf: '/img/Goodin..png',
+    articleImageProf: '/img/Goodin.jpg',
     articleImageAltTextProf: 'goodin',
     articleImageCred: '',
     articleCaption1: 'Student centers',

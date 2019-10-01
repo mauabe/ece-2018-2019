@@ -49,9 +49,6 @@
   }
 }
 
-// .bubble .sheihaiha{
-
-// }
 
 .bubble {
   display: flex;
@@ -99,10 +96,10 @@
       &:focus,
       &:hover,
       &:active {
-        width: 120px;
+        width: 110%;
         -webkit-filter: grayscale(80%);filter: grayscale(80%);
         -webkit-filter: brightness(70%);filter: brightness(70%);
-        // color: $submenublue;
+        // border: 2px solid $submenublue;
       }
     }
   }

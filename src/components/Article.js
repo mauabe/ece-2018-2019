@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import{withRouter} from 'react-router-dom';
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 import Story from './Story';
-import Menubar from './Menubar';
+// import Menubar from './Menubar';
 
 class Article extends Component{
 
@@ -64,15 +64,15 @@ class Article extends Component{
     let articleImageProfClass = (articleImageProf.length === 0)? 'none' : `${articleId}`;
 
     //check if images or caption on row exist, if not assing class 'none' to hide it
-    let row1ClassName = (articleImage1.length === 0 && articleImage2.length  === 0)? 'none' : 'row';
-    let row2ClassName = (articleImage3.length === 0 && articleImage4.length  === 0)? 'none' : 'row';
-    let row3ClassName = (articleImage5.length === 0 && articleImage5.length  === 0)? 'none' : 'row';
-    let caption1ClassName = (articleCaption1.length === 0) ? "caption-none" : "caption";
-    let caption2ClassName = (articleCaption2.length === 0) ? "caption-none" : "caption";
-    let caption3ClassName = (articleCaption3.length === 0) ? "caption-none" : "caption";
+    let row1ClassName = (articleImage1.length === 0 && articleImage2.length  === 0)? 'none' : 'row1';
+    let row2ClassName = (articleImage3.length === 0 && articleImage4.length  === 0)? 'none' : 'row2';
+    let row3ClassName = (articleImage5.length === 0 && articleImage5.length  === 0)? 'none' : 'row3';
+    let caption1ClassName = (articleCaption1.length === 0) ? "none" : "caption";
+    let caption2ClassName = (articleCaption2.length === 0) ? "none" : "caption";
+    let caption3ClassName = (articleCaption3.length === 0) ? "none" : "caption";
     let imgCreditClassName = (articleImageCred.length === 0) ? "none" : "image-credits";
     let authorCreditClassName = (articleAuthor.length === 0) ? "none" : "author-credits";
-    let pictClassName = (row1ClassName === 'none') ? "none" : "pict-area";
+    let pictClassName = (row1ClassName === "none") ? "none" : "pict-area";
     let creditsClassName = (articleImageCred.length === 0 && articleAuthor.length === 0) ? "none" : "credits";
 
     return (
@@ -92,25 +92,22 @@ class Article extends Component{
 
       {this.renderTextCopy()}
 
-      <div className={`picture-area ${articleId} ${pictClassName}`}>
+      <div className={`picture-area ${pictClassName} ${articleId} `}>
         <div className={row1ClassName}>
-          <img src={`${articleImage1}`} alt={`${articleImageAltText1}`} title={`${articleId}`} className={`articleImageLeft ${articleImage1Class}`} />
-          <img src={`${articleImage2}`} alt={`${articleImageAltText2}`} title={`${articleId}`}
-          className={`articleImageRight ${articleImage2Class}`} />
+          <img src={`${articleImage1}`} alt={articleImageAltText1} title={articleImageAltText1} className={`articleImageLeft ${articleImage1Class}`} />
+          <img src={`${articleImage2}`} alt={articleImageAltText2} title={articleImageAltText2} className={`articleImageRight ${articleImage2Class}`} />
         </div>
         <p className={caption1ClassName}>{articleCaption1}</p>
 
         <div className={`${row2ClassName}`}>
-          <img src={`${articleImage3}`} alt={`${articleImageAltText3}`} title={`${articleId}`} className={`articleImageLeft ${articleImage3Class}`} />
-          <img src={`${articleImage4}`} alt={`${articleImageAltText4}`} title={`${articleId}`}
-          className={`articleImageRight ${articleImage4Class}`} />
+          <img src={`${articleImage3}`} alt={articleImageAltText3} title={articleImageAltText3} className={`articleImageLeft ${articleImage3Class}`} />
+          <img src={`${articleImage4}`} alt={articleImageAltText4} title={articleImageAltText4} className={`articleImageRight ${articleImage4Class}`} />
         </div>
         <p className={caption2ClassName}>{articleCaption2}</p>
 
         <div className={`${row3ClassName}`}>
-          <img src={`${articleImage5}`} alt={`${articleImageAltText5}`} title={`${articleId}`} className={`articleImageLeft ${articleImage5Class}`} />
-          <img src={`${articleImage6}`} alt={`${articleImageAltText6}`} title={`${articleId}`}
-          className={`articleImageRight ${articleImage6Class}`} />
+          <img src={`${articleImage5}`} alt={articleImageAltText5} title={articleImageAltText5} className={`articleImageLeft ${articleImage5Class}`} />
+          <img src={`${articleImage6}`} alt={articleImageAltText6} title={articleImageAltText6} className={`articleImageRight ${articleImage6Class}`} />
         </div>
         <p className={caption3ClassName}>{articleCaption3}</p>
       </div>
