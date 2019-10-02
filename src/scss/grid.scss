@@ -140,6 +140,31 @@
       overflow: hidden;
     }
   }
+
+  .researchcenters {
+    display: grid;
+    // background: $greydark;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 4fr));
+    grid-gap: 2.2em;
+
+
+    .page-award.ctr{
+      max-width: 250px;
+      font-size: 1.1em;
+      // height: auto;
+
+      img.center{
+        background: white;
+        width: 250px;
+        height: 250px;
+        // min-height: 260px;
+        object-fit: cover;
+        object-position: 50% 50%;
+        // overflow: hidden;
+      }
+    }
+  }
   .page-caption.faculty-caption{
     margin-bottom: 2em;
   }
