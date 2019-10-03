@@ -68,6 +68,16 @@
     text-indent: 0;
     text-align:justify;
     text-justify: inter-word;
+
+    span.first-letter{
+      font-family: 'Lobster Two', cursive, "Times", "Times New Roman";
+      // initial-letter: 3 2;
+      font-size:2.5em;
+      float: left;
+      margin: -0.2em .3em 0 0;
+      color: $menublue;
+      text-indent: 0;
+    }
   }
 
   .page-caption{
@@ -168,6 +178,8 @@
   .page-caption.faculty-caption{
     margin-bottom: 2em;
   }
+
+
 
 }
 

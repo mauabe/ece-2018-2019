@@ -18,16 +18,17 @@
     text-indent: 0;
     text-align: left;
     z-index: 20;
-
-  ul > li{
+  }
+  li.page-text-transfers {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
-    font-size: 1em;
-    text-indent: 1em;
-    text-align: justify;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-indent: 0;
+    text-align:justify;
     text-justify: inter-word;
   }
-  }
+
   .spacer{
     margin: 1em 0;
   }
@@ -65,9 +66,7 @@
     margin-bottom: 0em;
     text-indent: 0;
     text-align: right;
-    // z-index:20;
   }
-
 }
 
 @media only screen and (max-width: 900px) {
