@@ -221,20 +221,22 @@ img.darpa {
 }
 
 .row2 img.articleImageLeft.jarrahi{
-  justify-self: end;
-}
-
-.row2 img.articleImageLeft.wang{
-  margin-right: -300px;
+  object-fit: contain;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-right: -50;
 }
 
 img.articleImageRight.madni{
   object-fit: contain;
-  // object-position: -10% 50%;
-  // height: 112%;
   max-width: 100%;
   justify-content: center;
-  // margin: 0 20px;
+}
+
+.row2 img.articleImageLeft.wang{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-right: -45%;
 }
 
 .ethanwang .row2{
@@ -243,9 +245,7 @@ img.articleImageRight.madni{
   margin-right: -250px;
 }
 img.articleImageLeft.ethanwang{
-  object-fit: contain;
-  // object-position: -10% 50%;
-  max-width: 160%;
+  max-width: 190%;
   justify-content: center;
   margin: 0 20px;
 }
@@ -256,6 +256,20 @@ img.articleImageLeft.ethanwang{
   margin-left: 25%;
 }
 img.articleImageLeft.pottie{
+  object-fit: contain;
+  object-position: -50% 50%;
+  // height: 112%;
+  max-width: 160%;
+  justify-content: center;
+  margin: 0 20px;
+}
+.staffsudd .row1{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-right: -25%;
+  margin-left: 25%;
+}
+img.articleImageLeft.staffsudd{
   object-fit: contain;
   object-position: -50% 50%;
   // height: 112%;
