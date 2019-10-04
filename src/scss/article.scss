@@ -243,11 +243,12 @@ img.articleImageRight.madni{
   display: grid;
   grid-template-columns: 1fr;
   margin-right: -250px;
-}
-img.articleImageLeft.ethanwang{
-  max-width: 190%;
-  justify-content: center;
-  margin: 0 20px;
+
+  img.articleImageLeft.ethanwang{
+    max-width: 190%;
+    justify-content: center;
+    margin: 0 20px;
+  }
 }
 .pottie .row1{
   display: grid;
@@ -342,3 +343,4 @@ img.articleImageLeft.staffsudd{
 @import './table.scss';
 @import './grid.scss';
 @import './transfers.scss';
+@import './academies.scss';

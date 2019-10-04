@@ -12,7 +12,6 @@
 
   .full {
     grid-column: span 2;
-    // justify-self: center;
     align-content: start;
     margin-bottom: 1em;
   }
@@ -197,3 +196,4 @@
 }
 
 @import './transfers.scss';
+@import './academies.scss';

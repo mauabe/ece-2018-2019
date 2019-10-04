@@ -313,7 +313,7 @@ export const articlesHighlights = [
     articleImageAltText6: '',
     articleImageMain: '/img/darpa1.jpg',
     articleImageAltTextMain: 'darpa',
-    articleImageProf: '/img/wang2.jpg',
+    articleImageProf: '/img/wang-pamarti-gupta.jpg',
     articleImageAltTextProf: 'professor Kang Wang',
     articleImageCred: '',
     articleAuthor: '',
