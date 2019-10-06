@@ -107,14 +107,14 @@ export const articlesFaculty = [
   },
   {
     articleId: 'academies',
-    professorTitle: 'ECE',
+    professorTitle: 'ECE ',
     professorFirstName: '',
     professorLastName: '',
     professorName: 'Faculty',
     articleAbrevTitle:'Members of National Academies',
     articleDescription: 'Members of National Academies',
-    articleHeadline:'Members of National Academies.',
-    articleSubhead: 'Members of National Academies',
+    articleHeadline:'Members of National Academies',
+    articleSubhead: '',
     articleCallout1: '',
     articleCallout2: '',
     articleImage1: '',
@@ -131,13 +131,13 @@ export const articlesFaculty = [
     articleImageAltText6: '',
     articleImageMain: '/img/samueli-zeroes-ones.jpg',
     articleImageAltTextMain: '',
-    articleImageProf: '/img/professor.jpg',
+    articleImageProf: '/img/nae.png',
     articleImageAltTextProf: '',
     articleImageCred: '',
     articleCaption1: '',
     articleCaption2: '',
     articleCaption3: '',
     articleAuthor: '',
-    textCopy: ' <div class="grid-layout academies"><div class="full"><h3 class="page-title">National Academy of Inventors 2019</h3><img class="cpu" src="/img/integratedcircuit.jpg" alt="National Academies"><div class="card-deck"><div class="card"><div class="card-top"><img class="card-pic" src="/img/PATEL-emeritus.jpg" alt="UCLA academy patel"><h4 class="acad-prof1">Distinguished</h4><h4 class="acad-prof2">Chancellor\'s Professor</h4><p class="acad-name">M.-C. Frank Chang</p></div><div class="card-bottom"><p>National Academy of ­Sciences, 1974<br>National Academy of Inventors, 2012<br>Made ­numerous contributions in gas lasers, nonlinear ­optics, ­molecular­spectroscopy, ­pollution detection and laser surgery</p></div></div><div class="card"><div class="card-top"><img class="card-pic" src="/img/PATEL-emeritus.jpg" alt="UCLA academy patel"><h4 class="acad-prof1">Distinguished</h4><h4 class="acad-prof2">Professor</h4><p class="acad-name">­Tatsuo Itoh</p></div><div class="card-bottom"><p>National Academy of Engineering, 2003<br>National Academy of Inventors, 2013<br>“for seminal contributions in advancing electromagnetic engineering for ­microwave and wireless components, ­circuits, and systems."</p></div></div></div></div></div><!-- END OF SECTION DESIGN ACADEMIES--></div>'
+    textCopy: ' <div class="grid-academies"><h3 class="page-title">National Academy of Inventors 2019</h3><img class="cpu" src="/img/cyber.jpg" alt="National Academies"><div class="card-deck"><div class="card"><div class="card-top"><!-- <img class="card-pic" src="/img/PATEL-emeritus.jpg" alt="UCLA academy patel" ></img> --><h5 class="acad-prof1">Distinguished</h5><h5 class="acad-prof2">Chancellor\'s Professor</h5><h5 class="acad-name">M.-C. Frank Chang</h5></div><ul class="card-bottom"><li>National Academy of ­Sciences, 1974</li><li>National Academy of Inventors, 2012</li><li>Made ­numerous contributions in gas lasers, nonlinear ­optics, ­molecular­spectroscopy, ­pollution detection and laser surgery</li><li></li></ul></div><div class="card"><div class="card-top"><!-- <img class="card-pic" src="/img/PATEL-emeritus.jpg" alt="UCLA academy patel" ></img> --><div class="acad-prof1">Distinguished</div><div class="acad-prof2">Chancellor\'s Professor</div><div class="acad-name">M.-C. Frank Chang</div></div><ul class="card-bottom"><li>National Academy of ­Sciences, 1974</li><li>National Academy of Inventors, 2012</li><li>Made ­numerous contributions in gas lasers, nonlinear ­optics, ­molecular­spectroscopy, ­pollution detection and laser surgery</li><li></li></ul></div></div></div><!-- END OF SECTION DESIGN ACADEMIES-->'
   },
 ];
