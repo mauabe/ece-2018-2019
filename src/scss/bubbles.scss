@@ -21,34 +21,29 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  // background: $menublue--50;
   align-items: flex-start;
   align-items: center;
   padding-bottom: 1em;
+  margin-right: 1em;
 }
 
 .bubble-link{
   display: flex;
   justify-content: center;
+
   .active{
-    img {
-      -webkit-filter: grayscale(0.2);
-      filter: grayscale(0.2);
-    }
-  }
-  &:active,
-  &:hover{
     color: $menublue--50;
-    img.animated {-webkit-animation: filter-animation 2s ;}
-    @-webkit-keyframes filter-animation {
-      0% {-webkit-filter: greyscale(0) saturate(100%);}
-      50% {-webkit-filter: greyscale(0) saturate(150%);}
-      100% {-webkit-filter: greyscale(40%) saturate(150%);}
+
+    .bubble-cropper{
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+      border: 2px solid $submenublue;
+      img{
+      filter: grayscale(0.2);
+      -webkit-filter: grayscale(0.2);
+      }
     }
-    // filter: blur(0.7px);
   }
 }
-
 
 .bubble {
   display: flex;
@@ -56,16 +51,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // align-items: flex-start;
-  color: $black-60;
+  color: $black-70;
   max-width: 160px;
-  // border-radius: 50%;
   &:focus,
-  &:hover,
-  &:active {
+  &:hover{
     color: $submenublue;
-    box-shadow: none;
+
+    .bubble-cropper{
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+      border: 2px solid $submenublue;
+    }
   }
+
+  // .bubble:hover .bubble-cropper {
+  //   color: $submenublue;
+  // }
+  // .bubble:hover .bubble-profTitle,
+  // .bubble:hover .bubble-headline,
+  // .bubble:hover .profName{
+  //  color: $submenublue;
+
 
   .bubble-cropper{
     position: relative;
@@ -77,12 +82,27 @@
     border: 2px solid $black-40;
     background: $black-20;
 
-    &:focus,
-    &:hover,
-    &:active {
-      border: 2px solid $submenublue;
-      filter: greysacle(65%);
-      color: $submenublue;
+    img.animated {-webkit-animation: filter-animation 2s ;}
+      @-webkit-keyframes filter-animation {
+        0% {-webkit-filter: greyscale(0) saturate(100%);}
+        50% {-webkit-filter: greyscale(0) saturate(150%);}
+        100% {-webkit-filter: greyscale(40%) saturate(150%);}
+    }
+
+    // &:focus,
+    // &:hover,
+    // &:active {
+    //   border: 2px solid $submenublue;
+    //   filter: greysacle(65%);
+    //   border: 2px solid $submenublue;
+
+      // color: $submenublue;
+    }
+
+    .bubble-cropper:active{
+        border: 2px solid $submenublue;
+        filter: greysacle(65%);
+        color: yellow;
     }
 
     .bubble-image{
@@ -96,13 +116,13 @@
       &:focus,
       &:hover,
       &:active {
-        width: 110%;
+        // width: 110%;
         -webkit-filter: grayscale(80%);filter: grayscale(80%);
         -webkit-filter: brightness(70%);filter: brightness(70%);
-        // border: 2px solid $submenublue;
       }
     }
-  }
+
+
 
   .bubble-profTitle{
     font-family: 'Lobster Two', cursive;

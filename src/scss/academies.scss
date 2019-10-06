@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-gap: 0;
+  grid-gap: 1em;
   // padding: 1em;
 
   h3.page-title{
@@ -23,16 +23,16 @@
     object-fit: cover;
     object-position: 50% 50%;
     overflow: hidden;
-    margin-bottom: 1.5em;
+    margin-bottom: 0.5em;
   }
   .card-deck{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 5fr));
     grid-template-rows: auto ;
     // grid-template-columns: repeat(auto-fill, minmax(250px, 3fr)) ;
     grid-gap: 1em;
     text-indent: 0;
-    justify-items: center;
+    justify-items: start;
   }
 
   .card {
@@ -41,73 +41,79 @@
     grid-template-columns: 1fr;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 230px;
-    height: 450px;
+    min-width: 270px;
+    min-height: 300px;
     border-radius: 4px;
     background: $cardtop;
     align-items: start;
     padding: 1em;
+  }
 
-    .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+
+    .card:hover > frame{
+      border: 2p solid $menublue;
     }
-
-    .card-top{
-      // width: 100%;
-      max-height: 50%;
-      border-radius: 4px 4px 0 0;
-      justify-items: center;
-      align-items: start;
-      grid-auto-rows: 300px;
+    .acad-prof2{
+      color:$menublue;
+    }
+    .acad-name{
+      color:$menublue;
     }
   }
 
-    .frame{
-      border: 2px solid $black-60;
-      border-radius: 3px;
-      margin-left: 30%;
-      margin-right: 30%;
-      max-width: 50%;
-      max-height: 150px;
-      overflow: hidden;
-      margin-bottom: 1em;
-      object-fit: cover;
-      object-position: 50% 50%;
+  .card-top{
+    // width: 100%;
+    max-height: 50%;
+    border-radius: 4px 4px 0 0;
+    justify-items: center;
+    align-items: start;
+    grid-auto-rows: 300px;
+  }
 
-      .frame:hover{
-        border: 2p solid $menublue;
-      }
+  .frame{
+    border: 2px solid $black-60;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
+    max-width: 40%;
+    max-height: 130px;
+    overflow: hidden;
+    margin-bottom: 1em;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+    // .frame:hover{
+    //   border: 2p solid $menublue;
+    // }
 
-      img.card-pic {
-        justify-self: center;
-        align-self: start;
-      }
+    img.card-pic {
+      justify-self: center;
+      align-self: start;
     }
-    .cardtop .acad-prof1{
-      font-family: 'Lobster Two', cursive;
-      font-size: 1em;
-      color: $borderblue;
-      font-size:1.3em;
-      text-indent: 0;
-      // margin-left: 2em
-      text-indent: 1em;
-    }
-    div.cardtop .acad-prof2{
-      font-family: 'Oswald', sans-serif;
-      font-weight: 500;
-      font-size: 1.1em;
-      color: $black-70;
-      // margin-left: 2em;
-      text-indent: 1em;
-    }
-    div.cardtop .acad-name{
-      font-family: 'Oswald', sans-serif;
-      font-weight: 700;
-      font-size: 1.4em;
-      color: $black-70;
-      // margin-left: 2em;
-      text-indent: 1em;
-    }
+
+  .acad-prof1{
+    font-family: 'Lobster Two', cursive;
+    font-size: 1em;
+    color: $menublue;
+    font-size: 1em;
+    text-align: center;
+  }
+  .acad-prof2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: $black-70;
+    text-align: center;
+  }
+  .acad-name{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: $black-70;
+    text-align: center;
+  }
 
   .card-bottom {
     display: grid;
@@ -119,13 +125,11 @@
       justify-self: end;
       border-radius: 0 0 4px 4px;
     }
-    ul.card-bottom > li{
+    li{
       font-family: 'Oswald', sans-serif;
       font-weight: 300  !important;
       text-align: left;
       font-size: 1em;
-      margin-left: 1em;
-      margin-right: 1em ;
       text-align: left;
       text-decoration: none;
     }

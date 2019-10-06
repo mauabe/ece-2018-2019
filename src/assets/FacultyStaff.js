@@ -17,33 +17,7 @@ export class FacultyStaff extends Component {
         "Staff":43
       };
 
-      this.playersYears =
-      [
-        {
-        "PlayerName": "AFFRUNTI, JOE",
-        "PGASeason": 2016
-        },
-        {
-        "PlayerName": "AIKEN, THOMAS",
-        "PGASeason": 2017
-        },
-        {
-        "PlayerName": "AIKEN, THOMAS",
-        "PGASeason": 2016
-        },
-        {
-        "PlayerName": "AKIYOSHI, SHOTA",
-        "PGASeason": 2018
-        },
-        {
-        "PlayerName": "ALBERTSON, ANDERS",
-        "PGASeason": 2019
-        },
-        {
-        "PlayerName": "ALDRIDGE, TYLER",
-        "PGASeason": 2016
-        }
-      ]
+ 
   }
 render () {
   return(

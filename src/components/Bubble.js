@@ -16,6 +16,7 @@ class Bubble extends Component{
   handleBubbleClick (e) {
     const{articleId} = this.props;
     // e.preventDefault();
+    // this.setState({selected: articleId });
     this.props.onClick(articleId, e);
     // console.log('%c PROPS at BUBBLE handleclick e', 'color:black;background:cyan;padding:6px;border:1px dashed black', e)
   }
