@@ -292,7 +292,7 @@ export const articlesHighlights = [
     professorTitle: 'Professors',
     professorFirstName: '',
     professorLastName: '',
-    professorName: 'Wang, Pamarti, Gupta',
+    professorName: 'Kang Wang, S. Pamarti, P. Gupta',
     articleAbrevTitle:'DARPA funds SSDC Project',
     articleDescription: 'ECE Professors Receive $5.9M Grant from DARPA for SSDC Project',
     articleHeadline:'ECE Professors Receive $5.9M Grant from DARPA for SSDC Project',
