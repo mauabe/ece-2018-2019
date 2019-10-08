@@ -11,6 +11,7 @@ $menublue--50: rgba(17, 60, 111, .5);
 $menublue--70: rgba(17, 60, 111, .7);
 $submenublue: #4976AB;
 $borderblue: rgba(116, 141, 181, 1.00);
+$borderblue--50: rgba(116, 141, 181, 0.5);
 $bubbles: #b7ad55;
 $brown: #757763;
 $greyish-brown:  #878972;
@@ -36,7 +37,7 @@ $beige-lighter: rgba(239, 240, 235, .5);
 
 // Update Bulma's global variables
 $family-sans-serif: "Oswald", sans-serif;
-$grey-light: $beige-light;
+// $grey-light: $beige-light;
 //Update some of Bulma's component variables
 $blgrey-lighter--50:	rgba(	219, 219, 219, .5);
 $blgrey-lighter--80:	rgba(	219, 219, 219, .8);

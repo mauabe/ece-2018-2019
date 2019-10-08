@@ -217,12 +217,23 @@ img.none {
 
 //additional CSS for spcific pages:
 
-.row2 img.articleImageLeft.jarrahi{
-  object-fit: contain;
+.jarrahi .row2{
+  // display: grid;
+  // grid-template-columns: 1fr;
+  margin-right: -25%;
+  margin-left: 25%;
+  padding-right: -250%;
+}
+
+
+.row2 > img.articleImageLeft.jarrahi {
+  object-fit: cover;
   display: grid;
   grid-template-columns: 1fr;
-  margin-right: -50;
-}
+  // justify-content: center;
+  // width:
+  }
+
 
 img.articleImageRight.madni{
   object-fit: contain;

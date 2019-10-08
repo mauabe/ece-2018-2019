@@ -164,7 +164,7 @@ export const articlesStudents = [
     articleImageAltText4: 'Madni Medal',
     articleImageAltText5: '',
     articleImageAltText6: '',
-    articleImageMain: '/img/ucla-at-night.png',
+    articleImageMain: '/img/ucla-at-night.jpg',
     articleImageAltTextMain: 'ucla',
     articleImageProf: '/img/madni3.jpg',
     articleImageAltTextProf: 'Assad Madni medal',

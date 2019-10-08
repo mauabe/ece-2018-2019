@@ -29,10 +29,28 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 4fr));
     grid-template-rows: auto ;
-    // grid-template-columns: repeat(auto-fill, minmax(250px, 3fr)) ;
     grid-gap: 1.5em;
     text-indent: 0;
     justify-items: start;
+  }
+  .card-deck.partner{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
+    grid-template-rows: auto ;
+    grid-gap: 1.5em;
+    text-indent: 0;
+    justify-items: center;
+    align-items: center;
+  }
+  .card-deck.dept{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
+    // grid-template-rows: auto ;
+    grid-gap: 1.5em;
+    text-indent: 0;
+    // justify-items: start;
+    // align-items: center;
   }
 
   .card {
@@ -59,6 +77,32 @@
     align-items: start;
     padding: 1em;
   }
+  .card-partner {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    min-width: 300px;
+    min-height: 150px;
+    border-radius: 4px;
+    background: $greylight;
+    align-items: center;
+    justify-items: center;
+    padding: 1em;
+  }
+  .card-partner.dept{
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    min-width: 300px;
+    min-height: 150px;
+    border-radius: 4px;
+    background: $beige-lighter;
+    // align-items: center;
+    // justify-items: center;
+    padding: 1em;
+  }
 
   .card-alumni:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
@@ -73,6 +117,11 @@
       color:$menublue;
     }
   }
+
+  .card-partner:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  }
+
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 
@@ -103,11 +152,26 @@
     object-fit: contain;
     object-position: 50% 50%;
   }
+  .frame-logo{
+    // position: relative;
+    border: 0;
+    // border-radius: 5px;
+    margin:1%;
+    // margin-right: 1%;
+    // max-width: 80%;
+    // height: 0;
+    // padding-bottom: 50%;
+    // background-color: white;
+    // overflow: hidden;
+    // margin-bottom: 1em;
+    object-fit: constain;
+    object-position: 50% 50%;
+  }
 
   img.card-pic{
     // justify-self: center;
     // align-self: start;
-    object-fit: cover;
+    object-fit: contain;
     object-position: 50% 50%;
     overflow: hidden;
     }
