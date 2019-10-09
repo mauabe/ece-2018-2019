@@ -217,22 +217,20 @@ img.none {
 
 //additional CSS for spcific pages:
 
-.jarrahi .row2{
+.row2 > .jarrahi{
+  position: relative;
+  overflow: visible;
+
+  img.articleImageLeft.jarrahi  {
   // display: grid;
   // grid-template-columns: 1fr;
-  margin-right: -25%;
+  margin-right: -150px;
   margin-left: 25%;
-  padding-right: -250%;
+  padding-right: -150px;
+  }
 }
 
 
-.row2 > img.articleImageLeft.jarrahi {
-  object-fit: cover;
-  display: grid;
-  grid-template-columns: 1fr;
-  // justify-content: center;
-  // width:
-  }
 
 
 img.articleImageRight.madni{
@@ -241,17 +239,7 @@ img.articleImageRight.madni{
   justify-content: center;
 }
 
-// .ethanwang .row3{
-//   display: grid;
-//   grid-template-columns: 1fr;
-//   margin-right: -250px;
 
-//   img.articleImageLeft.ethanwang{
-//     max-width: 190%;
-//     justify-content: center;
-//     margin: 0 20px;
-//   }
-// }
 .pottie .row1{
   display: grid;
   grid-template-columns: 1fr;
@@ -355,3 +343,4 @@ img.articleImageLeft.staffsudd{
 @import './transfers.scss';
 @import './academies.scss';
 @import './department.scss';
+@import './table.scss';

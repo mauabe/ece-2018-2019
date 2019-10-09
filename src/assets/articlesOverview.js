@@ -70,7 +70,7 @@ export const articlesOverview = [
     articleCaption1: '',
     articleCaption2: '',
     articleCaption3: '',
-    textCopy: '<div><span><p>Faculty and Staff</p></span><ul><li>Ladder Faculty: 48</li><li>      Courtesy Appointments": 14</li><li>      "Emeriti Faculty": 14</li><li>      "Adjunct Faculty":	4</li><li>      "Lecturers": 9</li><li>      "Post-Doc":	40</li><li>      "Staff":43</li><li></div>  <div> <span><p>Recognitionsf</p></span><ul><li>   Society Fellows 	49</li><li>     NAE Members 	18</li><li>    NAS Members	3</li><li>    National Academy of Inventors 	8</li><li>    Marconi Prize 	1</li><li>    </div>'
+    textCopy: '  <div class="grid-academies"><h3 class="page-title">The Department</h3><img class="cpu" src="/img/technology.jpg" alt="Alumni Board"><div class="card-deck partner"><div class="card-partner"><div><table><thead><tr><th>Faculty and Staff</th></tr></thead><tbody><tr><td>Ladder Faculty</td><td>48</td></tr><tr><td>Courtesy Appointments</td><td>14</td></tr><tr><td>Emeriti Faculty</td><td>14</td></tr><tr><td>Adjunct Faculty</td><td>4</td></tr><tr><td>Lecturers</td><td>9</td></tr><tr><td>Post-Doc</td><td>40</td></tr><tr><td>Staff</td><td>43</td></tr></tbody></table></div></div><div class="card-deck partner"><div class="card-partner"><div><table><thead><tr><th>Recognitions</th></tr></thead><tbody><tr><td>Society Fellows</td><td>49</td></tr><tr><td>NAE Members</td><td>18</td></tr><tr><td>NAS Members</td><td>18</td></tr><tr><td>National Academy of Inventors</td><td>10</td></tr><tr><td>Marconi Prize</td><td>1</td></tr></tbody></table></div></div></div></div></div>'
 
   },
 ];

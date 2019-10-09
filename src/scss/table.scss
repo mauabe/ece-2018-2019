@@ -2,162 +2,78 @@
 @import "./variables.scss";
 
 
+// sets
+$gl-ms         : "screen and (max-width: 23.5em)"; // up to 360px
+$gl-xs         : "screen and (max-width: 35.5em)"; // up to 568px
+$gl-sm         : "screen and (max-width: 48em)";   // max 768px
+$gl-md         : "screen and (max-width: 64em)";   // max 1024px
+$gl-lg         : "screen and (max-width: 80em)";   // max 1280px
 
-
-
-
-
-.table-fill {
-  background: $black-10;
-  border-radius:3px;
+// table style
+table 			      {
+  border-spacing: 1;
   border-collapse: collapse;
-  padding: 1em;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  animation: float 5s infinite;
-  // margin: 1em;
-  // height: 320px;
-  // max-width: 600px;
-  // width: 100%;
+  background:white;
+  border-radius:6px;
+  overflow:hidden;
+  max-width:600px;
+  width:100%;
+  margin:0 auto;
+  position:relative;
+
+  *               { position:relative }
+  td,th           { padding-left:8px}
+  thead tr        {
+    height:60px;
+    background:#8da4d6;
+    font-size:16px;
+  }
+  tbody tr        { height:48px; border-bottom:1px solid #E3F1D5 ;
+    &:last-child  { border:0; }
+  }
+ 	td,th 					{ text-align:left;
+		&.l 					{ text-align:right }
+		&.c 					{ text-align:center }
+		&.r 					{ text-align:center }
+	}
 }
 
-.table-layout{
-  padding: 1em;
-  width: 100%;
-  // margin: 1em;
-  // max-width: 600px;
-}
-
-th.data {
-  color:#D5DDE5;;
-  background: $menublue--50;
-  border-bottom:4px solid #9ea7af;
-  border-right: 1px solid #343a45;
-  font-size: 1em;
-  text-align:left;
-  vertical-align:middle;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  width: 50%;
-  // font-weight: 100;
-  // paddi÷ng: 1em;
-}
-th{
-  font-size: 1em;
-  text-align:top;
-  vertical-align:middle;
-  width: 50%;
-  background: transparent;
-  // font-weight: 100;
-}
-
-th:first-child {
-  border: 0px;
-}
-th.data:first-child {
-  border-top-left-radius:3px;
-}
-
-th.data:last-child {
-  border-top-right-radius:3px;
-  border-right:none;
-}
-th.data:last-child {
-  border-top-right-radius:3px;
-  border-right:none;
-}
-
-tr {
-  border: 0px;
-  background-color: transparent;
-}
-tr.data{
-  border-top: 1px solid #C1C3D1;
-  border-bottom: 1px solid #C1C3D1;
-  color:#666B85;
-  font-size:16px;
-  font-weight:normal;
-  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
-}
-
-tr:hover td {
-  background:#4E5066;
-  color:#FFFFFF;
-  border-top: 1px solid #22262e;
-}
-
-tr:first-child {
-  border-top:none;
-}
-
-tr:last-child {
-  border-bottom:none;
-}
-
-tr:nth-child(odd) td {
-  background:#EBEBEB;
-}
-
-tr:nth-child(odd):hover td {
-  background:#4E5066;
-}
-
-tr:last-child td.data:first-child {
-  border-bottom-left-radius:3px;
-}
-
-tr:last-child td.data:last-child {
-  border-bottom-right-radius:3px;
-}
-
-td {
-  background:#FFFFFF;
-  padding:20px;
-  text-align:left;
-  vertical-align:middle;
-  // font-weight:300;
-  // font-size:18px;
-  // text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-  // border-right: 1px solid #C1C3D1;
-}
-
-td > img {
-  object-fit: cover;
-  object-position: 50% 50%;
-  overflow: hidden;
-  max-height: 250px;
-  // width: 100%;
-  // display: block;
-  // padding: 0.5em;
-  // transform: translate(-50%, -50%);
-  // top: 50%;
-  // left: 50%;
-  // padding: 20px 20px;
-}
-
-td:last-child {
-  border-right: 0px;
-}
-
-th.text-left {
-  text-align: left;
-}
-
-th.text-center {
-  text-align: center;
-}
-
-td.text-right {
-  text-align: right;
+@media #{$gl-xs}              {
+  table					              { display:block;
+	  > *,tr,td,th              { display:block }
+    thead                     { display:none }
+    tbody tr                  { height:auto; padding:8px 0;
+      td                      { padding-left:45%; margin-bottom:12px;
+        &:last-child          { margin-bottom:0 }
+        &:before              {
+          position:absolute;
+          font-weight:700;
+          width:40%;
+          left:10px;
+          top:0
+        }
+        &:nth-child(1):before { content:"Faculty & Staff";}
+        // &:nth-child(2):before { content:"Stock";}
+        // &:nth-child(3):before { content:"Cap";}
+        // &:nth-child(4):before { content:"Inch";}
+        // &:nth-child(5):before { content:"Box Type";}
+      }
+    }
+  }
 }
 
 
-td.caption{
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  font-size: 1em;
-  // padding: 0.5em 1em ;
-  // margin-bottom: 1em;
-}
-td.caption-none{
-  padding: 0em ;
-  display: none;
+
+
+// body style
+
+// body               {
+//   background:#9BC86A;
+//   font:400 14px 'Calibri','Arial';
+//   padding:20px;
+// }
+
+blockquote {
+  color:white;
+  text-align:center;
 }

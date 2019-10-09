@@ -45,6 +45,7 @@
   .card-deck.dept{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     // grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
     // grid-template-rows: auto ;
     grid-gap: 1.5em;
@@ -90,20 +91,31 @@
     justify-items: center;
     padding: 1em;
   }
-  .card-partner.dept{
+  .card-dept{
     display: grid;
     grid-template-columns: 1fr;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     transition: 0.3s;
-    min-width: 300px;
-    min-height: 150px;
+    min-width: 270px;
     border-radius: 4px;
     background: $beige-lighter;
-    // align-items: center;
-    // justify-items: center;
+    align-items: start;
     padding: 1em;
+    min-height:520px;
   }
-
+  .card-partner{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    background: $borderblue2;
+    min-width: 300px;
+    // min-height: 300px;
+    height: auto;
+  }
+  .card-partner.dept:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  }
+  .card-partner:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  }
   .card-alumni:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 
@@ -116,6 +128,15 @@
     .acad-name{
       color:$menublue;
     }
+  }
+  .card-dept:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    // .acad-prof2{
+    //   color:$submenublue;
+    // }
+    // .acad-name{
+    //   color:$menublue;
+    // }
   }
 
   .card-partner:hover {
@@ -164,7 +185,7 @@
     // background-color: white;
     // overflow: hidden;
     // margin-bottom: 1em;
-    object-fit: constain;
+    object-fit: contain;
     object-position: 50% 50%;
   }
 
@@ -174,13 +195,12 @@
     object-fit: contain;
     object-position: 50% 50%;
     overflow: hidden;
-    }
+  }
 
   .acad-prof1{
     font-family: 'Lobster Two', cursive;
     font-size: 1em;
     color: $menublue;
-    font-size: 1em;
     text-align: center;
   }
   .acad-prof2{
@@ -209,10 +229,67 @@
     text-decoration: none;
   }
 
+
+  .card-deck.dept{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition: 0.3s;
+    // min-width: 300px;
+    // min-height: 300px;
+    border-radius: 4px;
+    align-items: start;
+    padding: 1em;
+
+    .card-partner{
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+      background: $borderblue2;
+      min-width: 300px;
+      // min-height: 300px;
+      height: auto;
+    }
+    .card-partner:hover{
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+
+    }
+
+    div.acad-prof1.dept{
+      font-size: 1.5em;
+      margin: 0.5em;
+      padding-bottom: 0.5em;
+    }
+  }
+
+  .acad-prof1-credt{
+    font-family: 'Lobster Two', cursive;
+    font-size: 2em;
+    color: $menublue;
+    text-align: start;
+  }
+  .acad-prof1-cred2{
+    font-family: 'Lobster Two', cursive;
+    font-size: 1em;
+    color: $menublue;
+    text-align: start;
+  }
+  // .acad-prof3-cred{
+  .acad-prof1-cred3 {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #515151;
+    text-align: start;
+    margin-bottom: 0.4em;
+  }
+  .card-partner.imb{
+    max-height: 450px;
+  }
+  .frame-logo.ibm img{
+    max-height: 300px;
+  }
   p > span {
     font-weight: bold;
   }
-  @media only screen and (max-width: 1338px) {
+  @media only screen and (max-width: 1000px) {
     // .frame {
     //   max-height: auto;
     // }
