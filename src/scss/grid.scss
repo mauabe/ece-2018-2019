@@ -172,16 +172,24 @@
     .page-award.ctr{
       max-width: 250px;
       font-size: 1.1em;
-      // height: auto;
+      margin-bottom: 0.5em;
 
       img.center{
         background: white;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+        transition: all 0.3s linear;
         width: 250px;
         height: 250px;
-        // min-height: 260px;
+        border-radius: 4px;
         object-fit: cover;
         object-position: 50% 50%;
+        margin-bottom: 0.5em;
         // overflow: hidden;
+      }
+    }
+    .page-award.ctr:hover{
+      img.center{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
       }
     }
   }
