@@ -68,7 +68,6 @@
   }
   .card-alumni {
     display: grid;
-    grid-template-columns: 1fr;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     transition: 0.3s;
     min-width: 270px;
@@ -77,14 +76,14 @@
     background: $cardbottom;
     align-items: start;
     padding: 1em;
+    width: 100%;
   }
   .card-partner {
     display: grid;
-    grid-template-columns: 1fr;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     transition: 0.3s;
     min-width: 300px;
-    min-height: 150px;
+    min-height: 180px;
     border-radius: 4px;
     background: $greylight;
     align-items: center;
@@ -92,25 +91,23 @@
     padding: 1em;
   }
 
-
   .card-dept{
     display: grid;
-    grid-template-columns: 1fr;
+    // grid-template-columns: 1fr;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     transition: 0.3s;
-    min-width: 270px;
     border-radius: 4px;
     background: $beige-lighter;
     align-items: start;
     padding: 1em;
-    min-height:520px;
+    min-width: 270px;
+    min-height:550px;
+    // height: 100%;
+    width: 100%;
   }
 
-
-
-
   .card-deck.dept.credits{
-    grid-template-columns: 1fr 1fr;
+    // grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     justify-items: center;
     grid-template-areas:
@@ -120,39 +117,64 @@
   .card-dept.editors{
     grid-column: 1;
     min-height:300px;
+    width: 100%;
   }
   .card-dept.designer {
     grid-column: 2;
     min-height:300px;
-  }
-  .card-dept.writers{
-    grid-column: 1 / span 2;
-    grid-area: writers;
-    min-height:300px;
     width: 100%;
   }
-  .twocol{
-    padding: 1em;
+  .card-dept.writers{
+    grid-area: writers;
+    width: 100%;
+    grid-column: 1 / span 2;
+    // min-height:300px;
+  }
+  .twocolumns{
+    padding: 2em;
     -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
     -moz-column-count: 2; /* Old Firefox */
     column-count: 2;
   }
 
+  .card-partner.ibm{
+    height: 300px;
+    width: 350px;
+    align-items: start;
+    justify-self: center;
+    text-indent: 0;
+  }
 
-    // .card-dept.editors:hover,
-    // .card-dept.designer:hover,
-    // .card-dept.writers:hover {
-    //   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-    // }
-  // }
+  .frame-ibm{
+    border: 2px solid $black-60;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 70%;
+    background-color: white;
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
 
-  // .card-partner{
-  //   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-  //   background: $borderblue2;
-  //   min-width: 300px;
-  //   // min-height: 300px;
-  //   height: auto;
-  // }
+  img.card-pic-ibm{
+    // width: 100%;
+    // height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
+  }
+
+  .acad-name{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: $black-70;
+    text-align: center;
+    margin-bottom: 0.2em;
+  }
+
   .card-partner.dept:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
   }
@@ -193,7 +215,6 @@
       color:$menublue;
     }
   }
-
 
   .frame{
     border: 2px solid $black-60;
@@ -245,6 +266,14 @@
     text-align: center;
     margin-bottom: 0.7em;
   }
+  .acad-name.credits{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: $black-70;
+    text-align: center;
+    margin-bottom: 0.7em;
+  }
 
 
   li{
@@ -279,11 +308,10 @@
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 
     }
-
-    div.acad-prof1.dept{
-      font-size: 1.5em;
+    acad-prof1.dept{
+      font-size: 2em;
       margin: 0.5em;
-      padding-bottom: 0.5em;
+      padding-bottom: 0.8em;
     }
     .acad-prof1-cred1{
       font-family: 'Lobster Two', cursive;
@@ -297,7 +325,6 @@
       color: $menublue;
       text-align: start;
     }
-    // .acad-prof3-cred{
     span.acad-prof1-cred3 {
       font-family: "Libre Caslon Text", serif;
       font-weight: 700;
@@ -308,14 +335,7 @@
     }
   }
 
-  // acad-prof1 dept
 
-  .card-partner.imb{
-    max-height: 450px;
-  }
-  .frame-logo.ibm img{
-    max-height: 300px;
-  }
   p > span {
     font-weight: bold;
   }
