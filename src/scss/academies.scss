@@ -54,11 +54,12 @@
     // align-items: center;
   }
 
+
   .card {
     display: grid;
     grid-template-columns: 1fr;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
     min-width: 270px;
     min-height: 300px;
     border-radius: 4px;
@@ -69,7 +70,7 @@
   .card-alumni {
     display: grid;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     min-width: 270px;
     min-height: 300px;
     border-radius: 4px;
@@ -77,11 +78,12 @@
     align-items: start;
     padding: 1em;
     width: 100%;
+    transition: all 0.3s ease-in-out;
   }
   .card-partner {
     display: grid;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
     min-width: 300px;
     min-height: 180px;
     border-radius: 4px;
@@ -95,7 +97,7 @@
     display: grid;
     // grid-template-columns: 1fr;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
     border-radius: 4px;
     background: $beige-lighter;
     align-items: start;
@@ -107,8 +109,6 @@
   }
 
   .card-deck.dept.credits{
-
-    // grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     justify-items: center;
     grid-template-areas:
@@ -146,7 +146,6 @@
     justify-self: center;
     text-indent: 0;
   }
-
   .frame-ibm{
     border: 2px solid $black-60;
     border-radius: 5px;
@@ -159,7 +158,6 @@
     overflow: hidden;
     margin-bottom: 0;
   }
-
   img.card-pic-ibm{
     object-fit: cover;
     object-position: 50% 50%;
@@ -175,37 +173,13 @@
     margin-bottom: 0.2em;
   }
 
-  .card-partner.dept:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-  }
-  .card-partner:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-  }
-  .card-alumni:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-
-    .card-alumni:hover > frame{
-      border: 2p solid $menublue;
-    }
-    .acad-prof2{
-      color:$menublue;
-    }
-    .acad-name{
-      color:$menublue;
-    }
-  }
+  .card:hover,
+  .card-alumni:hover,
+  .card-partner:hover,
   .card-dept:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-  }
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 
-  .card-partner:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-  }
-
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-
-    .card:hover > frame{
+    .frame{
       border: 2p solid $menublue;
     }
     .acad-prof2{
@@ -215,6 +189,8 @@
       color:$menublue;
     }
   }
+
+
 
   .frame{
     border: 2px solid $black-60;
@@ -298,45 +274,42 @@
     border-radius: 4px;
     align-items: start;
     padding: 1em;
-
-    .card-partner{
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-      background: $borderblue2;
-      min-width: 300px;
-      // min-height: 300px;
-      height: auto;
-    }
-    .card-partner:hover{
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-
-    }
-    .acad-section{
-      font-family: 'Lobster Two', cursive;
-      font-size: 2em;
-      color: $menublue;
-      text-align: center;
-    }
-    .acad-prof1-cred2{
-      font-family: 'Lobster Two', cursive;
-      font-size: 1.2em;
-      color: $menublue;
-      text-align: start;
-    }
-    span.acad-prof1-cred3 {
-      font-family: "Libre Caslon Text", serif;
-      font-weight: 700;
-      font-size: 1.1m;
-      color: $black_80;
-      // text-align: start;
-      margin-bottom: 0.4em;
-    }
+  }
+  .card-partner{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    background: $borderblue2;
+    min-width: 300px;
+    // min-height: 300px;
+    height: auto;
+  }
+  .card-partner:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+  }
+  .acad-section{
+    font-family: 'Lobster Two', cursive;
+    font-size: 2em;
+    color: $menublue;
+    text-align: center;
+  }
+  .acad-prof1-cred2{
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.2em;
+    color: $menublue;
+    text-align: start;
+  }
+  span.acad-prof1-cred3 {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-size: 1.1m;
+    color: $black_80;
+    // text-align: start;
+    margin-bottom: 0.4em;
   }
   .acad-prof1.dept{
     font-size: 2em;
     margin: 0.5em;
     padding-bottom: 0.8em;
   }
-
   .card-pic.book{
     border-radius: 0;
     object-fit: contain;
@@ -345,7 +318,7 @@
   }
   .frame-book{
     border: 2px solid $black-60;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     border-radius: 0px;
     margin-left: 30%;
     margin-right: 30%;
@@ -358,15 +331,16 @@
     object-fit: contain;
     object-position: 50% 50%;
   }
-
+  .card-alumni.book{
+      transition: all 0.3s ease;
+  }
   .frame-prof-book{
     display: none;
     opacity: 0;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     border: 2px solid $menublue;
     border-radius: 50%;
-    transition: all 0.5s ease;
-    max-width: 30%;
     object-fit: cover;
     object-position: 50% 50%;
     overflow: hidden;
@@ -377,23 +351,18 @@
     height: 100px;
   }
 
-  .card-alumni.book{
-    transition: all 0.5s ease;
-
-  }
-
   .card-alumni.book:hover{
     position: relative;
-    transition: all 0.5s ease;
-
+    // transition: all 0.3s ease;
     .frame-book{
       border: 2px solid $menublue;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     }
     .frame-prof-book{
       position: absolute;
       display: block;
       opacity: 1;
-      transition: all 0.3s ease;
+      transition: all 0.3s ease-in-out;
     }
   }
 

@@ -56,7 +56,7 @@
   .articleImageMain{
     position: relative;
     width: 100%;
-    height: 240px;
+    height: 200px;
     object-fit: cover;
     overflow: hidden;
     object-position: 50% 50%;
@@ -113,7 +113,7 @@
   text-align: justify;
   text-justify: inter-word;
   text-indent: 2em;
-  margin-top: -40px;
+  margin-top: -80px;
   color: $black-95;
   .text-body {
     text-align:justify;
@@ -343,4 +343,4 @@ img.articleImageLeft.staffsudd{
 @import './transfers.scss';
 @import './academies.scss';
 @import './department.scss';
-@import './table.scss';
+@import './tables.scss';
