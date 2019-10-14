@@ -15,9 +15,8 @@ const Footer = () => {
             title="UCLA footer"
           />
         </div>
-        <div></div>
+
         <div className="footer-school">
-          {/* <div className="school-name">Samueli School of Engineering</div> */}
           <div className="school-name">Electrical and Computer Engineering Department </div>
         </div>
       </div>

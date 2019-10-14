@@ -15,14 +15,12 @@ class Header extends Component{
 	  this.state = {
       pageView: '',
       logoPick: ece,
-      // menuSelected: false,
     }
 		// console.log('%c PROPS at HEADER constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
   }
 
   componentDidMount(){
     const components = this.props.location.pathname.split('/');
-    // console.log('HEADER comppnents: ', components)
     if (components.indexOf('features') !== -1) this.setState ({pageView: 'features'});
     if (components.indexOf('highlights') !== -1) this.setState ({pageView: 'highlights'});
     if (components.indexOf('students') !== -1) this.setState ({pageView: 'students'});

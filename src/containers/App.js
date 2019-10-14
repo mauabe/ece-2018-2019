@@ -21,6 +21,7 @@ class App extends Component {
 	  this.state = { }
   // console.log('%c PROPS at APP CONSTRUCTOR', 'color:white;background:black;padding:6px;border:3px dashed yellow', this.props)
   }
+  
   // renderPlaceholder = () => {
   //   return (<div>
   //     <div style={{ "padding": "50px", "textAlign": "center" }}>
@@ -57,11 +58,4 @@ class App extends Component {
   }
 }
 
-  // renderPlaceholder = () => {
-  //   return (<div>
-  //     <div style={{ "padding": "50px", "textAlign": "center" }}>
-  //       <h3>THIS FEATURE IS NOT YET AVAILABLE</h3>
-  //     </div>
-  //   </div>);
-  // }
 export default App;

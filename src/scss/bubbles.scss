@@ -70,7 +70,7 @@ a.bubble-link:hover  {
   align-items: center;
   color: $black-70;
   max-width: 160px;
-  transition: all .3s ease-in;
+  transition: all .5s ease-in;
 
   // &:focus,
   // &:hover{
@@ -130,7 +130,7 @@ a.bubble-link:hover  {
       height: 100%;
       width: 100%;
       object-fit: cover;
-      transition: all .3s ease-in-out;
+      transition: all .5s ease-in-out;
 
       // &:focus,
       // &:hover,
@@ -163,7 +163,6 @@ a.bubble-link:hover  {
     font-size: .9em;
     flex-wrap: wrap;
    }
-  // .bubble-description{}
 }
 
 

@@ -21,6 +21,7 @@ th {
   text-indent: 0;
   align-self: center;
   padding: 1.5em;
+  padding-left: 1em;
   text-align: left;
   vertical-align: center;
 }
@@ -31,6 +32,7 @@ td {
   color: $black-60;
   align-self: center;
   padding: 0.7em;
+  padding-left: 1em;
   border-bottom: 1px solid $black-40;
   // text-align: left;
   // vertical-align: center;
@@ -39,29 +41,32 @@ td {
 }
 thead {
   align-items: center;
-  background-color:MediumSlateBlue;
+  background-color: MediumSlateBlue;
   text-align: left;
   // justify-items: center;
   // margin-bottom: 1em;
 }
-tfoot td{
+tfoot tr{
   align-items: center;
   background-color:MediumSlateBlue;
-  color:MediumSlateBlue;
-  text-align: left;
   height: 1em;
+  // color:MediumSlateBlue;
+  // text-align: left;
 }
 th {
   // background-color: #4CAF50;
   // color: white;
 }
-tr:hover {
+tbody tr:hover {
   background-color: $beige-light;
 }
 // tr:nth-child(even) {
 //   background-color: $black-20;
 // }
 
+tr.t-total{
+  background-color: Gainsboro;
+}
 .card-deck.overview{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 4fr));
@@ -74,17 +79,22 @@ tr:hover {
 
 .card-overview {
 
-  overflow-x: auto; //responsive
-
+  overflow-y: auto; //responsive
+  // overflow-x: auto; //responsive
+  background-color: none;
   border-radius: 5px;
   align-items: start;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
   transition: all 0.3s;
   // padding: 1em;
   min-width: 300px;
-  min-height:550px;
+  height: auto;
   width: 100%;
 }
 // .card-overview tr{
 //     padding-top: O.3em;
 //   }
+
+.spacer{
+  margin: 1em 0;
+}

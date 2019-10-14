@@ -2,18 +2,26 @@
 @import "./variables.scss";
 
 
+
 .site-footer{
   display: flex;
   flex-shrink: 0;
   background-color:$blgrey-lighter--80;
   height: 45px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
 
   .footer-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex: 1 1 100%;
-    // align-content: space-between;
+    align-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 
     .footer-logo{
       display: flex;

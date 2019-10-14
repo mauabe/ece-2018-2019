@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "ucla-ece-annual-report-2018-2019",
+  "start_url": "http://ucla-ece-report/2018/2019",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
