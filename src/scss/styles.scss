@@ -12,7 +12,6 @@ body {
   // display: flex;
   // flex: 0 0 100%; /* Let it fill the entire space horizontally */  font-family: "Oswald", sans-serif;
   width: 100%;
-  height: 100%;
   background: $menublue--50 url('../assets/images/noise.png');
   // color: $black-80;
 }
@@ -62,7 +61,8 @@ p > span{
 }
 
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 button,
 input,
@@ -92,11 +92,11 @@ a{
   flex-direction: column;
   align-items: stretch;
 
-  .container-what-container{
-    flex: 0 0 100%; /* Let it fill the entire space horizontally */
-    align-content: stretch;
-    max-width: 100%;
-    }
+  // .container-what-container{
+  //   flex: 0 0 100%; /* Let it fill the entire space horizontally */
+  //   align-content: stretch;
+  //   max-width: 100%;
+  //   }
 }
 
 @import "./article.scss";
@@ -106,3 +106,4 @@ a{
 @import "./menu.scss";
 @import "./mixins.scss";
 @import "./patterns.scss";
+@import "./home.scss";

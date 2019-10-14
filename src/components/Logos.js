@@ -17,7 +17,7 @@ class Logos extends Component {
 
     return (
       <div className="logos">
-        <Link to={'/features/pottie'} className={`logos-${this.props.pageView}`}>
+        <Link to={'/'} className={`logos-${this.props.pageView}`}>
           <img
             className="logo-image"
             src={logoPick}

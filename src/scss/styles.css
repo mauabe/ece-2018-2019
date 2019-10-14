@@ -726,9 +726,6 @@ table th {
 .is-relative {
   position: relative !important; }
 
-
-
-
 .section {
   padding: 3rem 1.5rem; }
   @media screen and (min-width: 1024px) {
@@ -794,7 +791,7 @@ code {
     background-position-y: -120px;
     margin-bottom: 7px;
     transition: translateY(120px); }
-    .section-menu .menu-box-large .orange-circle {
+    .section-menu .menu-box-large {
       position: relative;
       width: 110px;
       height: 110px;
@@ -804,12 +801,12 @@ code {
       margin-top: 15px;
       margin-left: auto;
       margin-right: auto; }
-      .section-menu .menu-box-large .orange-circle .navbar-icon {
+      .section-menu .menu-box-large {
         position: relative;
         width: 70px;
         height: 70px;
         margin: auto; }
-  .section-menu .menu-box-small {
+  .section-menu {
     position: absolute;
     display: flex;
     width: 175px;

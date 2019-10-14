@@ -9,10 +9,10 @@ import * as serviceWorker from './serviceWorker';
 import {Router} from 'react-router';
 import {createBrowserHistory} from "history";
 
-const history = createBrowserHistory();
+const history = createBrowserHistory({basename: '/2018-2019'});
 
 ReactDOM.render(
-  <Router history={history}  basename={'/2018-2019'}>
+  <Router history={history} >
     <App />
   </Router>,
   document.getElementById('root')

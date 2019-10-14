@@ -145,6 +145,8 @@
     align-items: start;
     justify-self: center;
     text-indent: 0;
+    background: $cardtop;
+
   }
   .frame-ibm{
     border: 2px solid $black-60;
@@ -178,7 +180,7 @@
   .card-partner:hover,
   .card-dept:hover {
      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-
+     background: $cardbottom2;
     .frame{
       border: 2p solid $menublue;
     }
@@ -291,7 +293,7 @@
     color: $menublue;
     text-align: center;
   }
-  .acad-prof1-cred2{
+  span.acad-prof1-cred2{
     font-family: 'Lobster Two', cursive;
     font-size: 1.2em;
     color: $menublue;

@@ -13,7 +13,7 @@ class Bubble extends Component{
 		// console.log('%c PROPS at BUBBLE constructor', 'color:black;background:cyan;padding:6px;border:1px dashed black', this.props)
   }
 
-  handleBubbleClick (e) {
+  handleBubbleClick = (e) => {
     const{articleId} = this.props;
     // e.preventDefault();
     // this.setState({selected: articleId });
