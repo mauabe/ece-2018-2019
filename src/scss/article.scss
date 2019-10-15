@@ -211,6 +211,15 @@ img.none {
   display: none;
 }
 
+span.link a{
+  color: $menublue;
+  transition: all .3s ease-in-out;
+
+  span.link a:hover{
+    color: $beige-lighter;
+  }
+}
+
 .none {
   display: none;
 }
@@ -229,7 +238,6 @@ img.none {
   padding-right: -150px;
   }
 }
-
 
 
 
