@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // import MenuBoxLarge from './MenuBoxLarge';
 import { withRouter } from "react-router-dom";
 
-import * as data from '../assets/data'
+// import * as data from '../assets/data'
 import eceblue from '../assets/images/ECE_logo_blue.svg';
 import ecewhite from '../assets/images/ECE_logo_white.svg';
 
@@ -31,8 +31,8 @@ class Home extends Component{
       <div className="home-container">
         <Link to="/features/pottie" >
         <div className="logo-container">
-          <img className="frontpagelogoblue" src={eceblue} />
-          <img className="frontpagelogowhite" src={ecewhite} />
+          <img className="frontpagelogoblue" src={eceblue} alt="ECE logo blue"/>
+          <img className="frontpagelogowhite" src={ecewhite} alt="ECE Logo white"/>
         </div>
         </Link>
       </div>

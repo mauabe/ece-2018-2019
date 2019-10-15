@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Router, Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import '../scss/styles.scss';
 // import history from '../history';
 
@@ -21,7 +21,7 @@ class App extends Component {
 	  this.state = { }
   // console.log('%c PROPS at APP CONSTRUCTOR', 'color:white;background:black;padding:6px;border:3px dashed yellow', this.props)
   }
-  
+
   // renderPlaceholder = () => {
   //   return (<div>
   //     <div style={{ "padding": "50px", "textAlign": "center" }}>

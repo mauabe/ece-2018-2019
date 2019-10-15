@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import{withRouter} from 'react-router-dom';
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+// import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 
 class Story extends Component{
 

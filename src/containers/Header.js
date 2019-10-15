@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { withRouter } from "react-router-dom";
 import Menubar from '../components/Menubar';
 import Logos from '../components/Logos';
-import history from '../history';
+// import history from '../history';
 
 import ece from '../assets/images/ECE_white.svg';
 import uclaece from '../assets/images/ECE.svg';
@@ -37,10 +37,7 @@ class Header extends Component{
   }
 
   render() {
-
-
     return (
-
       <div className="header">
         <Logos
           logoPick={this.state.logoPick}

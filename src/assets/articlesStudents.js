@@ -145,7 +145,7 @@ export const articlesStudents = [
     professorTitle: 'Adj. Professor',
     professorFirstName: 'Assad',
     professorLastName: 'Madni',
-    professorName: 'Asad M. Madni',
+    professorName: 'Asad Madni',
     articleAbrevTitle:' <span>Receives Top Award<br> from IEEE-HKN</span>',
     articleDescription: 'IEEE-HKN Honor Society Names Top Award for Adj. Professor Asad M. Madni',
     articleHeadline:'IEEE-HKN Honor Society Names Top Award for Adj. Professor Asad M. Madni',
