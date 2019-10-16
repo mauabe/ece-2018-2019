@@ -225,21 +225,25 @@ span.link a{
 }
 
 //additional CSS for spcific pages:
-
-.row2 > .jarrahi{
-  position: relative;
-  overflow: visible;
-
-  img.articleImageLeft.jarrahi  {
-  // display: grid;
-  // grid-template-columns: 1fr;
-  margin-right: -150px;
-  margin-left: 25%;
-  padding-right: -150px;
-  }
+.full-width {
+	left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
 }
 
+.row2 .jarrahi{
+  display: grid;
+  grid-column-end: span 2;
 
+  img.articleImageLeft.jarrahi  {
+    left: 0;
+    top: 0;
+  }
+}
 
 img.articleImageRight.madni{
   object-fit: contain;
@@ -257,7 +261,6 @@ img.articleImageRight.madni{
 img.articleImageLeft.pottie{
   object-fit: contain;
   object-position: -50% 50%;
-  // height: 112%;
   max-width: 160%;
   justify-content: center;
   margin: 0 20px;
@@ -326,7 +329,7 @@ img.articleImageLeft.staffsudd{
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
   .picture-area.pict-area{
     display: block;
     margin: auto;
@@ -338,7 +341,7 @@ img.articleImageLeft.staffsudd{
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 650px) {
   .article {
     margin-left: 4%;
     margin-right: 4%;
@@ -346,7 +349,6 @@ img.articleImageLeft.staffsudd{
 }
 
 @import './students.scss';
-@import './table.scss';
 @import './grid.scss';
 @import './transfers.scss';
 @import './academies.scss';

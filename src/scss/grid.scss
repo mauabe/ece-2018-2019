@@ -181,7 +181,7 @@
       img.center{
         background: white;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-        transition: all 0.3s linear;
+        transition: all 0.3s ease-in-out;
         width: 250px;
         height: 250px;
         border-radius: 4px;
@@ -200,9 +200,6 @@
   .page-caption.faculty-caption{
     margin-bottom: 2em;
   }
-
-
-
 }
 
 @media only screen and (max-width: 900px) {

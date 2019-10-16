@@ -3,69 +3,69 @@
 
 table{
   border-collapse: collapse;
-  // align-items: center;
-  // padding: 2em;
-  // background-color: white;
-  // vertical-align: center !important;
   width: 100%;
   min-width: 350px;
-  // min-height: 200px;
-
+  background-color: white;
+  vertical-align: center;
+  // text-align: left;
 }
 
-th {
+thead {
+  // align-items: center;
+  // text-align: left;
+}
+tr th {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 1.2em;
-  color: $black-70;
+  font-size: 1.4em;
   text-indent: 0;
-  align-self: center;
   padding: 1.5em;
-  padding-left: 1em;
-  text-align: left;
-  vertical-align: center;
+  background-color: $menublue--70;
+  color:$white;
+
 }
 td {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
-  font-size: 1.1em;
-  color: $black-60;
+  font-size: 1.2em;
+  color: $black-70;
   align-self: center;
   padding: 0.7em;
-  padding-left: 1em;
+  padding-left: 1.5em;
   border-bottom: 1px solid $black-40;
-  // text-align: left;
-  // vertical-align: center;
-  // margin-bottom: 1em;
-  // text-indent: 0;
-}
-thead {
-  align-items: center;
-  background-color: MediumSlateBlue;
-  text-align: left;
-  // justify-items: center;
-  // margin-bottom: 1em;
 }
 tfoot tr{
   align-items: center;
-  background-color:MediumSlateBlue;
+  background-color:$menublue--50;
   height: 1em;
-  // color:MediumSlateBlue;
-  // text-align: left;
 }
-th {
-  // background-color: #4CAF50;
-  // color: white;
-}
+
 tbody tr:hover {
-  background-color: $beige-light;
+  background-color: $cardbottom ;
 }
 // tr:nth-child(even) {
 //   background-color: $black-20;
 // }
 
 tr.t-total{
-  background-color: Gainsboro;
+  background-color: $Gainsboro;
+  &:hover{
+    background-color: lighten($Gainsboro, 10) ;
+  }
+}
+tr.sub-head{
+  background-color: $LightSteelBlue;
+
+  &:hover{
+    background-color: darken($LightSteelBlue, 10) ;
+  }
+}
+tr.sub-total{
+  background-color: darken($Gainsboro, 8);
+
+  &:hover{
+    background-color: lighten($Gainsboro, 5) ;
+  }
 }
 .card-deck.overview{
   display: grid;
