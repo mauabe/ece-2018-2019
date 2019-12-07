@@ -12,8 +12,6 @@ import Faculty from './Faculty';
 import Overview from './Overview';
 import Alumni from './Alumni';
 import Footer from '../components/Footer';
-// import ContentArea from './ContentArea';
-
 
 class App extends Component {
   constructor(props) {

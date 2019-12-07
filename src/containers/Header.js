@@ -33,7 +33,6 @@ class Header extends Component{
     } else {
       this.setState({logoPick: ece});
     }
-
   }
 
   render() {

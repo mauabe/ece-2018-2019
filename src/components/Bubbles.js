@@ -7,7 +7,7 @@ import Article from '../components/Article';
 //TODO: PROPTYPES
 //PROPS:
 //pageView: location of first menu layer
-//articles: all articles for this page, feeds the second lauyer menu, the bubbles
+//articles: all articles for this page, feeds the second layer menu, the bubbles
 
 class Bubbles extends Component{
   constructor(props) {

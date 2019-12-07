@@ -169,7 +169,7 @@ export const articlesFeatures = [
   },
 
   {
-    articleId: 'staffsudd',
+    articleId: 'stafsudd',
     professorTitle: 'Professor',
     professorFirstName: 'Oscar',
     professorLastName: 'Austin',
@@ -186,7 +186,7 @@ export const articlesFeatures = [
     articleImage4:'',
     articleImage5:'',
     articleImage6:'',
-    articleImageAltText1: 'Oscar Staffsudd',
+    articleImageAltText1: 'Oscar Stafsudd',
     articleImageAltText2: '',
     articleImageAltText3: '',
     articleImageAltText4: '',

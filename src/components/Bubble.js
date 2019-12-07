@@ -5,23 +5,16 @@ import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from
 
 class Bubble extends Component{
 
-  constructor(props) {
-		super(props);
-    this.state = {
-    }
+  constructor() {
+		super();
     this.handleBubbleClick = this.handleBubbleClick.bind(this);
-		// console.log('%c PROPS at BUBBLE constructor', 'color:black;background:cyan;padding:6px;border:1px dashed black', this.props)
   }
 
   handleBubbleClick = (e) => {
     const{articleId} = this.props;
     // e.preventDefault();
-    // this.setState({selected: articleId });
     this.props.onClick(articleId, e);
-    // console.log('%c PROPS at BUBBLE handleclick e', 'color:black;background:cyan;padding:6px;border:1px dashed black', e)
   }
-
-
 
   render() {
     const {pageView, articleId, articleSelection, articleAbrevTitle, articleImageProf, articleImageAltTextProf, professorTitle, professorName} = this.props ;

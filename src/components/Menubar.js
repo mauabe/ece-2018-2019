@@ -9,10 +9,9 @@ class Menubar extends Component{
 		super(props);
 	  this.state = {}
 		// console.log('%c PROPS at MENUBAR constructor ', 'color:black;background:dodgerblue;padding:6px;border:1px dashed black', this.props);
-		// console.log('%c PROPS.pageView at MENUBAR constructor ', 'color:black;background:dodgerblue;padding:6px;border:1px dashed black', this.props.pageView);
 	}
 
-	componentDidMount(){
+	// componentDidMount(){
 		// const components = this.props.history.location.pathname.split('/');
     // console.log(' MENUBARcomppnents: ', components)
     // if (components.indexOf('features') !== -1) this.setState ({pageView: 'features'});
@@ -21,15 +20,13 @@ class Menubar extends Component{
     // if (components.indexOf('faculty') !== -1) this.setState ({pageView: 'faculty'});
     // if (components.indexOf('overview') !== -1) this.setState ({pageView: 'overview'});
 		// if (components.indexOf('alumni') !== -1) this.setState ({pageView: 'alumni'});
-	}
+	// }
 
 	navigationHtml = () => {
 		let html = [];
 		data.topMenu.forEach((value, index) =>{
 			const path = value[0];
 			const label = value[1];
-			// let locationClassName = (this.props.pageView === value[0]) ? 'active' : '';
-// console.log('locationClassName weird', locationClassName)
 
 			html.push(
 				<NavLink to={"/" + path}  activeClassName="active" key={index}>
@@ -44,7 +41,6 @@ class Menubar extends Component{
 
 		render() {
 				// console.log('%c this.PROPS at MENUBAR render ', 'color:black;background:dodgerblue;padding:6px;border:1px dashed black', this.props);
-				// console.log('%c PROPS.state at MENUBAR render ', 'color:black;background:dodgerblue;padding:6px;border:1px dashed black', this.state);
     return (
       <div className="menu-container">
 				<ul className="top-menu">

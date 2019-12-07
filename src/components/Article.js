@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import{withRouter} from 'react-router-dom';
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 import Story from './Story';
-// import Menubar from './Menubar';
 
 class Article extends Component{
 
@@ -38,23 +37,13 @@ class Article extends Component{
     )
   }
 
-  // renderText = () => {
-  //   console.log('%c PROPS at ARTICLE renderText', 'color:black;background:magenta;padding:16px;border:1px dashed black', 'this is text, on console')
-  //   return(
-  //     <>
-  //   <span className="article-subhead"> hello </span>
-  //   <div><Menubar /></div>
-  //   </>
-  //   )
-  // }
 
   render() {
-    // const {pageView} = this.props;
     const {
       articleId, professorName, articleImage1, articleImage2, articleImage3, articleImage4, articleImage5, articleImage6, articleImageProf, articleImageMain, articleImageAltText1, articleImageAltText2, articleImageAltText3, articleImageAltText4, articleImageAltText5,articleImageAltText6, articleImageAltTextProf, articleImageAltTextMain, articleCaption1, articleCaption2, articleCaption3, articleAuthor, articleImageCred
     } = this.props.story;
 
-    //check if image exists, assing class name none it is...
+    //check if image exists, assign class name none it is...
     let articleImage1Class = (articleImage1.length === 0)? 'none' : `${articleId}`;
     let articleImage2Class = (articleImage2.length === 0)? 'none' : `${articleId}`;
     let articleImage3Class = (articleImage3.length === 0)? 'none' : `${articleId}`;
@@ -63,7 +52,7 @@ class Article extends Component{
     let articleImage6Class = (articleImage6.length === 0)? 'none' : `${articleId}`;
     let articleImageProfClass = (articleImageProf.length === 0)? 'none' : `${articleId}`;
 
-    //check if images or caption on row exist, if not assing class 'none' to hide it
+    //check if images or caption on row exist, if not assign class 'none' to hide it
     let row1ClassName = (articleImage1.length === 0 && articleImage2.length  === 0)? 'none' : 'row1';
     let row2ClassName = (articleImage3.length === 0 && articleImage4.length  === 0)? 'none' : 'row2';
     let row3ClassName = (articleImage5.length === 0 && articleImage5.length  === 0)? 'none' : 'row3';

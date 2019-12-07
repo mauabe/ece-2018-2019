@@ -31,7 +31,6 @@ class ContentArea extends Component{
       articleSelection: articlesFeatures[0].articleId,
     }
     // console.log('%c PROPS at CONTENT AREA constructor', 'color:black;background:magenta;padding:6px;border:1px dashed black', this.props)
-
   }
 
   componentDidMount(){
@@ -45,7 +44,6 @@ class ContentArea extends Component{
     if (components.indexOf('alumni') !== -1) {this.setState.pageView = 'alumni'};
 
      if(components[2] === undefined){this.setState({articleSelection: articlesFaculty[0].articleId}, () =>{console.log('updating state inside ComponentDidMount...')})}
-
   }
 
   handlePageViewChange = e =>
@@ -60,7 +58,6 @@ class ContentArea extends Component{
   render() {
     return (
       <div className="content-area">
-
       </div>
     )
   }

@@ -5,7 +5,7 @@ import {articlesFaculty} from '../assets/articlesFaculty.js';
 class Faculty extends Component{
   constructor(props) {
 		super(props);
-    this.state = {}
+    // this.state = {}
   }
 
   render() {
