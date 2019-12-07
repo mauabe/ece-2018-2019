@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
 import { NavLink } from "react-router-dom";
 import { withRouter } from "react-router-dom";
-// import MenuBoxLarge from './MenuBoxLarge';
 import * as data from '../assets/data'
 
 class Menubar extends Component{
-  constructor(props) {
-		super(props);
-	  this.state = {}
+  // constructor(props) {
+	// 	super(props);
+	//   this.state = {}
 		// console.log('%c PROPS at MENUBAR constructor ', 'color:black;background:dodgerblue;padding:6px;border:1px dashed black', this.props);
-	}
+	// }
 
 	// componentDidMount(){
 		// const components = this.props.history.location.pathname.split('/');

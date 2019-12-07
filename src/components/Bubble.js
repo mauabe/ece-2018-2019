@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 // import logo from '../assets/images/UCLA_footer_600.svg';
 import {NavLink} from "react-router-dom";
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser'; //, { processNodes, convertNodeToElement, htmlparser2 }
 
 class Bubble extends Component{
 

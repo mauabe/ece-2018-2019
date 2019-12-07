@@ -3,10 +3,10 @@ import Bubbles from '../components/Bubbles';
 import {articlesFaculty} from '../assets/articlesFaculty.js';
 
 class Faculty extends Component{
-  constructor(props) {
-		super(props);
-    // this.state = {}
-  }
+  // constructor(props) {
+	// 	super(props);
+  //   // this.state = {}
+  // }
 
   render() {
     return (
