@@ -224,12 +224,8 @@
   }
 
   img.card-pic.aab-chair {
+    object-fit: cover;
     display: block;
-    object-position: 50% 50%;
-    overflow: hidden;
-    vertical-align: top;
-    line-height:0;
-    font-size:0;
   }
 
   .acad-prof1{
