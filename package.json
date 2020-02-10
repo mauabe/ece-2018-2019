@@ -43,7 +43,6 @@
   },
   "devDependencies": {
     "babel-plugin-root-import": "^6.4.1",
-    "eslint": "^6.2.2",
     "lodash.zip": "^4.2.0",
     "node-sass": "^4.13.0",
     "path": "^0.12.7",

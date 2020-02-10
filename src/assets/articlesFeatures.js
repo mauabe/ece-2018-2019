@@ -109,7 +109,7 @@ export const articlesFeatures = [
     professorName: 'Henry and Susan Samueli',
     articleAbrevTitle:'$100 Million Gift',
     articleDescription: 'Henry and Susan Samueli give $100 million to expand UCLA’s Engineering school',
-    articleHeadline:'$100 million gift to xxpand UCLA’s Engineering school',
+    articleHeadline:'$100 million Gift to Expand UCLA’s Engineering School',
     articleSubhead: '',
     articleImage1: '/img/samuelis.jpg',
     articleImage2:'/img/engineering-VI4.jpg',
