@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "handlebars": "^4.7.2",
+    "handlebars": "^4.7.7",
     "primeicons": "^2.0.0",
     "primereact": "^3.2.0",
     "rc-banner-anim": "^2.4.2",
